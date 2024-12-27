@@ -1,0 +1,47 @@
+Epsilon    5e-2
+Sphere     1000
+
+Source Array {
+  Name 		Aeble
+  Particles     5000
+  Current       4e-6
+  Shape         Rectangle { Size 150e-6 150e-6 }
+  Illumination  Gaussian { Alpha 93.3e-6 }
+  Electrode     20000
+  Seed		1
+//  Group         1
+}
+
+// Source Grid {
+//  Name          Test
+//  Particles	1000
+//  Illumination  Gaussian { Alpha 93.3e-6 }
+//  Seed		2
+//  Group         2
+// }
+  
+
+Plane ThinLens {    Z 0.04
+  FocalLength   0.05197
+  Name		Field
+}
+
+Plane ThinLens {    Z	0.094
+  FocalLength	0.002
+  Name		Demag
+}
+
+Plane Aperture {    Z   0.100
+  Shape Circle { Diameter 100e-6 }
+}
+
+Plane ThinLens {    Z	0.245
+  FocalLength	0.0387
+  Name		Objective
+}
+
+Plane Target {      Z	0.297
+  Name		Grid
+//  Group         2
+}
+

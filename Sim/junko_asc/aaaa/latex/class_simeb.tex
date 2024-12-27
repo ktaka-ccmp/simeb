@@ -1,0 +1,210 @@
+\section{SimEB  Class Reference}
+\label{SimEB}\index{SimEB@{Sim\-EB}}
+
+
+{\tt \#include $<$simeb.h$>$}
+
+\subsection*{Static Public Members}
+\begin{CompactItemize}
+\item 
+const char$\ast$ {\bf s\-Get\-Root} (void)
+\item 
+const char$\ast$ {\bf s\-Get\-Name} (void)
+\item 
+const {\bf real} {\bf r\-Get\-Q} (void)
+\item 
+const {\bf real} {\bf r\-Get\-QM} (void)
+\item 
+const {\bf real} {\bf r\-Get\-Scale\-Factor} (void)
+\item 
+const {\bf real} {\bf r\-Get\-Epsilon} (void)
+\item 
+const int {\bf i\-Get\-Sphere} (void)
+\item 
+void {\bf s\-Set\-Name} (char const $\ast$ const s\_\-name)
+\item 
+void {\bf s\-Ext\-Name} (char const $\ast$ const s\_\-ext)
+\item 
+void {\bf r\-Set\-QM} ({\bf real} r\_\-q, {\bf real} r\_\-m)
+\item 
+void {\bf Init\-Progress} (void)
+\item 
+void {\bf Poll\-Progress} (int)
+\item 
+void {\bf Kill\-Progress} (void)
+\item 
+void {\bf Halt} (void)
+\item 
+void {\bf Setup} (int, char const $\ast$ const[$\,$])
+\item 
+void {\bf Parse} ({\bf TParser} \&, char $\ast$)
+\item 
+void {\bf Initialize} (void)
+\item 
+void {\bf Simulate} (void)
+\item 
+void {\bf Finalize} (void)
+\item 
+{\bf real} const {\bf r\-Q0}
+\item 
+{\bf real} const {\bf r\-M0}
+\item 
+{\bf real} const {\bf r\-M1}
+\item 
+{\bf real} const {\bf r\-E0}
+\item 
+int {\bf i\-Iteration}
+\item 
+int {\bf i\-Num\-Generated}
+\item 
+int {\bf i\-Num\-Activated}
+\item 
+int {\bf i\-Num\-Killed}
+\end{CompactItemize}
+\vspace{0.4cm}\hrule\vspace{0.2cm}
+\subsection*{Detailed Description}
+\vspace{0.4cm}\hrule\vspace{0.2cm}
+\subsection*{Member Function Documentation}
+\label{SimEB_d0}
+\index{SimEB@{Sim\-EB}!sGetRoot@{s\-Get\-Root}}
+\index{sGetRoot@{s\-Get\-Root}!SimEB@{Sim\-EB}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ Sim\-EB::s\-Get\-Root (void)\hspace{0.3cm}{\tt  [inline, static]}}
+
+\label{SimEB_d1}
+\index{SimEB@{Sim\-EB}!sGetName@{s\-Get\-Name}}
+\index{sGetName@{s\-Get\-Name}!SimEB@{Sim\-EB}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ Sim\-EB::s\-Get\-Name (void)\hspace{0.3cm}{\tt  [inline, static]}}
+
+\label{SimEB_d2}
+\index{SimEB@{Sim\-EB}!rGetQ@{r\-Get\-Q}}
+\index{rGetQ@{r\-Get\-Q}!SimEB@{Sim\-EB}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}const {\bf real} Sim\-EB::r\-Get\-Q (void)\hspace{0.3cm}{\tt  [inline, static]}}
+
+\label{SimEB_d3}
+\index{SimEB@{Sim\-EB}!rGetQM@{r\-Get\-QM}}
+\index{rGetQM@{r\-Get\-QM}!SimEB@{Sim\-EB}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}const {\bf real} Sim\-EB::r\-Get\-QM (void)\hspace{0.3cm}{\tt  [inline, static]}}
+
+\label{SimEB_d4}
+\index{SimEB@{Sim\-EB}!rGetScaleFactor@{r\-Get\-Scale\-Factor}}
+\index{rGetScaleFactor@{r\-Get\-Scale\-Factor}!SimEB@{Sim\-EB}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}const {\bf real} Sim\-EB::r\-Get\-Scale\-Factor (void)\hspace{0.3cm}{\tt  [inline, static]}}
+
+\label{SimEB_d5}
+\index{SimEB@{Sim\-EB}!rGetEpsilon@{r\-Get\-Epsilon}}
+\index{rGetEpsilon@{r\-Get\-Epsilon}!SimEB@{Sim\-EB}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}const {\bf real} Sim\-EB::r\-Get\-Epsilon (void)\hspace{0.3cm}{\tt  [inline, static]}}
+
+\label{SimEB_d6}
+\index{SimEB@{Sim\-EB}!iGetSphere@{i\-Get\-Sphere}}
+\index{iGetSphere@{i\-Get\-Sphere}!SimEB@{Sim\-EB}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}const int Sim\-EB::i\-Get\-Sphere (void)\hspace{0.3cm}{\tt  [inline, static]}}
+
+\label{SimEB_d7}
+\index{SimEB@{Sim\-EB}!sSetName@{s\-Set\-Name}}
+\index{sSetName@{s\-Set\-Name}!SimEB@{Sim\-EB}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}void Sim\-EB::s\-Set\-Name (char const $\ast$ {\em const s\_\-name})\hspace{0.3cm}{\tt  [inline, static]}}
+
+\label{SimEB_d8}
+\index{SimEB@{Sim\-EB}!sExtName@{s\-Ext\-Name}}
+\index{sExtName@{s\-Ext\-Name}!SimEB@{Sim\-EB}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}void Sim\-EB::s\-Ext\-Name (char const $\ast$ {\em const s\_\-ext})\hspace{0.3cm}{\tt  [inline, static]}}
+
+\label{SimEB_d9}
+\index{SimEB@{Sim\-EB}!rSetQM@{r\-Set\-QM}}
+\index{rSetQM@{r\-Set\-QM}!SimEB@{Sim\-EB}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}void Sim\-EB::r\-Set\-QM ({\bf real} {\em r\_\-q}, {\bf real} {\em r\_\-m})\hspace{0.3cm}{\tt  [inline, static]}}
+
+\label{SimEB_d10}
+\index{SimEB@{Sim\-EB}!InitProgress@{Init\-Progress}}
+\index{InitProgress@{Init\-Progress}!SimEB@{Sim\-EB}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}void Sim\-EB::Init\-Progress (void)\hspace{0.3cm}{\tt  [static]}}
+
+\label{SimEB_d11}
+\index{SimEB@{Sim\-EB}!PollProgress@{Poll\-Progress}}
+\index{PollProgress@{Poll\-Progress}!SimEB@{Sim\-EB}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}void Sim\-EB::Poll\-Progress (int)\hspace{0.3cm}{\tt  [static]}}
+
+\label{SimEB_d12}
+\index{SimEB@{Sim\-EB}!KillProgress@{Kill\-Progress}}
+\index{KillProgress@{Kill\-Progress}!SimEB@{Sim\-EB}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}void Sim\-EB::Kill\-Progress (void)\hspace{0.3cm}{\tt  [static]}}
+
+\label{SimEB_d13}
+\index{SimEB@{Sim\-EB}!Halt@{Halt}}
+\index{Halt@{Halt}!SimEB@{Sim\-EB}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}void Sim\-EB::Halt (void)\hspace{0.3cm}{\tt  [static]}}
+
+\label{SimEB_d14}
+\index{SimEB@{Sim\-EB}!Setup@{Setup}}
+\index{Setup@{Setup}!SimEB@{Sim\-EB}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}void Sim\-EB::Setup (int {\em i\_\-argc}, char const $\ast$const[$\,$])\hspace{0.3cm}{\tt  [static]}}
+
+\label{SimEB_d15}
+\index{SimEB@{Sim\-EB}!Parse@{Parse}}
+\index{Parse@{Parse}!SimEB@{Sim\-EB}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}void Sim\-EB::Parse ({\bf TParser} \& {\em parser}, char $\ast$ {\em s\_\-token})\hspace{0.3cm}{\tt  [static]}}
+
+\label{SimEB_d16}
+\index{SimEB@{Sim\-EB}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!SimEB@{Sim\-EB}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}void Sim\-EB::Initialize (void)\hspace{0.3cm}{\tt  [static]}}
+
+\label{SimEB_d17}
+\index{SimEB@{Sim\-EB}!Simulate@{Simulate}}
+\index{Simulate@{Simulate}!SimEB@{Sim\-EB}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}void Sim\-EB::Simulate (void)\hspace{0.3cm}{\tt  [static]}}
+
+\label{SimEB_d18}
+\index{SimEB@{Sim\-EB}!Finalize@{Finalize}}
+\index{Finalize@{Finalize}!SimEB@{Sim\-EB}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}void Sim\-EB::Finalize (void)\hspace{0.3cm}{\tt  [static]}}
+
+\vspace{0.4cm}\hrule\vspace{0.2cm}
+\subsection*{Member Data Documentation}
+\label{SimEB_d19}
+\index{SimEB@{Sim\-EB}!rQ0@{r\-Q0}}
+\index{rQ0@{r\-Q0}!SimEB@{Sim\-EB}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf real} const Sim\-EB::r\-Q0\hspace{0.3cm}{\tt  [static]}}
+
+\label{SimEB_d20}
+\index{SimEB@{Sim\-EB}!rM0@{r\-M0}}
+\index{rM0@{r\-M0}!SimEB@{Sim\-EB}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf real} const Sim\-EB::r\-M0\hspace{0.3cm}{\tt  [static]}}
+
+\label{SimEB_d21}
+\index{SimEB@{Sim\-EB}!rM1@{r\-M1}}
+\index{rM1@{r\-M1}!SimEB@{Sim\-EB}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf real} const Sim\-EB::r\-M1\hspace{0.3cm}{\tt  [static]}}
+
+\label{SimEB_d22}
+\index{SimEB@{Sim\-EB}!rE0@{r\-E0}}
+\index{rE0@{r\-E0}!SimEB@{Sim\-EB}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf real} const Sim\-EB::r\-E0\hspace{0.3cm}{\tt  [static]}}
+
+\label{SimEB_d23}
+\index{SimEB@{Sim\-EB}!iIteration@{i\-Iteration}}
+\index{iIteration@{i\-Iteration}!SimEB@{Sim\-EB}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}int Sim\-EB::i\-Iteration\hspace{0.3cm}{\tt  [static]}}
+
+\label{SimEB_d24}
+\index{SimEB@{Sim\-EB}!iNumGenerated@{i\-Num\-Generated}}
+\index{iNumGenerated@{i\-Num\-Generated}!SimEB@{Sim\-EB}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}int Sim\-EB::i\-Num\-Generated\hspace{0.3cm}{\tt  [static]}}
+
+\label{SimEB_d25}
+\index{SimEB@{Sim\-EB}!iNumActivated@{i\-Num\-Activated}}
+\index{iNumActivated@{i\-Num\-Activated}!SimEB@{Sim\-EB}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}int Sim\-EB::i\-Num\-Activated\hspace{0.3cm}{\tt  [static]}}
+
+\label{SimEB_d26}
+\index{SimEB@{Sim\-EB}!iNumKilled@{i\-Num\-Killed}}
+\index{iNumKilled@{i\-Num\-Killed}!SimEB@{Sim\-EB}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}int Sim\-EB::i\-Num\-Killed\hspace{0.3cm}{\tt  [static]}}
+
+\vspace{0.4cm}\hrule\vspace{0.2cm}
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+{\bf simeb.h}\item 
+{\bf setup.cc}\item 
+{\bf simeb.cc}\end{CompactItemize}

@@ -1,0 +1,160 @@
+.TH SimEB 3 "16 Dec 1999" "simeb_ebit" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+SimEB \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <simeb.h>\fR
+.PP
+.SS Static Public Members
+
+.in +1c
+.ti -1c
+.RI "const char* \fBsGetRoot\fR (void)"
+.br
+.ti -1c
+.RI "const char* \fBsGetName\fR (void)"
+.br
+.ti -1c
+.RI "const \fBreal\fR \fBrGetQ\fR (void)"
+.br
+.ti -1c
+.RI "const \fBreal\fR \fBrGetQM\fR (void)"
+.br
+.ti -1c
+.RI "const \fBreal\fR \fBrGetScaleFactor\fR (void)"
+.br
+.ti -1c
+.RI "const \fBreal\fR \fBrGetEpsilon\fR (void)"
+.br
+.ti -1c
+.RI "const int \fBiGetSphere\fR (void)"
+.br
+.ti -1c
+.RI "void \fBsSetName\fR (char const * const s_name)"
+.br
+.ti -1c
+.RI "void \fBsExtName\fR (char const * const s_ext)"
+.br
+.ti -1c
+.RI "void \fBrSetQM\fR (\fBreal\fR r_q, \fBreal\fR r_m)"
+.br
+.ti -1c
+.RI "void \fBInitProgress\fR (void)"
+.br
+.ti -1c
+.RI "void \fBPollProgress\fR (int)"
+.br
+.ti -1c
+.RI "void \fBKillProgress\fR (void)"
+.br
+.ti -1c
+.RI "void \fBHalt\fR (void)"
+.br
+.ti -1c
+.RI "void \fBSetup\fR (int, char const * const[])"
+.br
+.ti -1c
+.RI "void \fBParse\fR (\fBTParser\fR &, char *)"
+.br
+.ti -1c
+.RI "void \fBInitialize\fR (void)"
+.br
+.ti -1c
+.RI "void \fBSimulate\fR (void)"
+.br
+.ti -1c
+.RI "void \fBFinalize\fR (void)"
+.br
+.ti -1c
+.RI "\fBreal\fR const \fBrQ0\fR"
+.br
+.ti -1c
+.RI "\fBreal\fR const \fBrM0\fR"
+.br
+.ti -1c
+.RI "\fBreal\fR const \fBrM1\fR"
+.br
+.ti -1c
+.RI "\fBreal\fR const \fBrE0\fR"
+.br
+.ti -1c
+.RI "int \fBiIteration\fR"
+.br
+.ti -1c
+.RI "int \fBiNumGenerated\fR"
+.br
+.ti -1c
+.RI "int \fBiNumActivated\fR"
+.br
+.ti -1c
+.RI "int \fBiNumKilled\fR"
+.br
+.in -1c
+.SH DETAILED DESCRIPTION
+.PP 
+.SH MEMBER FUNCTION DOCUMENTATION
+.PP 
+.SS const char * SimEB::sGetRoot (void)\fC [inline, static]\fR
+.PP
+.SS const char * SimEB::sGetName (void)\fC [inline, static]\fR
+.PP
+.SS const \fBreal\fR SimEB::rGetQ (void)\fC [inline, static]\fR
+.PP
+.SS const \fBreal\fR SimEB::rGetQM (void)\fC [inline, static]\fR
+.PP
+.SS const \fBreal\fR SimEB::rGetScaleFactor (void)\fC [inline, static]\fR
+.PP
+.SS const \fBreal\fR SimEB::rGetEpsilon (void)\fC [inline, static]\fR
+.PP
+.SS const int SimEB::iGetSphere (void)\fC [inline, static]\fR
+.PP
+.SS void SimEB::sSetName (char const * const s_name)\fC [inline, static]\fR
+.PP
+.SS void SimEB::sExtName (char const * const s_ext)\fC [inline, static]\fR
+.PP
+.SS void SimEB::rSetQM (\fBreal\fR r_q, \fBreal\fR r_m)\fC [inline, static]\fR
+.PP
+.SS void SimEB::InitProgress (void)\fC [static]\fR
+.PP
+.SS void SimEB::PollProgress (int)\fC [static]\fR
+.PP
+.SS void SimEB::KillProgress (void)\fC [static]\fR
+.PP
+.SS void SimEB::Halt (void)\fC [static]\fR
+.PP
+.SS void SimEB::Setup (int i_argc, char const *const[])\fC [static]\fR
+.PP
+.SS void SimEB::Parse (\fBTParser\fR & parser, char * s_token)\fC [static]\fR
+.PP
+.SS void SimEB::Initialize (void)\fC [static]\fR
+.PP
+.SS void SimEB::Simulate (void)\fC [static]\fR
+.PP
+.SS void SimEB::Finalize (void)\fC [static]\fR
+.PP
+.SH MEMBER DATA DOCUMENTATION
+.PP 
+.SS \fBreal\fR const SimEB::rQ0\fC [static]\fR
+.PP
+.SS \fBreal\fR const SimEB::rM0\fC [static]\fR
+.PP
+.SS \fBreal\fR const SimEB::rM1\fC [static]\fR
+.PP
+.SS \fBreal\fR const SimEB::rE0\fC [static]\fR
+.PP
+.SS int SimEB::iIteration\fC [static]\fR
+.PP
+.SS int SimEB::iNumGenerated\fC [static]\fR
+.PP
+.SS int SimEB::iNumActivated\fC [static]\fR
+.PP
+.SS int SimEB::iNumKilled\fC [static]\fR
+.PP
+
+
+.SH AUTHOR
+.PP 
+Generated automatically by Doxygen for simeb_ebit from the source code.

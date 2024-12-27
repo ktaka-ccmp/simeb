@@ -1,0 +1,312 @@
+<HTML>
+<HEAD><TITLE>./kdoc/setup-cc</TITLE></HEAD>
+<BODY BGCOLOR="#ffffff">
+<PRE>#include &quot;simeb.h&quot;
+
+////////////////////////////////////////////////////////////////////
+// Error messages.
+#define ERROR_USAGE         &quot;simeb (v4.0)\nUsage: simeb system args...&quot;
+#define ERROR_USAGE_ACCEL   &quot;Compiled w/ Accelerating Field Capability.&quot;
+#define ERROR_USAGE_RELATIVITY &quot;Compiled w/ Special Relativity Capability.&quot;
+#define ERROR_BADFILE       &quot;simeb: Could not open file: &quot;
+#define ERROR_BADARG        &quot;simeb: Error: Bad argument.&quot;
+#define ERROR_MULTSOURCEDEF &quot;simeb: Multiple source definition.&quot;
+#define ERROR_NOSOURCEDEF   &quot;simeb: No source definition.&quot;
+#define ERROR_MAXSECTIONS   &quot;simeb: Too many section definitions.&quot;
+#define WARNING_NOCAP_TRACK &quot;simeb: -Track directive ignored. Recompile \
+with -D_SIMEB_CAP_TRACK.&quot;
+#define WARNING_NOCAP_PROXIMITY &quot;simeb: -Proximity directive ignored. \
+Recompile with -D_SIMEB_CAP_PROXIMITY.&quot;
+
+void SimEB::Setup(int i_argc, char const * const s_argv[])
+{
+  /////////////////////////////////////////////////////////////
+  // 1. Check command line arguments.
+
+  if (i_argc &lt; 2) {
+    // If no command line arguments are given, print the
+    // usage information.
+    cerr &lt;&lt; ERROR_USAGE &lt;&lt; newline;
+
+    #ifdef _SIMEB_CAP_ACCEL
+      cerr &lt;&lt; ERROR_USAGE_ACCEL &lt;&lt; newline;
+    #endif // ACCEL
+
+    #ifdef _SIMEB_CAP_RELATIVITY
+      cerr &lt;&lt; ERROR_USAGE_RELATIVITY &lt;&lt; newline;
+    #endif // RELATIVITY
+
+    exit(0);
+  }
+
+  SimEB::sSetName(s_argv[1]);
+    // The first command line argument is always the default
+    // name of the system.
+
+  Column::Setup();
+
+  ////////////////////////////////////////////////////////////
+  // 2. Parse the input file and command line arguments.
+
+  // Open the input file. The first command line argument is also
+  // the name of input file describing the system.
+  TFileParser * file_parser = new TFileParser(s_argv[1]);
+  if (file_parser-&gt;Eof()) {
+    cerr &lt;&lt; &quot;simeb: Could not open &quot; &lt;&lt; s_argv[1] &lt;&lt; newline;
+    exit(0);
+  }
+
+  for (;;) { // Parse tokens in the input file.
+    char s_token[MAX_TOKEN];
+    *file_parser &gt;&gt; s_token;
+    if (file_parser-&gt;Eof()) break;
+    Parse(*file_parser, s_token);
+  }
+
+  // Close the input file.
+  delete file_parser; 
+
+  TArgParser * arg_parser = new TArgParser(i_argc, s_argv);
+    // All arguments following the first argument are parsed as
+    // if they were included in the input file.
+
+  for (;;) { // Parse tokens in the command line.
+    char s_token[MAX_TOKEN];
+    *arg_parser &gt;&gt; s_token;
+    if (arg_parser-&gt;Eof()) break;
+    Parse(*arg_parser, s_token);
+  }
+}
+
+///////////////////////////////////////////////////////////////
+///////////////////////////////////////////////////////////////
+// Parse()
+//
+// Parse system level commands. The current command to
+// parse is specified in &lt;s_token&gt;. Subsequent arguments
+// may be obtained from &lt;parser&gt;. Return value is TRUE
+// for successfully parsing the command and FALSE for
+// any error encountered. See the simeb user documentation
+// for further information on the command options and
+// formats.
+void SimEB::Parse(TParser &parser, char *s_token)
+{
+  if (s_token[0] == '-') ++s_token;
+  /////////////////////////////////////////////////////////
+  // The default value for the system name is the name
+  // specified in the first argument on the command line.
+  // The following two commands may be used to change the
+  // name to something else. They are useful because various
+  // output files names are derived from the system name, so
+  // these options may be used to generate unique output
+  // files for several simulation trials on the same input
+  // system file.
+
+  // Redefine the system name.
+  if (!strcmp(s_token, &quot;Name&quot;)) {parser &gt;&gt; s_token;  SimEB::sSetName(s_token);}
+
+  // Redefine the system name.
+  else if (s_token[0] == '.') SimEB::sExtName(s_token);
+
+  else if (!strcmp(s_token, &quot;Sphere&quot;)) parser &gt;&gt; iSphere;
+  else if (!strcmp(s_token, &quot;Epsilon&quot;)) parser &gt;&gt; rEpsilon;
+  else if (!strcmp(s_token, &quot;Ion&quot;)) {
+    parser &gt;&gt; SimEB::rM; SimEB::rM *= SimEB::rM1;
+    parser &gt;&gt; SimEB::rQ; SimEB::rQ *= SimEB::rQ0;
+  }
+  else if (!strcmp(s_token, &quot;Halt&quot;)) parser &gt;&gt; iHalt;
+
+  else Column::Parse(parser, s_token);
+}
+
+void SimEB::Initialize(void)
+{
+  SimEB::rQM = SimEB::rQ / SimEB::rM;
+  Relativity::rSetQM(SimEB::rQM);
+  SimEB::rScaleFactor = SimEB::rCoulomb * SimEB::rQ * SimEB::rQM;
+
+  Column::Initialize();
+
+  iNumGenerated = TSource::iGetTotalParticles();
+
+  // Allocate space for and initialize &lt;ParticleArray&gt; and &lt;ParticleHeap&gt;.
+  ParticleArray = new Particle *[iNumGenerated];
+  ParticleHeap = new Particle *[iNumGenerated];
+
+  for (int i = 0; i &lt; iNumGenerated; ++i) 
+    ParticleArray[i] = TSource::GetParticle(i);
+  for (int i = 0; i &lt; iNumGenerated; ++i)
+    ParticleHeap[i] = TSource::GetParticle(i);
+
+  qsort(ParticleArray, iNumGenerated, sizeof(Particle *),
+	(int(*)(void const *, void const *))Particle::EmissionOrder);
+  qsort(ParticleHeap, iNumGenerated, sizeof(Particle *),
+	(int(*)(void const *, void const *))Particle::EmissionOrder);
+
+  for (int i = 0; i &lt; iNumGenerated; ++i) ParticleArray[i]-&gt;iZOrder = i;
+  for (int i = 0; i &lt; iNumGenerated; ++i) ParticleHeap[i]-&gt;iTOrder = i;
+}
+
+
+void SimEB::Finalize(void)
+{
+  cerr &lt;&lt; &quot;simeb: Simulation complete for &quot; &lt;&lt; SimEB::sGetName() &lt;&lt; &quot;.\n&quot;;
+  cerr &lt;&lt; &quot;simeb: &quot; &lt;&lt; iIteration &lt;&lt; &quot; iterations.\n&quot;;
+}
+
+
+
+void SimEB::InitProgress(void)
+{
+  char s_filename[MAX_TOKEN];
+
+  sprintf(s_filename, &quot;%s.progress&quot;, sRoot);
+  fpProgress = fopen(s_filename, &quot;w&quot;);
+  if  (!fpProgress)  {
+    cerr &lt;&lt; &quot;Could not open &quot; &lt;&lt; s_filename &lt;&lt; &quot;.\n&quot;;
+    exit(0);
+  }
+
+  FILE * fp_batch;
+
+  sprintf(s_filename, &quot;%s.poll&quot;, sRoot);
+  fp_batch = fopen(s_filename, &quot;w&quot;); 
+  if (!fp_batch) {
+    cerr &lt;&lt; &quot;Could not open &quot; &lt;&lt; s_filename &lt;&lt; &quot;.\n&quot;;
+    exit(0);
+  }
+  fprintf(fp_batch, &quot;kill -USR1 %d\n&quot;, getpid());
+  fprintf(fp_batch, &quot;sleep 1\n&quot;);
+  fprintf(fp_batch, &quot;cat %s.progress\n&quot;, sRoot);
+  fclose(fp_batch);
+  chmod(s_filename, S_IRUSR | S_IWUSR | S_IXUSR);
+
+  sprintf(s_filename, &quot;%s.kill&quot;, sRoot);  
+  fp_batch = fopen(s_filename, &quot;w&quot;); 
+  if (!fp_batch) {
+    cerr &lt;&lt; &quot;Could not open &quot; &lt;&lt; s_filename &lt;&lt; &quot;.\n&quot;;
+    exit(0);
+  }
+  fprintf(fp_batch, &quot;kill %d\n&quot;, getpid());
+  fprintf(fp_batch, &quot;rm %s.progress\n&quot;, sRoot);
+  fprintf(fp_batch, &quot;rm %s.poll\n&quot;, sRoot);
+  fprintf(fp_batch, &quot;rm %s.kill\n&quot;, sRoot);
+  fclose(fp_batch);
+  chmod(s_filename, S_IRUSR | S_IWUSR | S_IXUSR);
+
+  signal(SIGUSR1, PollProgress);
+}
+
+void SimEB::KillProgress(void)
+{
+  char s_filename[MAX_TOKEN];
+
+  sprintf(s_filename, &quot;%s.poll&quot;, sRoot);
+  unlink(s_filename);
+
+  sprintf(s_filename, &quot;%s.kill&quot;, sRoot);
+  unlink(s_filename);
+
+  sprintf(s_filename, &quot;%s.progress&quot;, sRoot);
+  unlink(s_filename);
+}
+
+void SimEB::PollProgress(int)
+{
+  if (!iNumActivated) return;
+  if (iNumKilled == iNumGenerated) return;
+
+  //  ftruncate(fpProgress-&gt;_file, 0);
+  ftruncate(fpProgress-&gt;_fileno, 0); // by ktaka 11/03/99
+
+  Particle * particle;
+  
+  particle = ParticleArray[iNumKilled];
+  real r_lead = particle-&gt;xyzP.rZ - Column::rGetZ(0);
+
+  particle = ParticleArray[iNumActivated-1];
+  real r_tail = particle-&gt;xyzP.rZ - Column::rGetZ(0);
+
+  fprintf(fpProgress, &quot;I=%d A=%d K=%d L=%f T=%f\n&quot;,
+    iIteration, iNumActivated-iNumKilled, iNumKilled, (float)r_lead, (float)r_tail);
+
+  fflush(fpProgress);
+}
+
+
+
+TFileParser::TFileParser(char const *s_filename) : TParser()
+{
+  File = fopen(s_filename, &quot;r&quot;);
+  if (!File) Eof(true);
+
+  iLine = 1;
+}
+
+bool TFileParser::GetToken()
+{
+  unsigned  u = 0;
+  int       i = ' ';
+
+  *sToken = '\0';
+  if (Eof()) return !Eof();
+
+  while (isspace(i)) {
+    if (i == '\n') ++iLine;
+
+    i = getc(File);
+    if (i == EOF) return !Eof(true);
+    if (i == '/') while ((i = getc(File)) != '\n') if (i == EOF) return !Eof(true);
+  }
+
+  while (!isspace(i)) {
+    sToken[u++] = i;
+
+    i = getc(File);
+    if (i == EOF) return !Eof(true);
+  }
+  if (i == '\n') ++iLine;
+
+  sToken[u++] = '\0';
+  return !Eof();
+}
+
+void TFileParser::Error()
+{
+  cerr &lt;&lt; &quot;Error parsing input file!\n&quot;;
+  if (Eof()) cerr &lt;&lt; &quot;Unexpected EOF.\n&quot;;
+  else cerr &lt;&lt; &quot;Line &quot; &lt;&lt; iLine &lt;&lt; space &lt;&lt; &quot;: &quot; &lt;&lt; sToken &lt;&lt; newline;
+  exit(0);
+}
+
+
+TArgParser::TArgParser(unsigned u_argc, char const * const * s_argv) : TParser()
+{
+  uNumArgs = u_argc;
+  uArg = 2;
+
+  sArgVArray = s_argv;
+}
+
+bool TArgParser::GetToken()
+{
+  if (uArg == uNumArgs) return Eof(true);
+  strcpy(sToken, sArgVArray[uArg++]);
+  return true;
+}
+
+void TArgParser::Error()
+{
+  cerr &lt;&lt; &quot;Error parsing command line!\n&quot;;
+  if (Eof()) cerr &lt;&lt; &quot;Unterminated command.\n&quot;;
+  else cerr &lt;&lt; &quot;Token &quot; &lt;&lt; uArg &lt;&lt; space &lt;&lt; &quot;: &quot; &lt;&lt; sToken &lt;&lt; newline;
+  exit(0);  
+}
+
+
+</PRE>
+<HR>
+<address>Documentation generated by ktaka@junko on Thu Dec 16 18:04:15 PST 1999
+</address>
+</BODY>
+</HTML>

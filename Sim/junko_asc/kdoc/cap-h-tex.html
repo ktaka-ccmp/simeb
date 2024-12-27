@@ -1,0 +1,2572 @@
+<HTML>
+<HEAD><TITLE>./kdoc/cap-h-tex</TITLE></HEAD>
+<BODY BGCOLOR="#ffffff">
+<PRE>	\documentclass[12pt]{article}
+%		\usepackage{a4}
+		\usepackage{makeidx}
+		\title{cap.h Library Index}
+		\date{\today}
+		\def\mtl{{\tt\~\relax}}
+		\author{Generated with KDOC Revision: 1.14 }
+		\makeindex
+		\begin{document}
+		\maketitle
+		\pagestyle{headings}
+		\tableofcontents
+		\newpage
+		\sloppy
+\section[Column]{\emph{Column} class reference \small\sf (column.h)}
+\vspace{-0.6cm}
+\hrulefill
+\index{Column}
+\subsection{public members}
+\subsubsection*{Column::rPrecision}
+\vspace{-0.65cm}
+\hrulefill
+\index{Column!rPrecision}
+\index{rPrecision!Column}
+\begin{flushleft}
+\texttt{  static real const rPrecision;}
+\end{flushleft}
+
+
+
+\subsubsection*{Column::iGetNumPlanes}
+\vspace{-0.65cm}
+\hrulefill
+\index{Column!iGetNumPlanes}
+\index{iGetNumPlanes!Column}
+\begin{flushleft}
+\texttt{static int iGetNumPlanes(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{Column::GetSource}
+\vspace{-0.65cm}
+\hrulefill
+\index{Column!GetSource}
+\index{GetSource!Column}
+\begin{flushleft}
+\texttt{static TSource *  GetSource(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{Column::GetPlane}
+\vspace{-0.65cm}
+\hrulefill
+\index{Column!GetPlane}
+\index{GetPlane!Column}
+\begin{flushleft}
+\texttt{static TPlane * GetPlane(int const i);}
+\end{flushleft}
+
+
+
+\subsubsection*{Column::rGetZ}
+\vspace{-0.65cm}
+\hrulefill
+\index{Column!rGetZ}
+\index{rGetZ!Column}
+\begin{flushleft}
+\texttt{static real rGetZ(int const i);}
+\end{flushleft}
+
+
+
+\subsubsection*{Column::rGetCapture}
+\vspace{-0.65cm}
+\hrulefill
+\index{Column!rGetCapture}
+\index{rGetCapture!Column}
+\begin{flushleft}
+\texttt{static real rGetCapture(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{Column::Setup}
+\vspace{-0.65cm}
+\hrulefill
+\index{Column!Setup}
+\index{Setup!Column}
+\begin{flushleft}
+\texttt{static void Setup(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{Column::Initialize}
+\vspace{-0.65cm}
+\hrulefill
+\index{Column!Initialize}
+\index{Initialize!Column}
+\begin{flushleft}
+\texttt{static void Initialize(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{Column::Parse}
+\vspace{-0.65cm}
+\hrulefill
+\index{Column!Parse}
+\index{Parse!Column}
+\begin{flushleft}
+\texttt{static void Parse(TParser \&, char *);}
+\end{flushleft}
+
+
+
+\subsubsection*{Column::Fly}
+\vspace{-0.65cm}
+\hrulefill
+\index{Column!Fly}
+\index{Fly!Column}
+\begin{flushleft}
+\texttt{static void Fly(real const r\_dt);}
+\end{flushleft}
+
+
+
+\section[TIllumin]{\emph{TIllumin} class reference \small\sf (illumin.h)}
+\vspace{-0.6cm}
+\hrulefill
+\index{TIllumin}
+\subsection{public members}
+\subsubsection*{TIllumin::Parse}
+\vspace{-0.65cm}
+\hrulefill
+\index{TIllumin!Parse}
+\index{Parse!TIllumin}
+\begin{flushleft}
+\texttt{static TIllumin * Parse(TParser \&);}
+\end{flushleft}
+
+
+
+\subsubsection*{TIllumin::Parse}
+\vspace{-0.65cm}
+\hrulefill
+\index{TIllumin!Parse}
+\index{Parse!TIllumin}
+\begin{flushleft}
+\texttt{virtual void Parse(TParser \&, char *);}
+\end{flushleft}
+
+
+
+\subsubsection*{TIllumin::Randomize}
+\vspace{-0.65cm}
+\hrulefill
+\index{TIllumin!Randomize}
+\index{Randomize!TIllumin}
+\begin{flushleft}
+\texttt{virtual void Randomize(Particle *, real);}
+\end{flushleft}
+
+
+
+\section[TIlluminUniform]{\emph{TIlluminUniform} class reference \small\sf (illumin.h)}
+\vspace{-0.6cm}
+\hrulefill
+\index{TIlluminUniform}
+\begin{description}
+\item{Inherits:} TIllumin
+\end{description}
+\subsection{public members}
+\subsubsection*{TIlluminUniform::TIlluminUniform}
+\vspace{-0.65cm}
+\hrulefill
+\index{TIlluminUniform!TIlluminUniform}
+\index{TIlluminUniform!TIlluminUniform}
+\begin{flushleft}
+\texttt{TIlluminUniform(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{TIlluminUniform::Parse}
+\vspace{-0.65cm}
+\hrulefill
+\index{TIlluminUniform!Parse}
+\index{Parse!TIlluminUniform}
+\begin{flushleft}
+\texttt{virtual void Parse(TParser \&, char *);}
+\end{flushleft}
+
+
+
+\subsubsection*{TIlluminUniform::Randomize}
+\vspace{-0.65cm}
+\hrulefill
+\index{TIlluminUniform!Randomize}
+\index{Randomize!TIlluminUniform}
+\begin{flushleft}
+\texttt{virtual void Randomize(Particle *, real);}
+\end{flushleft}
+
+
+
+\section[TIlluminLumped]{\emph{TIlluminLumped} class reference \small\sf (illumin.h)}
+\vspace{-0.6cm}
+\hrulefill
+\index{TIlluminLumped}
+\begin{description}
+\item{Inherits:} TIllumin
+\end{description}
+\subsection{public members}
+\subsubsection*{TIlluminLumped::TIlluminLumped}
+\vspace{-0.65cm}
+\hrulefill
+\index{TIlluminLumped!TIlluminLumped}
+\index{TIlluminLumped!TIlluminLumped}
+\begin{flushleft}
+\texttt{TIlluminLumped(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{TIlluminLumped::Parse}
+\vspace{-0.65cm}
+\hrulefill
+\index{TIlluminLumped!Parse}
+\index{Parse!TIlluminLumped}
+\begin{flushleft}
+\texttt{virtual void Parse(TParser \&, char *);}
+\end{flushleft}
+
+
+
+\subsubsection*{TIlluminLumped::Randomize}
+\vspace{-0.65cm}
+\hrulefill
+\index{TIlluminLumped!Randomize}
+\index{Randomize!TIlluminLumped}
+\begin{flushleft}
+\texttt{virtual void Randomize(Particle *, real);}
+\end{flushleft}
+
+
+
+\section[TIlluminGaussian]{\emph{TIlluminGaussian} class reference \small\sf (illumin.h)}
+\vspace{-0.6cm}
+\hrulefill
+\index{TIlluminGaussian}
+\begin{description}
+\item{Inherits:} TIllumin
+\end{description}
+\subsection{public members}
+\subsubsection*{TIlluminGaussian::TIlluminGaussian}
+\vspace{-0.65cm}
+\hrulefill
+\index{TIlluminGaussian!TIlluminGaussian}
+\index{TIlluminGaussian!TIlluminGaussian}
+\begin{flushleft}
+\texttt{TIlluminGaussian(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{TIlluminGaussian::Parse}
+\vspace{-0.65cm}
+\hrulefill
+\index{TIlluminGaussian!Parse}
+\index{Parse!TIlluminGaussian}
+\begin{flushleft}
+\texttt{virtual void Parse(TParser \&, char *);}
+\end{flushleft}
+
+
+
+\subsubsection*{TIlluminGaussian::Randomize}
+\vspace{-0.65cm}
+\hrulefill
+\index{TIlluminGaussian!Randomize}
+\index{Randomize!TIlluminGaussian}
+\begin{flushleft}
+\texttt{virtual void Randomize(Particle *, real);}
+\end{flushleft}
+
+
+
+\section[TIlluminFixed]{\emph{TIlluminFixed} class reference \small\sf (illumin.h)}
+\vspace{-0.6cm}
+\hrulefill
+\index{TIlluminFixed}
+\begin{description}
+\item{Inherits:} TIllumin
+\end{description}
+\subsection{public members}
+\subsubsection*{TIlluminFixed::TIlluminFixed}
+\vspace{-0.65cm}
+\hrulefill
+\index{TIlluminFixed!TIlluminFixed}
+\index{TIlluminFixed!TIlluminFixed}
+\begin{flushleft}
+\texttt{TIlluminFixed(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{TIlluminFixed::Parse}
+\vspace{-0.65cm}
+\hrulefill
+\index{TIlluminFixed!Parse}
+\index{Parse!TIlluminFixed}
+\begin{flushleft}
+\texttt{virtual void Parse(TParser \&, char *);}
+\end{flushleft}
+
+
+
+\subsubsection*{TIlluminFixed::Randomize}
+\vspace{-0.65cm}
+\hrulefill
+\index{TIlluminFixed!Randomize}
+\index{Randomize!TIlluminFixed}
+\begin{flushleft}
+\texttt{virtual void Randomize(Particle *, real);}
+\end{flushleft}
+
+
+
+\section[Particle]{\emph{Particle} class reference \small\sf (particle.h)}
+\vspace{-0.6cm}
+\hrulefill
+\index{Particle}
+\subsection{public members}
+\subsubsection*{Particle::iPlane}
+\vspace{-0.65cm}
+\hrulefill
+\index{Particle!iPlane}
+\index{iPlane!Particle}
+\begin{flushleft}
+\texttt{  int iPlane;}
+\end{flushleft}
+
+
+
+\subsubsection*{Particle::iId}
+\vspace{-0.65cm}
+\hrulefill
+\index{Particle!iId}
+\index{iId!Particle}
+\begin{flushleft}
+\texttt{  int iId;}
+\end{flushleft}
+
+
+
+\subsubsection*{Particle::iBeam}
+\vspace{-0.65cm}
+\hrulefill
+\index{Particle!iBeam}
+\index{iBeam!Particle}
+\begin{flushleft}
+\texttt{  int iBeam;}
+\end{flushleft}
+
+
+
+\subsubsection*{Particle::iGroup}
+\vspace{-0.65cm}
+\hrulefill
+\index{Particle!iGroup}
+\index{iGroup!Particle}
+\begin{flushleft}
+\texttt{  int iGroup;}
+\end{flushleft}
+
+
+
+\subsubsection*{Particle::rFieldA}
+\vspace{-0.65cm}
+\hrulefill
+\index{Particle!rFieldA}
+\index{rFieldA!Particle}
+\begin{flushleft}
+\texttt{  real rFieldA;}
+\end{flushleft}
+
+
+
+\subsubsection*{Particle::iMirror}
+\vspace{-0.65cm}
+\hrulefill
+\index{Particle!iMirror}
+\index{iMirror!Particle}
+\begin{flushleft}
+\texttt{  int iMirror;}
+\end{flushleft}
+
+
+
+\subsubsection*{Particle::Impact}
+\vspace{-0.65cm}
+\hrulefill
+\index{Particle!Impact}
+\index{Impact!Particle}
+\begin{flushleft}
+\texttt{inline real Impact(real const r\_dz);}
+\end{flushleft}
+
+
+
+\subsubsection*{Particle::Cross}
+\vspace{-0.65cm}
+\hrulefill
+\index{Particle!Cross}
+\index{Cross!Particle}
+\begin{flushleft}
+\texttt{inline bool Cross(real const r\_dz);}
+\end{flushleft}
+
+
+
+\subsubsection*{Particle::bIncrPlane}
+\vspace{-0.65cm}
+\hrulefill
+\index{Particle!bIncrPlane}
+\index{bIncrPlane!Particle}
+\begin{flushleft}
+\texttt{inline bool bIncrPlane(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{Particle::EmissionOrder}
+\vspace{-0.65cm}
+\hrulefill
+\index{Particle!EmissionOrder}
+\index{EmissionOrder!Particle}
+\begin{flushleft}
+\texttt{static int EmissionOrder(Particle const * const *, Particle const * const *);}
+\end{flushleft}
+
+
+
+\subsubsection*{Particle::Particle}
+\vspace{-0.65cm}
+\hrulefill
+\index{Particle!Particle}
+\index{Particle!Particle}
+\begin{flushleft}
+\texttt{Particle();}
+\end{flushleft}
+
+
+
+\subsubsection*{Particle::xyzP}
+\vspace{-0.65cm}
+\hrulefill
+\index{Particle!xyzP}
+\index{xyzP!Particle}
+\begin{flushleft}
+\texttt{  TXYZ    xyzP;}
+\end{flushleft}
+
+
+
+\subsubsection*{Particle::xyzV}
+\vspace{-0.65cm}
+\hrulefill
+\index{Particle!xyzV}
+\index{xyzV!Particle}
+\begin{flushleft}
+\texttt{  TXYZ    xyzV;}
+\end{flushleft}
+
+
+
+\subsubsection*{Particle::xyzPCommit}
+\vspace{-0.65cm}
+\hrulefill
+\index{Particle!xyzPCommit}
+\index{xyzPCommit!Particle}
+\begin{flushleft}
+\texttt{  TXYZ    xyzPCommit;}
+\end{flushleft}
+
+
+
+\subsubsection*{Particle::xyzVCommit}
+\vspace{-0.65cm}
+\hrulefill
+\index{Particle!xyzVCommit}
+\index{xyzVCommit!Particle}
+\begin{flushleft}
+\texttt{  TXYZ    xyzVCommit;}
+\end{flushleft}
+
+
+
+\subsubsection*{Particle::rPert}
+\vspace{-0.65cm}
+\hrulefill
+\index{Particle!rPert}
+\index{rPert!Particle}
+\begin{flushleft}
+\texttt{  real    rPert;}
+\end{flushleft}
+
+
+
+\subsubsection*{Particle::iTOrder}
+\vspace{-0.65cm}
+\hrulefill
+\index{Particle!iTOrder}
+\index{iTOrder!Particle}
+\begin{flushleft}
+\texttt{  int     iTOrder;}
+\end{flushleft}
+
+
+
+\subsubsection*{Particle::iZOrder}
+\vspace{-0.65cm}
+\hrulefill
+\index{Particle!iZOrder}
+\index{iZOrder!Particle}
+\begin{flushleft}
+\texttt{  int     iZOrder;}
+\end{flushleft}
+
+
+
+\subsubsection*{Particle::rSetFieldA}
+\vspace{-0.65cm}
+\hrulefill
+\index{Particle!rSetFieldA}
+\index{rSetFieldA!Particle}
+\begin{flushleft}
+\texttt{static void rSetFieldA(real);}
+\end{flushleft}
+
+
+
+\subsubsection*{Particle::rGetFieldA}
+\vspace{-0.65cm}
+\hrulefill
+\index{Particle!rGetFieldA}
+\index{rGetFieldA!Particle}
+\begin{flushleft}
+\texttt{static real rGetFieldA();}
+\end{flushleft}
+
+
+
+\subsubsection*{Particle::rSetFieldA}
+\vspace{-0.65cm}
+\hrulefill
+\index{Particle!rSetFieldA}
+\index{rSetFieldA!Particle}
+\begin{flushleft}
+\texttt{void rSetFieldA(real r\_field\_a);}
+\end{flushleft}
+
+
+
+\subsubsection*{Particle::rGetFieldA}
+\vspace{-0.65cm}
+\hrulefill
+\index{Particle!rGetFieldA}
+\index{rGetFieldA!Particle}
+\begin{flushleft}
+\texttt{real rGetFieldA();}
+\end{flushleft}
+
+
+
+\subsubsection*{Particle::iGetGroup}
+\vspace{-0.65cm}
+\hrulefill
+\index{Particle!iGetGroup}
+\index{iGetGroup!Particle}
+\begin{flushleft}
+\texttt{static int  iGetGroup(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{Particle::iSetGroup}
+\vspace{-0.65cm}
+\hrulefill
+\index{Particle!iSetGroup}
+\index{iSetGroup!Particle}
+\begin{flushleft}
+\texttt{static void iSetGroup(int);}
+\end{flushleft}
+
+
+
+\subsubsection*{Particle::iClearGroup}
+\vspace{-0.65cm}
+\hrulefill
+\index{Particle!iClearGroup}
+\index{iClearGroup!Particle}
+\begin{flushleft}
+\texttt{static void iClearGroup(int);}
+\end{flushleft}
+
+
+
+\subsubsection*{Particle::iGetGroup}
+\vspace{-0.65cm}
+\hrulefill
+\index{Particle!iGetGroup}
+\index{iGetGroup!Particle}
+\begin{flushleft}
+\texttt{int  iGetGroup(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{Particle::iSetGroup}
+\vspace{-0.65cm}
+\hrulefill
+\index{Particle!iSetGroup}
+\index{iSetGroup!Particle}
+\begin{flushleft}
+\texttt{void iSetGroup(int i\_group);}
+\end{flushleft}
+
+
+
+\subsubsection*{Particle::iClearGroup}
+\vspace{-0.65cm}
+\hrulefill
+\index{Particle!iClearGroup}
+\index{iClearGroup!Particle}
+\begin{flushleft}
+\texttt{void iClearGroup(int i\_group);}
+\end{flushleft}
+
+
+
+\subsubsection*{Particle::iGetPlane}
+\vspace{-0.65cm}
+\hrulefill
+\index{Particle!iGetPlane}
+\index{iGetPlane!Particle}
+\begin{flushleft}
+\texttt{int iGetPlane(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{Particle::iGetId}
+\vspace{-0.65cm}
+\hrulefill
+\index{Particle!iGetId}
+\index{iGetId!Particle}
+\begin{flushleft}
+\texttt{int iGetId(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{Particle::iGetBeam}
+\vspace{-0.65cm}
+\hrulefill
+\index{Particle!iGetBeam}
+\index{iGetBeam!Particle}
+\begin{flushleft}
+\texttt{int iGetBeam(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{Particle::iSetId}
+\vspace{-0.65cm}
+\hrulefill
+\index{Particle!iSetId}
+\index{iSetId!Particle}
+\begin{flushleft}
+\texttt{void iSetId(int const i\_id);}
+\end{flushleft}
+
+
+
+\subsubsection*{Particle::iSetBeam}
+\vspace{-0.65cm}
+\hrulefill
+\index{Particle!iSetBeam}
+\index{iSetBeam!Particle}
+\begin{flushleft}
+\texttt{void iSetBeam(int const i\_beam);}
+\end{flushleft}
+
+
+
+\subsubsection*{Particle::Commit}
+\vspace{-0.65cm}
+\hrulefill
+\index{Particle!Commit}
+\index{Commit!Particle}
+\begin{flushleft}
+\texttt{inline void Commit(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{Particle::Fly}
+\vspace{-0.65cm}
+\hrulefill
+\index{Particle!Fly}
+\index{Fly!Particle}
+\begin{flushleft}
+\texttt{inline void Fly(TXYZ \& xyz\_p, TXYZ \& xyz\_v, real const r\_dt);}
+\end{flushleft}
+
+
+
+\subsubsection*{Particle::FlyZ}
+\vspace{-0.65cm}
+\hrulefill
+\index{Particle!FlyZ}
+\index{FlyZ!Particle}
+\begin{flushleft}
+\texttt{inline void FlyZ(real \& r\_pz, real \& r\_vz, real const r\_dt);}
+\end{flushleft}
+
+
+
+\subsubsection*{Particle::TimeStepIncr}
+\vspace{-0.65cm}
+\hrulefill
+\index{Particle!TimeStepIncr}
+\index{TimeStepIncr!Particle}
+\begin{flushleft}
+\texttt{inline void TimeStepIncr(real const r\_epsilon);}
+\end{flushleft}
+
+
+
+\subsubsection*{Particle::TimeStepDecr}
+\vspace{-0.65cm}
+\hrulefill
+\index{Particle!TimeStepDecr}
+\index{TimeStepDecr!Particle}
+\begin{flushleft}
+\texttt{inline void TimeStepDecr(real const r\_epsilon);}
+\end{flushleft}
+
+
+
+\subsubsection*{Particle::TimeStepTrunc}
+\vspace{-0.65cm}
+\hrulefill
+\index{Particle!TimeStepTrunc}
+\index{TimeStepTrunc!Particle}
+\begin{flushleft}
+\texttt{inline void TimeStepTrunc(real const r\_ti, real const r\_pert, real const r\_epsilon);}
+\end{flushleft}
+
+
+
+\subsubsection*{Particle::NextEvent}
+\vspace{-0.65cm}
+\hrulefill
+\index{Particle!NextEvent}
+\index{NextEvent!Particle}
+\begin{flushleft}
+\texttt{inline bool NextEvent(void);}
+\end{flushleft}
+
+
+
+\section[TPlane]{\emph{TPlane} class reference \small\sf (plane.h)}
+\vspace{-0.6cm}
+\hrulefill
+\index{TPlane}
+\subsection{public members}
+\subsubsection*{TPlane::Parse}
+\vspace{-0.65cm}
+\hrulefill
+\index{TPlane!Parse}
+\index{Parse!TPlane}
+\begin{flushleft}
+\texttt{static TPlane * Parse(TParser \&);}
+\end{flushleft}
+
+
+
+\subsubsection*{TPlane::TPlane}
+\vspace{-0.65cm}
+\hrulefill
+\index{TPlane!TPlane}
+\index{TPlane!TPlane}
+\begin{flushleft}
+\texttt{TPlane();}
+\end{flushleft}
+
+
+
+\subsubsection*{TPlane::\mtl TPlane}
+\vspace{-0.65cm}
+\hrulefill
+\index{TPlane!\mtl TPlane}
+\index{\mtl TPlane!TPlane}
+\begin{flushleft}
+\texttt{virtual \mtl TPlane(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{TPlane::Parse}
+\vspace{-0.65cm}
+\hrulefill
+\index{TPlane!Parse}
+\index{Parse!TPlane}
+\begin{flushleft}
+\texttt{virtual void Parse(TParser \&, char *);}
+\end{flushleft}
+
+
+
+\subsubsection*{TPlane::Initialize}
+\vspace{-0.65cm}
+\hrulefill
+\index{TPlane!Initialize}
+\index{Initialize!TPlane}
+\begin{flushleft}
+\texttt{virtual void Initialize(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{TPlane::Cross}
+\vspace{-0.65cm}
+\hrulefill
+\index{TPlane!Cross}
+\index{Cross!TPlane}
+\begin{flushleft}
+\texttt{virtual bool Cross(Particle * const p);}
+\end{flushleft}
+
+
+
+\subsubsection*{TPlane::Finalize}
+\vspace{-0.65cm}
+\hrulefill
+\index{TPlane!Finalize}
+\index{Finalize!TPlane}
+\begin{flushleft}
+\texttt{virtual void Finalize(FILE *pfile);}
+\end{flushleft}
+
+
+
+\subsubsection*{TPlane::iGetPlane}
+\vspace{-0.65cm}
+\hrulefill
+\index{TPlane!iGetPlane}
+\index{iGetPlane!TPlane}
+\begin{flushleft}
+\texttt{int  const iGetPlane(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{TPlane::sGetName}
+\vspace{-0.65cm}
+\hrulefill
+\index{TPlane!sGetName}
+\index{sGetName!TPlane}
+\begin{flushleft}
+\texttt{char const *  sGetName(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{TPlane::rGetZ}
+\vspace{-0.65cm}
+\hrulefill
+\index{TPlane!rGetZ}
+\index{rGetZ!TPlane}
+\begin{flushleft}
+\texttt{real rGetZ(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{TPlane::rGetVoltage}
+\vspace{-0.65cm}
+\hrulefill
+\index{TPlane!rGetVoltage}
+\index{rGetVoltage!TPlane}
+\begin{flushleft}
+\texttt{real rGetVoltage(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{TPlane::iGetSetGroup}
+\vspace{-0.65cm}
+\hrulefill
+\index{TPlane!iGetSetGroup}
+\index{iGetSetGroup!TPlane}
+\begin{flushleft}
+\texttt{int  iGetSetGroup(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{TPlane::iGetClearGroup}
+\vspace{-0.65cm}
+\hrulefill
+\index{TPlane!iGetClearGroup}
+\index{iGetClearGroup!TPlane}
+\begin{flushleft}
+\texttt{int  iGetClearGroup(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{TPlane::rGetFieldA}
+\vspace{-0.65cm}
+\hrulefill
+\index{TPlane!rGetFieldA}
+\index{rGetFieldA!TPlane}
+\begin{flushleft}
+\texttt{real rGetFieldA(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{TPlane::rSetVoltage}
+\vspace{-0.65cm}
+\hrulefill
+\index{TPlane!rSetVoltage}
+\index{rSetVoltage!TPlane}
+\begin{flushleft}
+\texttt{void rSetVoltage(real r\_voltage);}
+\end{flushleft}
+
+
+
+\subsubsection*{TPlane::rSetFieldA}
+\vspace{-0.65cm}
+\hrulefill
+\index{TPlane!rSetFieldA}
+\index{rSetFieldA!TPlane}
+\begin{flushleft}
+\texttt{void rSetFieldA(real r\_field\_a);}
+\end{flushleft}
+
+
+
+\subsection{protected members}
+\subsubsection*{TPlane::iGroup}
+\vspace{-0.65cm}
+\hrulefill
+\index{TPlane!iGroup}
+\index{iGroup!TPlane}
+\begin{flushleft}
+\texttt{  int iGroup;}
+\end{flushleft}
+
+
+
+\subsubsection*{TPlane::Trajectory}
+\vspace{-0.65cm}
+\hrulefill
+\index{TPlane!Trajectory}
+\index{Trajectory!TPlane}
+\begin{flushleft}
+\texttt{static void Trajectory(Particle * p, TXY const \& xy\_v\_normal);}
+\end{flushleft}
+
+
+
+\section[TTarget]{\emph{TTarget} class reference \small\sf (plane.h)}
+\vspace{-0.6cm}
+\hrulefill
+\index{TTarget}
+\begin{description}
+\item{Inherits:} TPlane
+\end{description}
+\subsection{public members}
+\subsubsection*{TTarget::TTarget}
+\vspace{-0.65cm}
+\hrulefill
+\index{TTarget!TTarget}
+\index{TTarget!TTarget}
+\begin{flushleft}
+\texttt{TTarget();}
+\end{flushleft}
+
+
+
+\subsubsection*{TTarget::Parse}
+\vspace{-0.65cm}
+\hrulefill
+\index{TTarget!Parse}
+\index{Parse!TTarget}
+\begin{flushleft}
+\texttt{virtual void Parse(TParser \&, char *);}
+\end{flushleft}
+
+
+
+\subsubsection*{TTarget::Initialize}
+\vspace{-0.65cm}
+\hrulefill
+\index{TTarget!Initialize}
+\index{Initialize!TTarget}
+\begin{flushleft}
+\texttt{virtual void Initialize(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{TTarget::Cross}
+\vspace{-0.65cm}
+\hrulefill
+\index{TTarget!Cross}
+\index{Cross!TTarget}
+\begin{flushleft}
+\texttt{virtual bool Cross(Particle * const p);}
+\end{flushleft}
+
+
+
+\section[TAperture]{\emph{TAperture} class reference \small\sf (plane.h)}
+\vspace{-0.6cm}
+\hrulefill
+\index{TAperture}
+\begin{description}
+\item{Inherits:} TPlane
+\end{description}
+\subsection{public members}
+\subsubsection*{TAperture::TAperture}
+\vspace{-0.65cm}
+\hrulefill
+\index{TAperture!TAperture}
+\index{TAperture!TAperture}
+\begin{flushleft}
+\texttt{TAperture();}
+\end{flushleft}
+
+
+
+\subsubsection*{TAperture::Parse}
+\vspace{-0.65cm}
+\hrulefill
+\index{TAperture!Parse}
+\index{Parse!TAperture}
+\begin{flushleft}
+\texttt{virtual void Parse(TParser \&, char *);}
+\end{flushleft}
+
+
+
+\subsubsection*{TAperture::Cross}
+\vspace{-0.65cm}
+\hrulefill
+\index{TAperture!Cross}
+\index{Cross!TAperture}
+\begin{flushleft}
+\texttt{virtual bool Cross(Particle * const p);}
+\end{flushleft}
+
+
+
+\section[TThinLens]{\emph{TThinLens} class reference \small\sf (plane.h)}
+\vspace{-0.6cm}
+\hrulefill
+\index{TThinLens}
+\begin{description}
+\item{Inherits:} TPlane
+\end{description}
+\subsection{public members}
+\subsubsection*{TThinLens::TThinLens}
+\vspace{-0.65cm}
+\hrulefill
+\index{TThinLens!TThinLens}
+\index{TThinLens!TThinLens}
+\begin{flushleft}
+\texttt{TThinLens();}
+\end{flushleft}
+
+
+
+\subsubsection*{TThinLens::Parse}
+\vspace{-0.65cm}
+\hrulefill
+\index{TThinLens!Parse}
+\index{Parse!TThinLens}
+\begin{flushleft}
+\texttt{virtual void Parse(TParser \&, char *);}
+\end{flushleft}
+
+
+
+\subsubsection*{TThinLens::Cross}
+\vspace{-0.65cm}
+\hrulefill
+\index{TThinLens!Cross}
+\index{Cross!TThinLens}
+\begin{flushleft}
+\texttt{virtual bool Cross(Particle * const p);}
+\end{flushleft}
+
+
+
+\section[EELens]{\emph{EELens} class reference \small\sf (plane.h)}
+\vspace{-0.6cm}
+\hrulefill
+\index{EELens}
+\begin{description}
+\item{Inherits:} TTarget
+\end{description}
+\subsection{public members}
+\subsubsection*{EELens::iMode}
+\vspace{-0.65cm}
+\hrulefill
+\index{EELens!iMode}
+\index{iMode!EELens}
+\begin{flushleft}
+\texttt{  static int    iMode;}
+\end{flushleft}
+
+
+
+\subsubsection*{EELens::iGroup}
+\vspace{-0.65cm}
+\hrulefill
+\index{EELens!iGroup}
+\index{iGroup!EELens}
+\begin{flushleft}
+\texttt{  static int    iGroup;}
+\end{flushleft}
+
+
+
+\subsubsection*{EELens::pFile}
+\vspace{-0.65cm}
+\hrulefill
+\index{EELens!pFile}
+\index{pFile!EELens}
+\begin{flushleft}
+\texttt{  static FILE * pFile;}
+\end{flushleft}
+
+
+
+\subsubsection*{EELens::iNumLens}
+\vspace{-0.65cm}
+\hrulefill
+\index{EELens!iNumLens}
+\index{iNumLens!EELens}
+\begin{flushleft}
+\texttt{  static int    iNumLens;}
+\end{flushleft}
+
+
+
+\subsubsection*{EELens::iNumBeams}
+\vspace{-0.65cm}
+\hrulefill
+\index{EELens!iNumBeams}
+\index{iNumBeams!EELens}
+\begin{flushleft}
+\texttt{  static int    iNumBeams;}
+\end{flushleft}
+
+
+
+\subsubsection*{EELens::iNumElements}
+\vspace{-0.65cm}
+\hrulefill
+\index{EELens!iNumElements}
+\index{iNumElements!EELens}
+\begin{flushleft}
+\texttt{  static int    iNumElements;}
+\end{flushleft}
+
+
+
+\subsubsection*{EELens::iNumSegments}
+\vspace{-0.65cm}
+\hrulefill
+\index{EELens!iNumSegments}
+\index{iNumSegments!EELens}
+\begin{flushleft}
+\texttt{  static int    iNumSegments;}
+\end{flushleft}
+
+
+
+\subsubsection*{EELens::LensMap}
+\vspace{-0.65cm}
+\hrulefill
+\index{EELens!LensMap}
+\index{LensMap!EELens}
+\begin{flushleft}
+\texttt{  static int *  LensMap;}
+\end{flushleft}
+
+
+
+\subsubsection*{EELens::CurrentMap}
+\vspace{-0.65cm}
+\hrulefill
+\index{EELens!CurrentMap}
+\index{CurrentMap!EELens}
+\begin{flushleft}
+\texttt{  static real * CurrentMap;}
+\end{flushleft}
+
+
+
+\subsubsection*{EELens::EELens}
+\vspace{-0.65cm}
+\hrulefill
+\index{EELens!EELens}
+\index{EELens!EELens}
+\begin{flushleft}
+\texttt{EELens();}
+\end{flushleft}
+
+
+
+\subsubsection*{EELens::Initialize}
+\vspace{-0.65cm}
+\hrulefill
+\index{EELens!Initialize}
+\index{Initialize!EELens}
+\begin{flushleft}
+\texttt{virtual void Initialize(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{EELens::Cross}
+\vspace{-0.65cm}
+\hrulefill
+\index{EELens!Cross}
+\index{Cross!EELens}
+\begin{flushleft}
+\texttt{virtual bool Cross(Particle * const p);}
+\end{flushleft}
+
+
+
+\section[Relativity]{\emph{Relativity} class reference \small\sf (relativity.h)}
+\vspace{-0.6cm}
+\hrulefill
+\index{Relativity}
+\subsection{public members}
+\subsubsection*{Relativity::rQM}
+\vspace{-0.65cm}
+\hrulefill
+\index{Relativity!rQM}
+\index{rQM!Relativity}
+\begin{flushleft}
+\texttt{  static real rQM;}
+\end{flushleft}
+
+
+
+\subsubsection*{Relativity::rSetQM}
+\vspace{-0.65cm}
+\hrulefill
+\index{Relativity!rSetQM}
+\index{rSetQM!Relativity}
+\begin{flushleft}
+\texttt{inline static void rSetQM(real r\_qm);}
+\end{flushleft}
+
+
+
+\subsubsection*{Relativity::rCalcVelocity}
+\vspace{-0.65cm}
+\hrulefill
+\index{Relativity!rCalcVelocity}
+\index{rCalcVelocity!Relativity}
+\begin{flushleft}
+\texttt{inline const static real rCalcVelocity(real r\_voltage);}
+\end{flushleft}
+
+
+
+\subsubsection*{Relativity::rCalcVelocity}
+\vspace{-0.65cm}
+\hrulefill
+\index{Relativity!rCalcVelocity}
+\index{rCalcVelocity!Relativity}
+\begin{flushleft}
+\texttt{inline const static real rCalcVelocity(real r\_voltage, real r\_alpha);}
+\end{flushleft}
+
+
+
+\subsubsection*{Relativity::rCalcVoltage}
+\vspace{-0.65cm}
+\hrulefill
+\index{Relativity!rCalcVoltage}
+\index{rCalcVoltage!Relativity}
+\begin{flushleft}
+\texttt{inline const static real rCalcVoltage(real r\_velocity);}
+\end{flushleft}
+
+
+
+\subsubsection*{Relativity::rCalcGammaFromVelocity}
+\vspace{-0.65cm}
+\hrulefill
+\index{Relativity!rCalcGammaFromVelocity}
+\index{rCalcGammaFromVelocity!Relativity}
+\begin{flushleft}
+\texttt{inline const static real rCalcGammaFromVelocity(real r\_velocity);}
+\end{flushleft}
+
+
+
+\subsubsection*{Relativity::rCalcGammaFromVoltage}
+\vspace{-0.65cm}
+\hrulefill
+\index{Relativity!rCalcGammaFromVoltage}
+\index{rCalcGammaFromVoltage!Relativity}
+\begin{flushleft}
+\texttt{inline const static real rCalcGammaFromVoltage(real r\_voltage);}
+\end{flushleft}
+
+
+
+\section[TParser]{\emph{TParser} class reference \small\sf (setup.h)}
+\vspace{-0.6cm}
+\hrulefill
+\index{TParser}
+\subsection{public members}
+\subsubsection*{TParser::TParser}
+\vspace{-0.65cm}
+\hrulefill
+\index{TParser!TParser}
+\index{TParser!TParser}
+\begin{flushleft}
+\texttt{TParser(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{TParser::\mtl TParser}
+\vspace{-0.65cm}
+\hrulefill
+\index{TParser!\mtl TParser}
+\index{\mtl TParser!TParser}
+\begin{flushleft}
+\texttt{virtual \mtl TParser(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{TParser::GetToken}
+\vspace{-0.65cm}
+\hrulefill
+\index{TParser!GetToken}
+\index{GetToken!TParser}
+\begin{flushleft}
+\texttt{virtual bool GetToken(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{TParser::Error}
+\vspace{-0.65cm}
+\hrulefill
+\index{TParser!Error}
+\index{Error!TParser}
+\begin{flushleft}
+\texttt{virtual void Error(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{TParser::Eof}
+\vspace{-0.65cm}
+\hrulefill
+\index{TParser!Eof}
+\index{Eof!TParser}
+\begin{flushleft}
+\texttt{bool Eof(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{TParser::&gt;&gt;}
+\vspace{-0.65cm}
+\hrulefill
+\index{TParser!&gt;&gt;}
+\index{&gt;&gt;!TParser}
+\begin{flushleft}
+\texttt{TParser\& operator &gt;&gt;(char *s);}
+\end{flushleft}
+
+
+
+\subsubsection*{TParser::&gt;&gt;}
+\vspace{-0.65cm}
+\hrulefill
+\index{TParser!&gt;&gt;}
+\index{&gt;&gt;!TParser}
+\begin{flushleft}
+\texttt{TParser\& operator &gt;&gt;(unsigned \&u);}
+\end{flushleft}
+
+
+
+\subsubsection*{TParser::&gt;&gt;}
+\vspace{-0.65cm}
+\hrulefill
+\index{TParser!&gt;&gt;}
+\index{&gt;&gt;!TParser}
+\begin{flushleft}
+\texttt{TParser\& operator &gt;&gt;(int \&i);}
+\end{flushleft}
+
+
+
+\subsubsection*{TParser::&gt;&gt;}
+\vspace{-0.65cm}
+\hrulefill
+\index{TParser!&gt;&gt;}
+\index{&gt;&gt;!TParser}
+\begin{flushleft}
+\texttt{TParser\& operator &gt;&gt;(long \&l);}
+\end{flushleft}
+
+
+
+\subsubsection*{TParser::&gt;&gt;}
+\vspace{-0.65cm}
+\hrulefill
+\index{TParser!&gt;&gt;}
+\index{&gt;&gt;!TParser}
+\begin{flushleft}
+\texttt{TParser\& operator &gt;&gt;(real \&r);}
+\end{flushleft}
+
+
+
+\subsubsection*{TParser::&gt;&gt;}
+\vspace{-0.65cm}
+\hrulefill
+\index{TParser!&gt;&gt;}
+\index{&gt;&gt;!TParser}
+\begin{flushleft}
+\texttt{TParser\& operator &gt;&gt;(TXYZ \&xyz);}
+\end{flushleft}
+
+
+
+\subsubsection*{TParser::&gt;&gt;}
+\vspace{-0.65cm}
+\hrulefill
+\index{TParser!&gt;&gt;}
+\index{&gt;&gt;!TParser}
+\begin{flushleft}
+\texttt{TParser\& operator &gt;&gt;(TXY \&xy);}
+\end{flushleft}
+
+
+
+\subsubsection*{TParser::&gt;&gt;}
+\vspace{-0.65cm}
+\hrulefill
+\index{TParser!&gt;&gt;}
+\index{&gt;&gt;!TParser}
+\begin{flushleft}
+\texttt{TParser\& operator &gt;&gt;(bool \&b);}
+\end{flushleft}
+
+
+
+\subsubsection*{TParser::this}
+\vspace{-0.65cm}
+\hrulefill
+\index{TParser!this}
+\index{this!TParser}
+\begin{flushleft}
+\texttt{    return *this;}
+\end{flushleft}
+
+
+
+\subsection{protected members}
+\subsubsection*{TParser::Eof}
+\vspace{-0.65cm}
+\hrulefill
+\index{TParser!Eof}
+\index{Eof!TParser}
+\begin{flushleft}
+\texttt{bool Eof(bool b);}
+\end{flushleft}
+
+
+
+\section[TFileParser]{\emph{TFileParser} class reference \small\sf (setup.h)}
+\vspace{-0.6cm}
+\hrulefill
+\index{TFileParser}
+\begin{description}
+\item{Inherits:} virtualTParser
+\end{description}
+\subsection{public members}
+\subsubsection*{TFileParser::TFileParser}
+\vspace{-0.65cm}
+\hrulefill
+\index{TFileParser!TFileParser}
+\index{TFileParser!TFileParser}
+\begin{flushleft}
+\texttt{TFileParser(char const *sfilename);}
+\end{flushleft}
+
+
+
+\subsubsection*{TFileParser::GetToken}
+\vspace{-0.65cm}
+\hrulefill
+\index{TFileParser!GetToken}
+\index{GetToken!TFileParser}
+\begin{flushleft}
+\texttt{virtual bool GetToken(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{TFileParser::Error}
+\vspace{-0.65cm}
+\hrulefill
+\index{TFileParser!Error}
+\index{Error!TFileParser}
+\begin{flushleft}
+\texttt{virtual void Error(void);}
+\end{flushleft}
+
+
+
+\section[TArgParser]{\emph{TArgParser} class reference \small\sf (setup.h)}
+\vspace{-0.6cm}
+\hrulefill
+\index{TArgParser}
+\begin{description}
+\item{Inherits:} virtualTParser
+\end{description}
+\subsection{public members}
+\subsubsection*{TArgParser::TArgParser}
+\vspace{-0.65cm}
+\hrulefill
+\index{TArgParser!TArgParser}
+\index{TArgParser!TArgParser}
+\begin{flushleft}
+\texttt{TArgParser(unsigned uargc, char const * const * argv);}
+\end{flushleft}
+
+
+
+\subsubsection*{TArgParser::GetToken}
+\vspace{-0.65cm}
+\hrulefill
+\index{TArgParser!GetToken}
+\index{GetToken!TArgParser}
+\begin{flushleft}
+\texttt{virtual bool GetToken(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{TArgParser::Error}
+\vspace{-0.65cm}
+\hrulefill
+\index{TArgParser!Error}
+\index{Error!TArgParser}
+\begin{flushleft}
+\texttt{virtual void Error(void);}
+\end{flushleft}
+
+
+
+\section[TShape]{\emph{TShape} class reference \small\sf (shape.h)}
+\vspace{-0.6cm}
+\hrulefill
+\index{TShape}
+\subsection{public members}
+\subsubsection*{TShape::Parse}
+\vspace{-0.65cm}
+\hrulefill
+\index{TShape!Parse}
+\index{Parse!TShape}
+\begin{flushleft}
+\texttt{static TShape * Parse(TParser \&);}
+\end{flushleft}
+
+
+
+\subsubsection*{TShape::Parse}
+\vspace{-0.65cm}
+\hrulefill
+\index{TShape!Parse}
+\index{Parse!TShape}
+\begin{flushleft}
+\texttt{virtual void Parse(TParser \&, char *);}
+\end{flushleft}
+
+
+
+\subsubsection*{TShape::Randomize}
+\vspace{-0.65cm}
+\hrulefill
+\index{TShape!Randomize}
+\index{Randomize!TShape}
+\begin{flushleft}
+\texttt{virtual void Randomize(Particle *);}
+\end{flushleft}
+
+
+
+\subsubsection*{TShape::bInside}
+\vspace{-0.65cm}
+\hrulefill
+\index{TShape!bInside}
+\index{bInside!TShape}
+\begin{flushleft}
+\texttt{virtual bool bInside(TXY xy);}
+\end{flushleft}
+
+
+
+\subsubsection*{TShape::xyOffset}
+\vspace{-0.65cm}
+\hrulefill
+\index{TShape!xyOffset}
+\index{xyOffset!TShape}
+\begin{flushleft}
+\texttt{  TXY xyOffset;}
+\end{flushleft}
+
+
+
+\section[TShapePoint]{\emph{TShapePoint} class reference \small\sf (shape.h)}
+\vspace{-0.6cm}
+\hrulefill
+\index{TShapePoint}
+\begin{description}
+\item{Inherits:} TShape
+\end{description}
+\subsection{public members}
+\subsubsection*{TShapePoint::TShapePoint}
+\vspace{-0.65cm}
+\hrulefill
+\index{TShapePoint!TShapePoint}
+\index{TShapePoint!TShapePoint}
+\begin{flushleft}
+\texttt{TShapePoint(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{TShapePoint::Parse}
+\vspace{-0.65cm}
+\hrulefill
+\index{TShapePoint!Parse}
+\index{Parse!TShapePoint}
+\begin{flushleft}
+\texttt{virtual void Parse(TParser \&, char *);}
+\end{flushleft}
+
+
+
+\subsubsection*{TShapePoint::Randomize}
+\vspace{-0.65cm}
+\hrulefill
+\index{TShapePoint!Randomize}
+\index{Randomize!TShapePoint}
+\begin{flushleft}
+\texttt{virtual void Randomize(Particle *);}
+\end{flushleft}
+
+
+
+\subsubsection*{TShapePoint::bInside}
+\vspace{-0.65cm}
+\hrulefill
+\index{TShapePoint!bInside}
+\index{bInside!TShapePoint}
+\begin{flushleft}
+\texttt{virtual bool bInside(TXY xy);}
+\end{flushleft}
+
+
+
+\section[TShapeCircle]{\emph{TShapeCircle} class reference \small\sf (shape.h)}
+\vspace{-0.6cm}
+\hrulefill
+\index{TShapeCircle}
+\begin{description}
+\item{Inherits:} TShape
+\end{description}
+\subsection{public members}
+\subsubsection*{TShapeCircle::TShapeCircle}
+\vspace{-0.65cm}
+\hrulefill
+\index{TShapeCircle!TShapeCircle}
+\index{TShapeCircle!TShapeCircle}
+\begin{flushleft}
+\texttt{TShapeCircle(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{TShapeCircle::Parse}
+\vspace{-0.65cm}
+\hrulefill
+\index{TShapeCircle!Parse}
+\index{Parse!TShapeCircle}
+\begin{flushleft}
+\texttt{virtual void Parse(TParser \&, char *);}
+\end{flushleft}
+
+
+
+\subsubsection*{TShapeCircle::Randomize}
+\vspace{-0.65cm}
+\hrulefill
+\index{TShapeCircle!Randomize}
+\index{Randomize!TShapeCircle}
+\begin{flushleft}
+\texttt{virtual void Randomize(Particle *);}
+\end{flushleft}
+
+
+
+\subsubsection*{TShapeCircle::bInside}
+\vspace{-0.65cm}
+\hrulefill
+\index{TShapeCircle!bInside}
+\index{bInside!TShapeCircle}
+\begin{flushleft}
+\texttt{virtual bool bInside(TXY xy);}
+\end{flushleft}
+
+
+
+\section[TShapeBagel]{\emph{TShapeBagel} class reference \small\sf (shape.h)}
+\vspace{-0.6cm}
+\hrulefill
+\index{TShapeBagel}
+\begin{description}
+\item{Inherits:} TShape
+\end{description}
+\subsection{public members}
+\subsubsection*{TShapeBagel::TShapeBagel}
+\vspace{-0.65cm}
+\hrulefill
+\index{TShapeBagel!TShapeBagel}
+\index{TShapeBagel!TShapeBagel}
+\begin{flushleft}
+\texttt{TShapeBagel(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{TShapeBagel::Parse}
+\vspace{-0.65cm}
+\hrulefill
+\index{TShapeBagel!Parse}
+\index{Parse!TShapeBagel}
+\begin{flushleft}
+\texttt{virtual void Parse(TParser \&, char *);}
+\end{flushleft}
+
+
+
+\subsubsection*{TShapeBagel::Randomize}
+\vspace{-0.65cm}
+\hrulefill
+\index{TShapeBagel!Randomize}
+\index{Randomize!TShapeBagel}
+\begin{flushleft}
+\texttt{virtual void Randomize(Particle *);}
+\end{flushleft}
+
+
+
+\subsubsection*{TShapeBagel::bInside}
+\vspace{-0.65cm}
+\hrulefill
+\index{TShapeBagel!bInside}
+\index{bInside!TShapeBagel}
+\begin{flushleft}
+\texttt{virtual bool bInside(TXY xy);}
+\end{flushleft}
+
+
+
+\section[TShapeSquare]{\emph{TShapeSquare} class reference \small\sf (shape.h)}
+\vspace{-0.6cm}
+\hrulefill
+\index{TShapeSquare}
+\begin{description}
+\item{Inherits:} TShape
+\end{description}
+\subsection{public members}
+\subsubsection*{TShapeSquare::TShapeSquare}
+\vspace{-0.65cm}
+\hrulefill
+\index{TShapeSquare!TShapeSquare}
+\index{TShapeSquare!TShapeSquare}
+\begin{flushleft}
+\texttt{TShapeSquare(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{TShapeSquare::Parse}
+\vspace{-0.65cm}
+\hrulefill
+\index{TShapeSquare!Parse}
+\index{Parse!TShapeSquare}
+\begin{flushleft}
+\texttt{virtual void Parse(TParser \&, char *);}
+\end{flushleft}
+
+
+
+\subsubsection*{TShapeSquare::Randomize}
+\vspace{-0.65cm}
+\hrulefill
+\index{TShapeSquare!Randomize}
+\index{Randomize!TShapeSquare}
+\begin{flushleft}
+\texttt{virtual void Randomize(Particle *);}
+\end{flushleft}
+
+
+
+\subsubsection*{TShapeSquare::bInside}
+\vspace{-0.65cm}
+\hrulefill
+\index{TShapeSquare!bInside}
+\index{bInside!TShapeSquare}
+\begin{flushleft}
+\texttt{virtual bool bInside(TXY xy);}
+\end{flushleft}
+
+
+
+\section[TShapeRectangle]{\emph{TShapeRectangle} class reference \small\sf (shape.h)}
+\vspace{-0.6cm}
+\hrulefill
+\index{TShapeRectangle}
+\begin{description}
+\item{Inherits:} TShape
+\end{description}
+\subsection{public members}
+\subsubsection*{TShapeRectangle::TShapeRectangle}
+\vspace{-0.65cm}
+\hrulefill
+\index{TShapeRectangle!TShapeRectangle}
+\index{TShapeRectangle!TShapeRectangle}
+\begin{flushleft}
+\texttt{TShapeRectangle(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{TShapeRectangle::Parse}
+\vspace{-0.65cm}
+\hrulefill
+\index{TShapeRectangle!Parse}
+\index{Parse!TShapeRectangle}
+\begin{flushleft}
+\texttt{virtual void Parse(TParser \&, char *);}
+\end{flushleft}
+
+
+
+\subsubsection*{TShapeRectangle::Randomize}
+\vspace{-0.65cm}
+\hrulefill
+\index{TShapeRectangle!Randomize}
+\index{Randomize!TShapeRectangle}
+\begin{flushleft}
+\texttt{virtual void Randomize(Particle *);}
+\end{flushleft}
+
+
+
+\subsubsection*{TShapeRectangle::bInside}
+\vspace{-0.65cm}
+\hrulefill
+\index{TShapeRectangle!bInside}
+\index{bInside!TShapeRectangle}
+\begin{flushleft}
+\texttt{virtual bool bInside(TXY xy);}
+\end{flushleft}
+
+
+
+\section[SimEB]{\emph{SimEB} class reference \small\sf (simeb.h)}
+\vspace{-0.6cm}
+\hrulefill
+\index{SimEB}
+\subsection{public members}
+\subsubsection*{SimEB::rQ0}
+\vspace{-0.65cm}
+\hrulefill
+\index{SimEB!rQ0}
+\index{rQ0!SimEB}
+\begin{flushleft}
+\texttt{  static real const rQ0;}
+\end{flushleft}
+
+
+
+\subsubsection*{SimEB::rM0}
+\vspace{-0.65cm}
+\hrulefill
+\index{SimEB!rM0}
+\index{rM0!SimEB}
+\begin{flushleft}
+\texttt{  static real const rM0;}
+\end{flushleft}
+
+
+
+\subsubsection*{SimEB::rM1}
+\vspace{-0.65cm}
+\hrulefill
+\index{SimEB!rM1}
+\index{rM1!SimEB}
+\begin{flushleft}
+\texttt{  static real const rM1;}
+\end{flushleft}
+
+
+
+\subsubsection*{SimEB::rE0}
+\vspace{-0.65cm}
+\hrulefill
+\index{SimEB!rE0}
+\index{rE0!SimEB}
+\begin{flushleft}
+\texttt{  static real const rE0;}
+\end{flushleft}
+
+
+
+\subsubsection*{SimEB::iIteration}
+\vspace{-0.65cm}
+\hrulefill
+\index{SimEB!iIteration}
+\index{iIteration!SimEB}
+\begin{flushleft}
+\texttt{  static int iIteration;}
+\end{flushleft}
+
+
+
+\subsubsection*{SimEB::iNumGenerated}
+\vspace{-0.65cm}
+\hrulefill
+\index{SimEB!iNumGenerated}
+\index{iNumGenerated!SimEB}
+\begin{flushleft}
+\texttt{  static int iNumGenerated;}
+\end{flushleft}
+
+
+
+\subsubsection*{SimEB::iNumActivated}
+\vspace{-0.65cm}
+\hrulefill
+\index{SimEB!iNumActivated}
+\index{iNumActivated!SimEB}
+\begin{flushleft}
+\texttt{  static int iNumActivated;}
+\end{flushleft}
+
+
+
+\subsubsection*{SimEB::iNumKilled}
+\vspace{-0.65cm}
+\hrulefill
+\index{SimEB!iNumKilled}
+\index{iNumKilled!SimEB}
+\begin{flushleft}
+\texttt{  static int iNumKilled;}
+\end{flushleft}
+
+
+
+\subsubsection*{SimEB::sGetRoot}
+\vspace{-0.65cm}
+\hrulefill
+\index{SimEB!sGetRoot}
+\index{sGetRoot!SimEB}
+\begin{flushleft}
+\texttt{const static char * sGetRoot(void)const;}
+\end{flushleft}
+
+
+
+\subsubsection*{SimEB::sGetName}
+\vspace{-0.65cm}
+\hrulefill
+\index{SimEB!sGetName}
+\index{sGetName!SimEB}
+\begin{flushleft}
+\texttt{const static char * sGetName(void)const;}
+\end{flushleft}
+
+
+
+\subsubsection*{SimEB::rGetQ}
+\vspace{-0.65cm}
+\hrulefill
+\index{SimEB!rGetQ}
+\index{rGetQ!SimEB}
+\begin{flushleft}
+\texttt{const static real rGetQ(void)const;}
+\end{flushleft}
+
+
+
+\subsubsection*{SimEB::rGetQM}
+\vspace{-0.65cm}
+\hrulefill
+\index{SimEB!rGetQM}
+\index{rGetQM!SimEB}
+\begin{flushleft}
+\texttt{const static real rGetQM(void)const;}
+\end{flushleft}
+
+
+
+\subsubsection*{SimEB::rGetScaleFactor}
+\vspace{-0.65cm}
+\hrulefill
+\index{SimEB!rGetScaleFactor}
+\index{rGetScaleFactor!SimEB}
+\begin{flushleft}
+\texttt{const static real rGetScaleFactor(void)const;}
+\end{flushleft}
+
+
+
+\subsubsection*{SimEB::rGetEpsilon}
+\vspace{-0.65cm}
+\hrulefill
+\index{SimEB!rGetEpsilon}
+\index{rGetEpsilon!SimEB}
+\begin{flushleft}
+\texttt{const static real rGetEpsilon(void)const;}
+\end{flushleft}
+
+
+
+\subsubsection*{SimEB::iGetSphere}
+\vspace{-0.65cm}
+\hrulefill
+\index{SimEB!iGetSphere}
+\index{iGetSphere!SimEB}
+\begin{flushleft}
+\texttt{const static int  iGetSphere(void)const;}
+\end{flushleft}
+
+
+
+\subsubsection*{SimEB::sSetName}
+\vspace{-0.65cm}
+\hrulefill
+\index{SimEB!sSetName}
+\index{sSetName!SimEB}
+\begin{flushleft}
+\texttt{static void sSetName(char const * const s\_name);}
+\end{flushleft}
+
+
+
+\subsubsection*{SimEB::sExtName}
+\vspace{-0.65cm}
+\hrulefill
+\index{SimEB!sExtName}
+\index{sExtName!SimEB}
+\begin{flushleft}
+\texttt{static void sExtName(char const * const s\_ext);}
+\end{flushleft}
+
+
+
+\subsubsection*{SimEB::rSetQM}
+\vspace{-0.65cm}
+\hrulefill
+\index{SimEB!rSetQM}
+\index{rSetQM!SimEB}
+\begin{flushleft}
+\texttt{static void rSetQM(real r\_q, real r\_m);}
+\end{flushleft}
+
+
+
+\subsubsection*{SimEB::InitProgress}
+\vspace{-0.65cm}
+\hrulefill
+\index{SimEB!InitProgress}
+\index{InitProgress!SimEB}
+\begin{flushleft}
+\texttt{static void InitProgress(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{SimEB::PollProgress}
+\vspace{-0.65cm}
+\hrulefill
+\index{SimEB!PollProgress}
+\index{PollProgress!SimEB}
+\begin{flushleft}
+\texttt{static void PollProgress(int);}
+\end{flushleft}
+
+
+
+\subsubsection*{SimEB::KillProgress}
+\vspace{-0.65cm}
+\hrulefill
+\index{SimEB!KillProgress}
+\index{KillProgress!SimEB}
+\begin{flushleft}
+\texttt{static void KillProgress(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{SimEB::Halt}
+\vspace{-0.65cm}
+\hrulefill
+\index{SimEB!Halt}
+\index{Halt!SimEB}
+\begin{flushleft}
+\texttt{static void Halt(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{SimEB::Setup}
+\vspace{-0.65cm}
+\hrulefill
+\index{SimEB!Setup}
+\index{Setup!SimEB}
+\begin{flushleft}
+\texttt{static void Setup(int, char const * const[]);}
+\end{flushleft}
+
+
+
+\subsubsection*{SimEB::Parse}
+\vspace{-0.65cm}
+\hrulefill
+\index{SimEB!Parse}
+\index{Parse!SimEB}
+\begin{flushleft}
+\texttt{static void Parse(TParser \&, char *);}
+\end{flushleft}
+
+
+
+\subsubsection*{SimEB::Initialize}
+\vspace{-0.65cm}
+\hrulefill
+\index{SimEB!Initialize}
+\index{Initialize!SimEB}
+\begin{flushleft}
+\texttt{static void Initialize(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{SimEB::Simulate}
+\vspace{-0.65cm}
+\hrulefill
+\index{SimEB!Simulate}
+\index{Simulate!SimEB}
+\begin{flushleft}
+\texttt{static void Simulate(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{SimEB::Finalize}
+\vspace{-0.65cm}
+\hrulefill
+\index{SimEB!Finalize}
+\index{Finalize!SimEB}
+\begin{flushleft}
+\texttt{static void Finalize(void);}
+\end{flushleft}
+
+
+
+\section[TSource]{\emph{TSource} class reference \small\sf (source.h)}
+\vspace{-0.6cm}
+\hrulefill
+\index{TSource}
+\begin{description}
+\item{Inherits:} TPlane
+\end{description}
+\subsection{public members}
+\subsubsection*{TSource::Parse}
+\vspace{-0.65cm}
+\hrulefill
+\index{TSource!Parse}
+\index{Parse!TSource}
+\begin{flushleft}
+\texttt{static TSource *  Parse(TParser \&parser);}
+\end{flushleft}
+
+
+
+\subsubsection*{TSource::NewParticle}
+\vspace{-0.65cm}
+\hrulefill
+\index{TSource!NewParticle}
+\index{NewParticle!TSource}
+\begin{flushleft}
+\texttt{static Particle * NewParticle(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{TSource::iGetTotalParticles}
+\vspace{-0.65cm}
+\hrulefill
+\index{TSource!iGetTotalParticles}
+\index{iGetTotalParticles!TSource}
+\begin{flushleft}
+\texttt{static int        iGetTotalParticles(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{TSource::GetParticle}
+\vspace{-0.65cm}
+\hrulefill
+\index{TSource!GetParticle}
+\index{GetParticle!TSource}
+\begin{flushleft}
+\texttt{static Particle * GetParticle(int i);}
+\end{flushleft}
+
+
+
+\subsubsection*{TSource::TSource}
+\vspace{-0.65cm}
+\hrulefill
+\index{TSource!TSource}
+\index{TSource!TSource}
+\begin{flushleft}
+\texttt{TSource(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{TSource::Parse}
+\vspace{-0.65cm}
+\hrulefill
+\index{TSource!Parse}
+\index{Parse!TSource}
+\begin{flushleft}
+\texttt{virtual void Parse(TParser \&, char *);}
+\end{flushleft}
+
+
+
+\subsubsection*{TSource::Initialize}
+\vspace{-0.65cm}
+\hrulefill
+\index{TSource!Initialize}
+\index{Initialize!TSource}
+\begin{flushleft}
+\texttt{virtual void Initialize(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{TSource::rEmissionTime}
+\vspace{-0.65cm}
+\hrulefill
+\index{TSource!rEmissionTime}
+\index{rEmissionTime!TSource}
+\begin{flushleft}
+\texttt{  real rEmissionTime;}
+\end{flushleft}
+
+
+
+\section[TSourceArray]{\emph{TSourceArray} class reference \small\sf (source.h)}
+\vspace{-0.6cm}
+\hrulefill
+\index{TSourceArray}
+\begin{description}
+\item{Inherits:} TSource
+\end{description}
+\subsection{public members}
+\subsubsection*{TSourceArray::TSourceArray}
+\vspace{-0.65cm}
+\hrulefill
+\index{TSourceArray!TSourceArray}
+\index{TSourceArray!TSourceArray}
+\begin{flushleft}
+\texttt{TSourceArray(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{TSourceArray::Parse}
+\vspace{-0.65cm}
+\hrulefill
+\index{TSourceArray!Parse}
+\index{Parse!TSourceArray}
+\begin{flushleft}
+\texttt{virtual void Parse(TParser \&parser, char *);}
+\end{flushleft}
+
+
+
+\subsubsection*{TSourceArray::Initialize}
+\vspace{-0.65cm}
+\hrulefill
+\index{TSourceArray!Initialize}
+\index{Initialize!TSourceArray}
+\begin{flushleft}
+\texttt{virtual void Initialize(void);}
+\end{flushleft}
+
+
+
+\section[TSourceEELens]{\emph{TSourceEELens} class reference \small\sf (source.h)}
+\vspace{-0.6cm}
+\hrulefill
+\index{TSourceEELens}
+\begin{description}
+\item{Inherits:} TSource
+\end{description}
+\subsection{public members}
+\subsubsection*{TSourceEELens::TSourceEELens}
+\vspace{-0.65cm}
+\hrulefill
+\index{TSourceEELens!TSourceEELens}
+\index{TSourceEELens!TSourceEELens}
+\begin{flushleft}
+\texttt{TSourceEELens(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{TSourceEELens::Parse}
+\vspace{-0.65cm}
+\hrulefill
+\index{TSourceEELens!Parse}
+\index{Parse!TSourceEELens}
+\begin{flushleft}
+\texttt{virtual void Parse(TParser \&parser, char *);}
+\end{flushleft}
+
+
+
+\subsubsection*{TSourceEELens::Initialize}
+\vspace{-0.65cm}
+\hrulefill
+\index{TSourceEELens!Initialize}
+\index{Initialize!TSourceEELens}
+\begin{flushleft}
+\texttt{virtual void Initialize(void);}
+\end{flushleft}
+
+
+
+\section[TSourceGrid]{\emph{TSourceGrid} class reference \small\sf (source.h)}
+\vspace{-0.6cm}
+\hrulefill
+\index{TSourceGrid}
+\begin{description}
+\item{Inherits:} TSource
+\end{description}
+\subsection{public members}
+\subsubsection*{TSourceGrid::TSourceGrid}
+\vspace{-0.65cm}
+\hrulefill
+\index{TSourceGrid!TSourceGrid}
+\index{TSourceGrid!TSourceGrid}
+\begin{flushleft}
+\texttt{TSourceGrid(void);}
+\end{flushleft}
+
+
+
+\subsubsection*{TSourceGrid::Parse}
+\vspace{-0.65cm}
+\hrulefill
+\index{TSourceGrid!Parse}
+\index{Parse!TSourceGrid}
+\begin{flushleft}
+\texttt{virtual void Parse(TParser \&parser, char *);}
+\end{flushleft}
+
+
+
+\subsubsection*{TSourceGrid::Initialize}
+\vspace{-0.65cm}
+\hrulefill
+\index{TSourceGrid!Initialize}
+\index{Initialize!TSourceGrid}
+\begin{flushleft}
+\texttt{virtual void Initialize(void);}
+\end{flushleft}
+
+
+
+\section[TXY]{\emph{TXY} class reference \small\sf (vector.h)}
+\vspace{-0.6cm}
+\hrulefill
+\index{TXY}
+\subsection{public members}
+\subsubsection*{TXY::TXY}
+\vspace{-0.65cm}
+\hrulefill
+\index{TXY!TXY}
+\index{TXY!TXY}
+\begin{flushleft}
+\texttt{TXY(real rix = 0.0, real riy = 0.0);}
+\end{flushleft}
+
+
+
+\subsubsection*{TXY::TXY}
+\vspace{-0.65cm}
+\hrulefill
+\index{TXY!TXY}
+\index{TXY!TXY}
+\begin{flushleft}
+\texttt{TXY(const TXYZ \&xyz);}
+\end{flushleft}
+
+
+
+\subsubsection*{TXY::=}
+\vspace{-0.65cm}
+\hrulefill
+\index{TXY!=}
+\index{=!TXY}
+\begin{flushleft}
+\texttt{TXY operator =(const TXYZ \&xyz);}
+\end{flushleft}
+
+
+
+\subsubsection*{TXY::rX}
+\vspace{-0.65cm}
+\hrulefill
+\index{TXY!rX}
+\index{rX!TXY}
+\begin{flushleft}
+\texttt{  real rX;}
+\end{flushleft}
+
+
+
+\subsubsection*{TXY::rY}
+\vspace{-0.65cm}
+\hrulefill
+\index{TXY!rY}
+\index{rY!TXY}
+\begin{flushleft}
+\texttt{  real rY;}
+\end{flushleft}
+
+
+
+\section[TXYZ]{\emph{TXYZ} class reference \small\sf (vector.h)}
+\vspace{-0.6cm}
+\hrulefill
+\index{TXYZ}
+\subsection{public members}
+\subsubsection*{TXYZ::TXYZ}
+\vspace{-0.65cm}
+\hrulefill
+\index{TXYZ!TXYZ}
+\index{TXYZ!TXYZ}
+\begin{flushleft}
+\texttt{TXYZ(real rix = 0.0, real riy = 0.0, real riz = 0.0);}
+\end{flushleft}
+
+
+
+\subsubsection*{TXYZ::TXYZ}
+\vspace{-0.65cm}
+\hrulefill
+\index{TXYZ!TXYZ}
+\index{TXYZ!TXYZ}
+\begin{flushleft}
+\texttt{TXYZ(const TXY \&xy, real riz = 0.0);}
+\end{flushleft}
+
+
+
+\subsubsection*{TXYZ::=}
+\vspace{-0.65cm}
+\hrulefill
+\index{TXYZ!=}
+\index{=!TXYZ}
+\begin{flushleft}
+\texttt{TXYZ operator =(const TXY \&xy);}
+\end{flushleft}
+
+
+
+\subsubsection*{TXYZ::rX}
+\vspace{-0.65cm}
+\hrulefill
+\index{TXYZ!rX}
+\index{rX!TXYZ}
+\begin{flushleft}
+\texttt{  real rX;}
+\end{flushleft}
+
+
+
+\subsubsection*{TXYZ::rY}
+\vspace{-0.65cm}
+\hrulefill
+\index{TXYZ!rY}
+\index{rY!TXYZ}
+\begin{flushleft}
+\texttt{  real rY;}
+\end{flushleft}
+
+
+
+\subsubsection*{TXYZ::rZ}
+\vspace{-0.65cm}
+\hrulefill
+\index{TXYZ!rZ}
+\index{rZ!TXYZ}
+\begin{flushleft}
+\texttt{  real rZ;}
+\end{flushleft}
+
+
+
+\printindex
+\end{document}
+</PRE>
+<HR>
+<address>Documentation generated by ktaka@junko on Thu Dec 16 18:04:15 PST 1999
+</address>
+</BODY>
+</HTML>

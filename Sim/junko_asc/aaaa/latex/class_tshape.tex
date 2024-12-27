@@ -1,0 +1,72 @@
+\section{TShape  Class Reference}
+\label{TShape}\index{TShape@{TShape}}
+
+
+{\tt \#include $<$shape.h$>$}
+
+\subsection*{Class diagram for TShape}
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\setlength{\epsfysize}{1.88235cm}
+\epsfbox{class_tshape.eps}
+\end{center}
+\end{figure}
+\subsection*{Public Members}
+\begin{CompactItemize}
+\item 
+virtual void {\bf Parse} ({\bf TParser} \&, char $\ast$)
+\item 
+virtual void {\bf Randomize} ({\bf Particle} $\ast$) = 0
+\item 
+virtual bool {\bf b\-Inside} ({\bf TXY} xy) = 0
+\item 
+{\bf TXY} {\bf xy\-Offset}
+\end{CompactItemize}
+\subsection*{Static Public Members}
+\begin{CompactItemize}
+\item 
+TShape$\ast$ {\bf Parse} ({\bf TParser} \&)
+\end{CompactItemize}
+\vspace{0.4cm}\hrule\vspace{0.2cm}
+\subsection*{Detailed Description}
+\vspace{0.4cm}\hrule\vspace{0.2cm}
+\subsection*{Member Function Documentation}
+\label{TShape_a0}
+\index{TShape@{TShape}!Parse@{Parse}}
+\index{Parse@{Parse}!TShape@{TShape}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}void TShape::Parse ({\bf TParser} \& {\em parser}, char $\ast$ {\em s\_\-token})\hspace{0.3cm}{\tt  [virtual]}}
+
+
+
+Reimplemented in {\bf TShape\-Bagel} {\rm (p.~\pageref{TShapeBagel_a1})}, {\bf TShape\-Circle} {\rm (p.~\pageref{TShapeCircle_a1})}, {\bf TShape\-Point} {\rm (p.~\pageref{TShapePoint_a1})}, {\bf TShape\-Rectangle} {\rm (p.~\pageref{TShapeRectangle_a1})}, and {\bf TShape\-Square} {\rm (p.~\pageref{TShapeSquare_a1})}.\label{TShape_a1}
+\index{TShape@{TShape}!Randomize@{Randomize}}
+\index{Randomize@{Randomize}!TShape@{TShape}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}virtual void TShape::Randomize ({\bf Particle} $\ast$ {\em p})\hspace{0.3cm}{\tt  [pure virtual]}}
+
+
+
+Reimplemented in {\bf TShape\-Bagel} {\rm (p.~\pageref{TShapeBagel_a2})}, {\bf TShape\-Circle} {\rm (p.~\pageref{TShapeCircle_a2})}, {\bf TShape\-Point} {\rm (p.~\pageref{TShapePoint_a2})}, {\bf TShape\-Rectangle} {\rm (p.~\pageref{TShapeRectangle_a2})}, and {\bf TShape\-Square} {\rm (p.~\pageref{TShapeSquare_a2})}.\label{TShape_a2}
+\index{TShape@{TShape}!bInside@{b\-Inside}}
+\index{bInside@{b\-Inside}!TShape@{TShape}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}virtual bool TShape::b\-Inside ({\bf TXY} {\em xy})\hspace{0.3cm}{\tt  [pure virtual]}}
+
+
+
+Reimplemented in {\bf TShape\-Bagel} {\rm (p.~\pageref{TShapeBagel_a3})}, {\bf TShape\-Circle} {\rm (p.~\pageref{TShapeCircle_a3})}, {\bf TShape\-Point} {\rm (p.~\pageref{TShapePoint_a3})}, {\bf TShape\-Rectangle} {\rm (p.~\pageref{TShapeRectangle_a3})}, and {\bf TShape\-Square} {\rm (p.~\pageref{TShapeSquare_a3})}.\label{TShape_d0}
+\index{TShape@{TShape}!Parse@{Parse}}
+\index{Parse@{Parse}!TShape@{TShape}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}TShape $\ast$ TShape::Parse ({\bf TParser} \& {\em parser})\hspace{0.3cm}{\tt  [static]}}
+
+\vspace{0.4cm}\hrule\vspace{0.2cm}
+\subsection*{Member Data Documentation}
+\label{TShape_a3}
+\index{TShape@{TShape}!xyOffset@{xy\-Offset}}
+\index{xyOffset@{xy\-Offset}!TShape@{TShape}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TXY} TShape::xy\-Offset}
+
+\vspace{0.4cm}\hrule\vspace{0.2cm}
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+{\bf shape.h}\item 
+{\bf shape.cc}\end{CompactItemize}

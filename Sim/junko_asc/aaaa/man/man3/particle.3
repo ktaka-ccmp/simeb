@@ -1,0 +1,204 @@
+.TH Particle 3 "16 Dec 1999" "simeb_ebit" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Particle \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <particle.h>\fR
+.PP
+.SS Public Members
+
+.in +1c
+.ti -1c
+.RI "\fBreal\fR \fBImpact\fR (\fBreal\fR const r_dz)"
+.br
+.ti -1c
+.RI "bool \fBCross\fR (\fBreal\fR const r_dz)"
+.br
+.ti -1c
+.RI "bool \fBbIncrPlane\fR (void)"
+.br
+.ti -1c
+.RI "\fBParticle\fR ()"
+.br
+.ti -1c
+.RI "int \fBiGetPlane\fR (void) const"
+.br
+.ti -1c
+.RI "int \fBiGetId\fR (void) const"
+.br
+.ti -1c
+.RI "int \fBiGetBeam\fR (void) const"
+.br
+.ti -1c
+.RI "void \fBiSetId\fR (int const i_id)"
+.br
+.ti -1c
+.RI "void \fBiSetBeam\fR (int const i_beam)"
+.br
+.ti -1c
+.RI "void \fBCommit\fR (void)"
+.br
+.ti -1c
+.RI "void \fBFly\fR (\fBTXYZ\fR & xyz_p, \fBTXYZ\fR & xyz_v, \fBreal\fR const r_dt) const"
+.br
+.ti -1c
+.RI "void \fBFlyZ\fR (\fBreal\fR & r_pz, \fBreal\fR & r_vz, \fBreal\fR const r_dt) const"
+.br
+.ti -1c
+.RI "void \fBTimeStepIncr\fR (\fBreal\fR const r_epsilon)"
+.br
+.ti -1c
+.RI "void \fBTimeStepDecr\fR (\fBreal\fR const r_epsilon)"
+.br
+.ti -1c
+.RI "void \fBTimeStepTrunc\fR (\fBreal\fR const r_ti, \fBreal\fR const r_pert, \fBreal\fR const r_epsilon)"
+.br
+.ti -1c
+.RI "bool \fBNextEvent\fR (void)"
+.br
+.ti -1c
+.RI "int \fBiPlane\fR"
+.br
+.ti -1c
+.RI "int \fBiId\fR"
+.br
+.ti -1c
+.RI "int \fBiBeam\fR"
+.br
+.ti -1c
+.RI "\fBTXYZ\fR \fBxyzP\fR"
+.br
+.ti -1c
+.RI "\fBTXYZ\fR \fBxyzV\fR"
+.br
+.ti -1c
+.RI "\fBTXYZ\fR \fBxyzPCommit\fR"
+.br
+.ti -1c
+.RI "\fBTXYZ\fR \fBxyzVCommit\fR"
+.br
+.ti -1c
+.RI "\fBreal\fR \fBrPert\fR"
+.br
+.ti -1c
+.RI "\fBreal\fR \fBrTi\fR"
+.br
+.ti -1c
+.RI "\fBreal\fR \fBrTf\fR"
+.br
+.ti -1c
+.RI "\fBreal\fR \fBrDt\fR"
+.br
+.ti -1c
+.RI "int \fBiTOrder\fR"
+.br
+.ti -1c
+.RI "int \fBiZOrder\fR"
+.br
+.in -1c
+.SS Static Public Members
+
+.in +1c
+.ti -1c
+.RI "int \fBEmissionOrder\fR (Particle const * const *, Particle const * const *)"
+.br
+.ti -1c
+.RI "void \fBrSetFieldA\fR (\fBreal\fR)"
+.br
+.ti -1c
+.RI "\fBreal\fR \fBrGetFieldA\fR ()"
+.br
+.ti -1c
+.RI "int \fBiGetGroup\fR (void)"
+.br
+.ti -1c
+.RI "void \fBiSetGroup\fR (int)"
+.br
+.ti -1c
+.RI "void \fBiClearGroup\fR (int)"
+.br
+.in -1c
+.SH DETAILED DESCRIPTION
+.PP 
+.SH MEMBER FUNCTION DOCUMENTATION
+.PP 
+.SS \fBreal\fR Particle::Impact (\fBreal\fR const r_dz)\fC [inline]\fR
+.PP
+.SS bool Particle::Cross (\fBreal\fR const r_dz)\fC [inline]\fR
+.PP
+.SS bool Particle::bIncrPlane (void)\fC [inline]\fR
+.PP
+.SS Particle::Particle (void)
+.PP
+.SS int Particle::iGetPlane (void) const\fC [inline]\fR
+.PP
+.SS int Particle::iGetId (void) const\fC [inline]\fR
+.PP
+.SS int Particle::iGetBeam (void) const\fC [inline]\fR
+.PP
+.SS void Particle::iSetId (int const i_id)\fC [inline]\fR
+.PP
+.SS void Particle::iSetBeam (int const i_beam)\fC [inline]\fR
+.PP
+.SS void Particle::Commit (void)\fC [inline]\fR
+.PP
+.SS void Particle::Fly (\fBTXYZ\fR & xyz_p, \fBTXYZ\fR & xyz_v, \fBreal\fR const r_dt) const\fC [inline]\fR
+.PP
+.SS void Particle::FlyZ (\fBreal\fR & r_pz, \fBreal\fR & r_vz, \fBreal\fR const r_dt) const\fC [inline]\fR
+.PP
+.SS void Particle::TimeStepIncr (\fBreal\fR const r_epsilon)\fC [inline]\fR
+.PP
+.SS void Particle::TimeStepDecr (\fBreal\fR const r_epsilon)\fC [inline]\fR
+.PP
+.SS void Particle::TimeStepTrunc (\fBreal\fR const r_ti, \fBreal\fR const r_pert, \fBreal\fR const r_epsilon)\fC [inline]\fR
+.PP
+.SS bool Particle::NextEvent (void)\fC [inline]\fR
+.PP
+.SS int Particle::EmissionOrder (Particle const *const * pparticle1, Particle const *const * pparticle2)\fC [static]\fR
+.PP
+.SS void Particle::rSetFieldA (\fBreal\fR)\fC [inline, static]\fR
+.PP
+.SS \fBreal\fR Particle::rGetFieldA ()\fC [inline, static]\fR
+.PP
+.SS int Particle::iGetGroup (void)\fC [inline, static]\fR
+.PP
+.SS void Particle::iSetGroup (int)\fC [inline, static]\fR
+.PP
+.SS void Particle::iClearGroup (int)\fC [inline, static]\fR
+.PP
+.SH MEMBER DATA DOCUMENTATION
+.PP 
+.SS int Particle::iPlane
+.PP
+.SS int Particle::iId
+.PP
+.SS int Particle::iBeam
+.PP
+.SS \fBTXYZ\fR Particle::xyzP
+.PP
+.SS \fBTXYZ\fR Particle::xyzV
+.PP
+.SS \fBTXYZ\fR Particle::xyzPCommit
+.PP
+.SS \fBTXYZ\fR Particle::xyzVCommit
+.PP
+.SS \fBreal\fR Particle::rPert
+.PP
+.SS \fBreal\fR Particle::rTi
+.PP
+.SS \fBreal\fR Particle::rTf
+.PP
+.SS \fBreal\fR Particle::rDt
+.PP
+.SS int Particle::iTOrder
+.PP
+.SS int Particle::iZOrder
+.PP
+
+
+.SH AUTHOR
+.PP 
+Generated automatically by Doxygen for simeb_ebit from the source code.

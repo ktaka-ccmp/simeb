@@ -1,0 +1,323 @@
+<HTML>
+<HEAD><TITLE>./kdoc/source-cc</TITLE></HEAD>
+<BODY BGCOLOR="#ffffff">
+<PRE>#include &quot;simeb.h&quot;
+
+int TSource::iTotalParticles = 0;
+Particle * TSource::ParticleDatabase = NULL;
+
+int        TSource::iGetTotalParticles(void) {return iTotalParticles;};
+Particle * TSource::GetParticle(int i) {return &ParticleDatabase[i];};
+
+TSource * TSource::Parse(TParser &parser)
+{
+  TSource * source = NULL;
+  char s_token[MAX_TOKEN];
+
+  parser &gt;&gt; s_token;
+  if (!strcmp(s_token, &quot;Array&quot;)) source = new TSourceArray();
+  if (!strcmp(s_token, &quot;EELens&quot;)) source = new TSourceEELens();
+  if (!strcmp(s_token, &quot;Grid&quot;)) source = new TSourceGrid();
+  if (!source) parser.Error();
+
+  parser &gt;&gt; s_token;
+  if (strcmp(s_token, &quot;{&quot;)) parser.Error();
+
+  for (;;) {
+    parser &gt;&gt; s_token;
+    if (parser.Eof()) parser.Error();
+    if (!strcmp(s_token, &quot;}&quot;)) break;
+    source-&gt;Parse(parser, s_token);
+  }
+  return source;
+}
+
+Particle * TSource::NewParticle(void)
+{
+  if (iTotalParticles % 10000) return &ParticleDatabase[iTotalParticles++];
+
+  Particle * temp_database = ParticleDatabase;
+  ParticleDatabase = new Particle[iTotalParticles+10000];
+
+  for (int i = 0; i &lt; iTotalParticles; ++i)
+    ParticleDatabase[i] = temp_database[i];
+
+  if (temp_database) delete[] temp_database;
+  return &ParticleDatabase[iTotalParticles++];
+}
+
+// Generic source constructor.
+TSource::TSource(void) : TPlane()
+{
+  ParticleDatabase = NULL;
+
+  lSeed = 0L;
+}
+
+void TSource::Parse(TParser &parser, char *s_token)
+{
+  if (!strcmp(s_token, &quot;Seed&quot;)) parser &gt;&gt; lSeed;
+  else TPlane::Parse(parser, s_token);
+}
+
+void TSource::Initialize(void)
+{
+  TPlane::Initialize();
+
+  srand48(lSeed);
+}
+
+TSourceArray::TSourceArray(void) : TSource()
+{
+  iNumParticles = 0;
+  iGroup = 0;
+  rCurrent = 0.0;
+  iDim = 1;
+  rPitch = 0.0;
+  Shape = NULL;
+  Illumination = NULL;
+  Scattering = NULL;
+  MaskIllumination = NULL;
+  MaskScattering = NULL;
+}
+
+void TSourceArray::Parse(TParser &parser, char *s_token)
+{
+  if (!strcmp(s_token, &quot;Particles&quot;)) parser &gt;&gt; iNumParticles;
+  else if (!strcmp(s_token, &quot;Group&quot;)) parser &gt;&gt; iGroup;
+  else if (!strcmp(s_token, &quot;Current&quot;)) parser &gt;&gt; rCurrent;
+  else if (!strcmp(s_token, &quot;Array&quot;)) parser &gt;&gt; iDim;
+  else if (!strcmp(s_token, &quot;Pitch&quot;)) parser &gt;&gt; rPitch;
+  else if (!strcmp(s_token, &quot;Shape&quot;)) {
+    if (!Shape) Shape = TShape::Parse(parser);
+    else {parser &gt;&gt; s_token; Shape-&gt;Parse(parser, s_token);}
+  }
+  else if (!strcmp(s_token, &quot;Illumination&quot;)) {
+    if (!Illumination) Illumination = TIllumin::Parse(parser);
+    else {parser &gt;&gt; s_token; Illumination-&gt;Parse(parser, s_token);}
+  }
+  else if (!strcmp(s_token, &quot;Scattering&quot;)) {
+    if (!Scattering) Scattering = TIllumin::Parse(parser);
+    else {parser &gt;&gt; s_token; Scattering-&gt;Parse(parser, s_token);}
+  }
+  else if (!strcmp(s_token, &quot;Mask&quot;)) {
+    int i_num_beams = iDim * iDim;
+    parser &gt;&gt; s_token;
+    if (!strcmp(s_token, &quot;Illumination&quot;)) {
+      parser &gt;&gt; s_token;
+      if (strcmp(s_token, &quot;{&quot;)) parser.Error();
+      MaskIllumination = new real[i_num_beams];
+      for (int i = 0; i &lt; i_num_beams; ++i) parser &gt;&gt; MaskIllumination[i];
+    }
+    else if (!strcmp(s_token, &quot;Scattering&quot;)) {
+      parser &gt;&gt; s_token;
+      if (strcmp(s_token, &quot;{&quot;)) parser.Error();
+      MaskScattering = new real[i_num_beams];
+      for (int i = 0; i &lt; i_num_beams; ++i) parser &gt;&gt; MaskScattering[i];
+    }
+    parser &gt;&gt; s_token;
+    if (strcmp(s_token, &quot;}&quot;)) parser.Error();
+  }
+
+  else TSource::Parse(parser, s_token);
+}
+
+
+void TSourceArray::Initialize(void)
+{
+  TSource::Initialize();
+
+  if (rCurrent &lt;= 0.0) {
+    cerr &lt;&lt; &quot;Source Array - Error: invalid Current specification.\n&quot;;
+    exit(0);
+  }
+
+  rEmissionTime = iNumParticles * SimEB::rGetQ() / rCurrent;
+
+  int i_index = 0;
+
+  // Loop through all beams;
+  for (int i = 0; i &lt; iNumParticles; ++i) {
+    int i_x = (int)(drand48() * iDim);
+    int i_y = (int)(drand48() * iDim);
+    int i_beam = i_y*iDim + i_x;
+    real r_rand = drand48();
+
+    real r_mask = 1.0;
+    if (MaskIllumination) r_mask = MaskIllumination[i_beam];
+    if (r_rand &lt; r_mask) {
+      Particle * p = TSource::NewParticle();
+      p-&gt;iId = i_index++;
+      p-&gt;iBeam = i_beam;
+      p-&gt;iSetGroup(iGroup);
+
+      Shape-&gt;Randomize(p);
+      p-&gt;xyzP.rX += i_x * rPitch - (iDim-1)*rPitch/2;
+      p-&gt;xyzP.rY += i_y * rPitch - (iDim-1)*rPitch/2;
+      p-&gt;xyzP.rZ = rGetZ();
+
+      Illumination-&gt;Randomize(p, rGetVoltage());
+
+      p-&gt;rTf = p-&gt;rTi = rEmissionTime * drand48();
+      continue;
+    }
+
+    if (!MaskScattering) continue;
+
+    r_mask += MaskScattering[i_beam];
+    if (r_rand &lt; r_mask) {
+      Particle * p = &ParticleDatabase[i_index];
+      p-&gt;iId = i_index++;
+      p-&gt;iBeam = i_beam + iDim*iDim;
+      p-&gt;iSetGroup(iGroup);
+
+      Shape-&gt;Randomize(p);
+      p-&gt;xyzP.rX += i_x * rPitch - (iDim-1)*rPitch/2;
+      p-&gt;xyzP.rY += i_y * rPitch - (iDim-1)*rPitch/2;
+      p-&gt;xyzP.rZ = rGetZ();
+      Scattering-&gt;Randomize(p, rGetVoltage());
+
+      p-&gt;rTf = p-&gt;rTi = rEmissionTime * drand48();
+    }
+  }
+}
+
+TSourceEELens::TSourceEELens(void)
+{
+  sFileName[0] = '\0';
+  rCurrent = 0.0;
+  iDim = 1;
+  MaskIllumination = NULL;
+  MaskScattering = NULL;
+}
+
+void TSourceEELens::Parse(TParser &parser, char * s_token)
+{
+  if (!strcmp(s_token, &quot;Mode&quot;)) {
+    parser &gt;&gt; s_token;
+    if (!strcmp(s_token, &quot;Lens&quot;)) EELens::iMode = EELENS_LENS;
+    if (!strcmp(s_token, &quot;Target&quot;)) EELens::iMode = EELENS_TARGET;
+  }
+  else if (!strcmp(s_token, &quot;Group&quot;)) parser &gt;&gt; EELens::iGroup;
+  else if (!strcmp(s_token, &quot;File&quot;)) parser &gt;&gt; sFileName;
+  else if (!strcmp(s_token, &quot;Segments&quot;)) parser &gt;&gt; EELens::iNumSegments;
+  else if (!strcmp(s_token, &quot;Current&quot;)) parser &gt;&gt; rCurrent;
+  else if (!strcmp(s_token, &quot;Array&quot;)) parser &gt;&gt; iDim;
+  else if (!strcmp(s_token, &quot;Mask&quot;)) {
+    int i_num_beams = iDim * iDim;
+    parser &gt;&gt; s_token;
+    if (!strcmp(s_token, &quot;Illumination&quot;)) {
+      parser &gt;&gt; s_token;
+      if (strcmp(s_token, &quot;{&quot;)) parser.Error();
+      MaskIllumination = new real[i_num_beams];
+      for (int i = 0; i &lt; i_num_beams; ++i) parser &gt;&gt; MaskIllumination[i];
+    }
+    else if (!strcmp(s_token, &quot;Scattering&quot;)) {
+      parser &gt;&gt; s_token;
+      if (strcmp(s_token, &quot;{&quot;)) parser.Error();
+      MaskScattering = new real[i_num_beams];
+      for (int i = 0; i &lt; i_num_beams; ++i) parser &gt;&gt; MaskScattering[i];
+    }
+    parser &gt;&gt; s_token;
+    if (strcmp(s_token, &quot;}&quot;)) parser.Error();
+  }
+  else TSource::Parse(parser, s_token);
+}
+
+void TSourceEELens::Initialize(void)
+{
+  TSource::Initialize();
+  if (EELens::iMode != EELENS_LENS) return;
+
+  char s_filename[MAX_TOKEN];
+  strcpy(s_filename, SimEB::sGetRoot());
+  strcat(s_filename, &quot;.&quot;);
+  strcat(s_filename, sFileName);
+  EELens::pFile = fopen(s_filename, &quot;r&quot;);
+  if (!EELens::pFile) {
+    cerr &lt;&lt; &quot;Source EELens - Error: Could not open file &quot; &lt;&lt; s_filename &lt;&lt; &quot;.\n&quot;;
+    exit(0);
+  }
+
+  fscanf(EELens::pFile, &quot;%d %d %d&quot;, &EELens::iNumLens, &EELens::iNumBeams, &EELens::iNumElements);
+
+  if ((EELens::iNumBeams != iDim*iDim) &&
+      (EELens::iNumBeams != 2*iDim*iDim)) {
+    cerr &lt;&lt; &quot;Lens file does not match Source EELens configuration!\n&quot;;
+    exit(0);
+  }
+
+  EELens::LensMap = new int[EELens::iNumLens];
+  EELens::CurrentMap = new real[2*iDim*iDim];
+
+  for (int i = 0; i &lt; 2*iDim*iDim; ++i)
+    EELens::CurrentMap[i] = rCurrent / (iDim*iDim);
+  if (MaskIllumination) for (int i = 0; i &lt; iDim*iDim; ++i)
+    EELens::CurrentMap[i] *= MaskIllumination[i];
+  if (!MaskScattering) for (int i = 0; i &lt; iDim*iDim; ++i)
+    EELens::CurrentMap[iDim*iDim+i] = 0.0;
+  if (MaskScattering) for (int i = 0; i &lt; iDim*iDim; ++i)
+    EELens::CurrentMap[iDim*iDim+i] *= MaskScattering[i];
+}
+
+
+TSourceGrid::TSourceGrid(void) : TSource()
+{
+  iNumParticles = 0;
+  iGroup = 0;
+  iDim = 1;
+  rPitch = 0.0;
+  Illumination = NULL;
+  xyOffset = xy0;
+}
+
+void TSourceGrid::Parse(TParser &parser, char *s_token)
+{
+  if (!strcmp(s_token, &quot;Particles&quot;)) parser &gt;&gt; iNumParticles;
+  else if (!strcmp(s_token, &quot;Group&quot;)) parser &gt;&gt; iGroup;
+  else if (!strcmp(s_token, &quot;Array&quot;)) parser &gt;&gt; iDim;
+  else if (!strcmp(s_token, &quot;Pitch&quot;)) parser &gt;&gt; rPitch;
+  else if (!strcmp(s_token, &quot;Illumination&quot;)) {
+    if (!Illumination) Illumination = TIllumin::Parse(parser);
+    else {parser &gt;&gt; s_token; Illumination-&gt;Parse(parser, s_token);}
+  }
+  else if (!strcmp(s_token, &quot;Offset&quot;)) parser &gt;&gt; xyOffset;
+  else TSource::Parse(parser, s_token);
+}
+
+void TSourceGrid::Initialize(void)
+{
+  TSource::Initialize();
+
+  real r_emission_time = Column::GetSource()-&gt;rEmissionTime;
+
+  int i_index = 0;
+
+  // Loop through all beams;
+  for (int i = 0; i &lt; iNumParticles; ++i) {
+    int i_x = (int)(drand48() * iDim);
+    int i_y = (int)(drand48() * iDim);
+    int i_beam = i_y*iDim + i_x;
+
+    Particle * p = TSource::NewParticle();
+    p-&gt;iId = i_index++;
+    p-&gt;iBeam = i_beam;
+    p-&gt;iSetGroup(iGroup);
+
+    p-&gt;xyzP.rX = i_x * rPitch - (iDim-1)*rPitch/2;
+    p-&gt;xyzP.rY = i_y * rPitch - (iDim-1)*rPitch/2;
+    p-&gt;xyzP.rZ = rGetZ();
+    p-&gt;xyzP += xyOffset;
+
+    Illumination-&gt;Randomize(p, rGetVoltage());
+
+    p-&gt;rTi = p-&gt;rTf = r_emission_time * drand48();
+  }
+}
+
+</PRE>
+<HR>
+<address>Documentation generated by ktaka@junko on Thu Dec 16 18:04:15 PST 1999
+</address>
+</BODY>
+</HTML>

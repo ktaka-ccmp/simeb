@@ -1,0 +1,64 @@
+\section{TTarget  Class Reference}
+\label{TTarget}\index{TTarget@{TTarget}}
+
+
+{\tt \#include $<$plane.h$>$}
+
+\subsection*{Class diagram for TTarget}
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\setlength{\epsfysize}{3cm}
+\epsfbox{class_ttarget.eps}
+\end{center}
+\end{figure}
+\subsection*{Public Members}
+\begin{CompactItemize}
+\item 
+{\bf TTarget} ()
+\item 
+virtual void {\bf Parse} ({\bf TParser} \&, char $\ast$)
+\item 
+virtual void {\bf Initialize} (void)
+\item 
+virtual bool {\bf Cross} ({\bf Particle} $\ast$ const p)
+\end{CompactItemize}
+\vspace{0.4cm}\hrule\vspace{0.2cm}
+\subsection*{Detailed Description}
+\vspace{0.4cm}\hrule\vspace{0.2cm}
+\subsection*{Member Function Documentation}
+\label{TTarget_a0}
+\index{TTarget@{TTarget}!TTarget@{TTarget}}
+\index{TTarget@{TTarget}!TTarget@{TTarget}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}TTarget::TTarget ()}
+
+\label{TTarget_a1}
+\index{TTarget@{TTarget}!Parse@{Parse}}
+\index{Parse@{Parse}!TTarget@{TTarget}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}void TTarget::Parse ({\bf TParser} \& {\em parser}, char $\ast$ {\em s\_\-token})\hspace{0.3cm}{\tt  [virtual]}}
+
+
+
+Reimplemented from {\bf TPlane} {\rm (p.~\pageref{TPlane_a2})}.\label{TTarget_a2}
+\index{TTarget@{TTarget}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!TTarget@{TTarget}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}void TTarget::Initialize (void)\hspace{0.3cm}{\tt  [virtual]}}
+
+
+
+Reimplemented from {\bf TPlane} {\rm (p.~\pageref{TPlane_a3})}.
+
+Reimplemented in {\bf EELens} {\rm (p.~\pageref{EELens_a1})}.\label{TTarget_a3}
+\index{TTarget@{TTarget}!Cross@{Cross}}
+\index{Cross@{Cross}!TTarget@{TTarget}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}bool TTarget::Cross ({\bf Particle} $\ast$ {\em const p})\hspace{0.3cm}{\tt  [virtual]}}
+
+
+
+Reimplemented from {\bf TPlane} {\rm (p.~\pageref{TPlane_a4})}.
+
+Reimplemented in {\bf EELens} {\rm (p.~\pageref{EELens_a2})}.\vspace{0.4cm}\hrule\vspace{0.2cm}
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+{\bf plane.h}\item 
+{\bf plane.cc}\end{CompactItemize}

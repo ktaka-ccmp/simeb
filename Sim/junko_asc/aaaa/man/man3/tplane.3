@@ -1,0 +1,139 @@
+.TH TPlane 3 "16 Dec 1999" "simeb_ebit" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TPlane \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <plane.h>\fR
+.PP
+Inherited by \fBTAperture\fR, \fBTSource\fR, \fBTTarget\fR, and \fBTThinLens\fR.
+.PP
+.SS Public Members
+
+.in +1c
+.ti -1c
+.RI "\fBTPlane\fR ()"
+.br
+.ti -1c
+.RI "virtual \fB~TPlane\fR (void)"
+.br
+.ti -1c
+.RI "virtual void \fBParse\fR (\fBTParser\fR &, char *)"
+.br
+.ti -1c
+.RI "virtual void \fBInitialize\fR (void)"
+.br
+.ti -1c
+.RI "virtual bool \fBCross\fR (\fBParticle\fR * const p)"
+.br
+.ti -1c
+.RI "virtual void \fBFinalize\fR (FILE *pfile)"
+.br
+.ti -1c
+.RI "int const \fBiGetPlane\fR (void) const"
+.br
+.ti -1c
+.RI "char const* \fBsGetName\fR (void) const"
+.br
+.ti -1c
+.RI "\fBreal\fR \fBrGetZ\fR (void) const"
+.br
+.ti -1c
+.RI "\fBreal\fR \fBrGetVoltage\fR (void) const"
+.br
+.ti -1c
+.RI "int \fBiGetSetGroup\fR (void) const"
+.br
+.ti -1c
+.RI "int \fBiGetClearGroup\fR (void) const"
+.br
+.ti -1c
+.RI "\fBreal\fR \fBrGetFieldA\fR (void) const"
+.br
+.ti -1c
+.RI "void \fBrSetVoltage\fR (\fBreal\fR r_voltage)"
+.br
+.ti -1c
+.RI "void \fBrSetFieldA\fR (\fBreal\fR r_field_a)"
+.br
+.in -1c
+.SS Static Public Members
+
+.in +1c
+.ti -1c
+.RI "TPlane* \fBParse\fR (\fBTParser\fR &)"
+.br
+.in -1c
+.SS Protected Members
+
+.in +1c
+.ti -1c
+.RI "int \fBiGroup\fR"
+.br
+.ti -1c
+.RI "char \fBsName\fR [MAX_TOKEN]"
+.br
+.in -1c
+.SS Static Protected Members
+
+.in +1c
+.ti -1c
+.RI "void \fBTrajectory\fR (\fBParticle\fR * p, \fBTXY\fR const & xy_v_normal)"
+.br
+.in -1c
+.SH DETAILED DESCRIPTION
+.PP 
+.SH MEMBER FUNCTION DOCUMENTATION
+.PP 
+.SS TPlane::TPlane (void)
+.PP
+.SS virtual TPlane::~TPlane (void)\fC [inline, virtual]\fR
+.PP
+.SS void TPlane::Parse (\fBTParser\fR & parser, char * s_token)\fC [virtual]\fR
+.PP
+Reimplemented in \fBTAperture\fR, \fBTSource\fR, \fBTSourceArray\fR, \fBTSourceEELens\fR, \fBTSourceGrid\fR, \fBTTarget\fR, and \fBTThinLens\fR.
+.SS void TPlane::Initialize (void)\fC [virtual]\fR
+.PP
+Reimplemented in \fBEELens\fR, \fBTSource\fR, \fBTSourceArray\fR, \fBTSourceEELens\fR, \fBTSourceGrid\fR, and \fBTTarget\fR.
+.SS bool TPlane::Cross (\fBParticle\fR * const p)\fC [virtual]\fR
+.PP
+Reimplemented in \fBEELens\fR, \fBTAperture\fR, \fBTTarget\fR, and \fBTThinLens\fR.
+.SS virtual void TPlane::Finalize (FILE * pfile)\fC [inline, virtual]\fR
+.PP
+.SS int const TPlane::iGetPlane (void) const\fC [inline]\fR
+.PP
+.SS char const * TPlane::sGetName (void) const\fC [inline]\fR
+.PP
+.SS \fBreal\fR TPlane::rGetZ (void) const\fC [inline]\fR
+.PP
+.SS \fBreal\fR TPlane::rGetVoltage (void) const\fC [inline]\fR
+.PP
+.SS int TPlane::iGetSetGroup (void) const\fC [inline]\fR
+.PP
+.SS int TPlane::iGetClearGroup (void) const\fC [inline]\fR
+.PP
+.SS \fBreal\fR TPlane::rGetFieldA (void) const\fC [inline]\fR
+.PP
+.SS void TPlane::rSetVoltage (\fBreal\fR r_voltage)\fC [inline]\fR
+.PP
+.SS void TPlane::rSetFieldA (\fBreal\fR r_field_a)\fC [inline]\fR
+.PP
+.SS TPlane * TPlane::Parse (\fBTParser\fR & parser)\fC [static]\fR
+.PP
+Reimplemented in \fBTSource\fR.
+.SS void TPlane::Trajectory (\fBParticle\fR * p, \fBTXY\fR const & xy_v_normal)\fC [static, protected]\fR
+.PP
+.SH MEMBER DATA DOCUMENTATION
+.PP 
+.SS int TPlane::iGroup\fC [protected]\fR
+.PP
+Reimplemented in \fBEELens\fR.
+.SS char TPlane::sName[MAX_TOKEN]\fC [protected]\fR
+.PP
+
+
+.SH AUTHOR
+.PP 
+Generated automatically by Doxygen for simeb_ebit from the source code.

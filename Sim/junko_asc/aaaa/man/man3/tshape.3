@@ -1,0 +1,59 @@
+.TH TShape 3 "16 Dec 1999" "simeb_ebit" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TShape \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <shape.h>\fR
+.PP
+Inherited by \fBTShapeBagel\fR, \fBTShapeCircle\fR, \fBTShapePoint\fR, \fBTShapeRectangle\fR, and \fBTShapeSquare\fR.
+.PP
+.SS Public Members
+
+.in +1c
+.ti -1c
+.RI "virtual void \fBParse\fR (\fBTParser\fR &, char *)"
+.br
+.ti -1c
+.RI "virtual void \fBRandomize\fR (\fBParticle\fR *) = 0"
+.br
+.ti -1c
+.RI "virtual bool \fBbInside\fR (\fBTXY\fR xy) = 0"
+.br
+.ti -1c
+.RI "\fBTXY\fR \fBxyOffset\fR"
+.br
+.in -1c
+.SS Static Public Members
+
+.in +1c
+.ti -1c
+.RI "TShape* \fBParse\fR (\fBTParser\fR &)"
+.br
+.in -1c
+.SH DETAILED DESCRIPTION
+.PP 
+.SH MEMBER FUNCTION DOCUMENTATION
+.PP 
+.SS void TShape::Parse (\fBTParser\fR & parser, char * s_token)\fC [virtual]\fR
+.PP
+Reimplemented in \fBTShapeBagel\fR, \fBTShapeCircle\fR, \fBTShapePoint\fR, \fBTShapeRectangle\fR, and \fBTShapeSquare\fR.
+.SS virtual void TShape::Randomize (\fBParticle\fR * p)\fC [pure virtual]\fR
+.PP
+Reimplemented in \fBTShapeBagel\fR, \fBTShapeCircle\fR, \fBTShapePoint\fR, \fBTShapeRectangle\fR, and \fBTShapeSquare\fR.
+.SS virtual bool TShape::bInside (\fBTXY\fR xy)\fC [pure virtual]\fR
+.PP
+Reimplemented in \fBTShapeBagel\fR, \fBTShapeCircle\fR, \fBTShapePoint\fR, \fBTShapeRectangle\fR, and \fBTShapeSquare\fR.
+.SS TShape * TShape::Parse (\fBTParser\fR & parser)\fC [static]\fR
+.PP
+.SH MEMBER DATA DOCUMENTATION
+.PP 
+.SS \fBTXY\fR TShape::xyOffset
+.PP
+
+
+.SH AUTHOR
+.PP 
+Generated automatically by Doxygen for simeb_ebit from the source code.

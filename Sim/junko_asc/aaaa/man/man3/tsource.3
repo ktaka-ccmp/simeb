@@ -1,0 +1,80 @@
+.TH TSource 3 "16 Dec 1999" "simeb_ebit" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TSource \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <source.h>\fR
+.PP
+Inherits \fBTPlane\fR.
+.PP
+Inherited by \fBTSourceArray\fR, \fBTSourceEELens\fR, and \fBTSourceGrid\fR.
+.PP
+.SS Public Members
+
+.in +1c
+.ti -1c
+.RI "\fBTSource\fR (void)"
+.br
+.ti -1c
+.RI "virtual void \fBParse\fR (\fBTParser\fR &, char *)"
+.br
+.ti -1c
+.RI "virtual void \fBInitialize\fR (void)"
+.br
+.ti -1c
+.RI "\fBreal\fR \fBrEmissionTime\fR"
+.br
+.in -1c
+.SS Static Public Members
+
+.in +1c
+.ti -1c
+.RI "TSource* \fBParse\fR (\fBTParser\fR &parser)"
+.br
+.ti -1c
+.RI "\fBParticle\fR* \fBNewParticle\fR (void)"
+.br
+.ti -1c
+.RI "int \fBiGetTotalParticles\fR (void)"
+.br
+.ti -1c
+.RI "\fBParticle\fR* \fBGetParticle\fR (int i)"
+.br
+.in -1c
+.SH DETAILED DESCRIPTION
+.PP 
+.SH MEMBER FUNCTION DOCUMENTATION
+.PP 
+.SS TSource::TSource (void)
+.PP
+.SS void TSource::Parse (\fBTParser\fR & parser, char * s_token)\fC [virtual]\fR
+.PP
+Reimplemented from \fBTPlane\fR.
+.PP
+Reimplemented in \fBTSourceArray\fR, \fBTSourceEELens\fR, and \fBTSourceGrid\fR.
+.SS void TSource::Initialize (void)\fC [virtual]\fR
+.PP
+Reimplemented from \fBTPlane\fR.
+.PP
+Reimplemented in \fBTSourceArray\fR, \fBTSourceEELens\fR, and \fBTSourceGrid\fR.
+.SS TSource * TSource::Parse (\fBTParser\fR & parser)\fC [static]\fR
+.PP
+Reimplemented from \fBTPlane\fR.
+.SS \fBParticle\fR * TSource::NewParticle (void)\fC [static]\fR
+.PP
+.SS int TSource::iGetTotalParticles (void)\fC [static]\fR
+.PP
+.SS \fBParticle\fR * TSource::GetParticle (int i)\fC [static]\fR
+.PP
+.SH MEMBER DATA DOCUMENTATION
+.PP 
+.SS \fBreal\fR TSource::rEmissionTime
+.PP
+
+
+.SH AUTHOR
+.PP 
+Generated automatically by Doxygen for simeb_ebit from the source code.

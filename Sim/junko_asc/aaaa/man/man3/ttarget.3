@@ -1,0 +1,53 @@
+.TH TTarget 3 "16 Dec 1999" "simeb_ebit" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TTarget \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <plane.h>\fR
+.PP
+Inherits \fBTPlane\fR.
+.PP
+Inherited by \fBEELens\fR.
+.PP
+.SS Public Members
+
+.in +1c
+.ti -1c
+.RI "\fBTTarget\fR ()"
+.br
+.ti -1c
+.RI "virtual void \fBParse\fR (\fBTParser\fR &, char *)"
+.br
+.ti -1c
+.RI "virtual void \fBInitialize\fR (void)"
+.br
+.ti -1c
+.RI "virtual bool \fBCross\fR (\fBParticle\fR * const p)"
+.br
+.in -1c
+.SH DETAILED DESCRIPTION
+.PP 
+.SH MEMBER FUNCTION DOCUMENTATION
+.PP 
+.SS TTarget::TTarget ()
+.PP
+.SS void TTarget::Parse (\fBTParser\fR & parser, char * s_token)\fC [virtual]\fR
+.PP
+Reimplemented from \fBTPlane\fR.
+.SS void TTarget::Initialize (void)\fC [virtual]\fR
+.PP
+Reimplemented from \fBTPlane\fR.
+.PP
+Reimplemented in \fBEELens\fR.
+.SS bool TTarget::Cross (\fBParticle\fR * const p)\fC [virtual]\fR
+.PP
+Reimplemented from \fBTPlane\fR.
+.PP
+Reimplemented in \fBEELens\fR.
+
+.SH AUTHOR
+.PP 
+Generated automatically by Doxygen for simeb_ebit from the source code.

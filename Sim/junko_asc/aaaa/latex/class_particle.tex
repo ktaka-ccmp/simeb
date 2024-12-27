@@ -1,0 +1,268 @@
+\section{Particle  Class Reference}
+\label{Particle}\index{Particle@{Particle}}
+
+
+{\tt \#include $<$particle.h$>$}
+
+\subsection*{Public Members}
+\begin{CompactItemize}
+\item 
+{\bf real} {\bf Impact} ({\bf real} const r\_\-dz)
+\item 
+bool {\bf Cross} ({\bf real} const r\_\-dz)
+\item 
+bool {\bf b\-Incr\-Plane} (void)
+\item 
+{\bf Particle} ()
+\item 
+int {\bf i\-Get\-Plane} (void) const
+\item 
+int {\bf i\-Get\-Id} (void) const
+\item 
+int {\bf i\-Get\-Beam} (void) const
+\item 
+void {\bf i\-Set\-Id} (int const i\_\-id)
+\item 
+void {\bf i\-Set\-Beam} (int const i\_\-beam)
+\item 
+void {\bf Commit} (void)
+\item 
+void {\bf Fly} ({\bf TXYZ} \& xyz\_\-p, {\bf TXYZ} \& xyz\_\-v, {\bf real} const r\_\-dt) const
+\item 
+void {\bf Fly\-Z} ({\bf real} \& r\_\-pz, {\bf real} \& r\_\-vz, {\bf real} const r\_\-dt) const
+\item 
+void {\bf Time\-Step\-Incr} ({\bf real} const r\_\-epsilon)
+\item 
+void {\bf Time\-Step\-Decr} ({\bf real} const r\_\-epsilon)
+\item 
+void {\bf Time\-Step\-Trunc} ({\bf real} const r\_\-ti, {\bf real} const r\_\-pert, {\bf real} const r\_\-epsilon)
+\item 
+bool {\bf Next\-Event} (void)
+\item 
+int {\bf i\-Plane}
+\item 
+int {\bf i\-Id}
+\item 
+int {\bf i\-Beam}
+\item 
+{\bf TXYZ} {\bf xyz\-P}
+\item 
+{\bf TXYZ} {\bf xyz\-V}
+\item 
+{\bf TXYZ} {\bf xyz\-PCommit}
+\item 
+{\bf TXYZ} {\bf xyz\-VCommit}
+\item 
+{\bf real} {\bf r\-Pert}
+\item 
+{\bf real} {\bf r\-Ti}
+\item 
+{\bf real} {\bf r\-Tf}
+\item 
+{\bf real} {\bf r\-Dt}
+\item 
+int {\bf i\-TOrder}
+\item 
+int {\bf i\-ZOrder}
+\end{CompactItemize}
+\subsection*{Static Public Members}
+\begin{CompactItemize}
+\item 
+int {\bf Emission\-Order} (Particle const $\ast$ const $\ast$, Particle const $\ast$ const $\ast$)
+\item 
+void {\bf r\-Set\-Field\-A} ({\bf real})
+\item 
+{\bf real} {\bf r\-Get\-Field\-A} ()
+\item 
+int {\bf i\-Get\-Group} (void)
+\item 
+void {\bf i\-Set\-Group} (int)
+\item 
+void {\bf i\-Clear\-Group} (int)
+\end{CompactItemize}
+\vspace{0.4cm}\hrule\vspace{0.2cm}
+\subsection*{Detailed Description}
+\vspace{0.4cm}\hrule\vspace{0.2cm}
+\subsection*{Member Function Documentation}
+\label{Particle_a0}
+\index{Particle@{Particle}!Impact@{Impact}}
+\index{Impact@{Impact}!Particle@{Particle}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf real} Particle::Impact ({\bf real} const {\em r\_\-dz})\hspace{0.3cm}{\tt  [inline]}}
+
+\label{Particle_a1}
+\index{Particle@{Particle}!Cross@{Cross}}
+\index{Cross@{Cross}!Particle@{Particle}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}bool Particle::Cross ({\bf real} const {\em r\_\-dz})\hspace{0.3cm}{\tt  [inline]}}
+
+\label{Particle_a2}
+\index{Particle@{Particle}!bIncrPlane@{b\-Incr\-Plane}}
+\index{bIncrPlane@{b\-Incr\-Plane}!Particle@{Particle}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}bool Particle::b\-Incr\-Plane (void)\hspace{0.3cm}{\tt  [inline]}}
+
+\label{Particle_a3}
+\index{Particle@{Particle}!Particle@{Particle}}
+\index{Particle@{Particle}!Particle@{Particle}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}Particle::Particle (void)}
+
+\label{Particle_a4}
+\index{Particle@{Particle}!iGetPlane@{i\-Get\-Plane}}
+\index{iGetPlane@{i\-Get\-Plane}!Particle@{Particle}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}int Particle::i\-Get\-Plane (void) const\hspace{0.3cm}{\tt  [inline]}}
+
+\label{Particle_a5}
+\index{Particle@{Particle}!iGetId@{i\-Get\-Id}}
+\index{iGetId@{i\-Get\-Id}!Particle@{Particle}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}int Particle::i\-Get\-Id (void) const\hspace{0.3cm}{\tt  [inline]}}
+
+\label{Particle_a6}
+\index{Particle@{Particle}!iGetBeam@{i\-Get\-Beam}}
+\index{iGetBeam@{i\-Get\-Beam}!Particle@{Particle}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}int Particle::i\-Get\-Beam (void) const\hspace{0.3cm}{\tt  [inline]}}
+
+\label{Particle_a7}
+\index{Particle@{Particle}!iSetId@{i\-Set\-Id}}
+\index{iSetId@{i\-Set\-Id}!Particle@{Particle}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}void Particle::i\-Set\-Id (int const {\em i\_\-id})\hspace{0.3cm}{\tt  [inline]}}
+
+\label{Particle_a8}
+\index{Particle@{Particle}!iSetBeam@{i\-Set\-Beam}}
+\index{iSetBeam@{i\-Set\-Beam}!Particle@{Particle}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}void Particle::i\-Set\-Beam (int const {\em i\_\-beam})\hspace{0.3cm}{\tt  [inline]}}
+
+\label{Particle_a9}
+\index{Particle@{Particle}!Commit@{Commit}}
+\index{Commit@{Commit}!Particle@{Particle}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}void Particle::Commit (void)\hspace{0.3cm}{\tt  [inline]}}
+
+\label{Particle_a10}
+\index{Particle@{Particle}!Fly@{Fly}}
+\index{Fly@{Fly}!Particle@{Particle}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}void Particle::Fly ({\bf TXYZ} \& {\em xyz\_\-p}, {\bf TXYZ} \& {\em xyz\_\-v}, {\bf real} const {\em r\_\-dt}) const\hspace{0.3cm}{\tt  [inline]}}
+
+\label{Particle_a11}
+\index{Particle@{Particle}!FlyZ@{Fly\-Z}}
+\index{FlyZ@{Fly\-Z}!Particle@{Particle}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}void Particle::Fly\-Z ({\bf real} \& {\em r\_\-pz}, {\bf real} \& {\em r\_\-vz}, {\bf real} const {\em r\_\-dt}) const\hspace{0.3cm}{\tt  [inline]}}
+
+\label{Particle_a12}
+\index{Particle@{Particle}!TimeStepIncr@{Time\-Step\-Incr}}
+\index{TimeStepIncr@{Time\-Step\-Incr}!Particle@{Particle}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}void Particle::Time\-Step\-Incr ({\bf real} const {\em r\_\-epsilon})\hspace{0.3cm}{\tt  [inline]}}
+
+\label{Particle_a13}
+\index{Particle@{Particle}!TimeStepDecr@{Time\-Step\-Decr}}
+\index{TimeStepDecr@{Time\-Step\-Decr}!Particle@{Particle}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}void Particle::Time\-Step\-Decr ({\bf real} const {\em r\_\-epsilon})\hspace{0.3cm}{\tt  [inline]}}
+
+\label{Particle_a14}
+\index{Particle@{Particle}!TimeStepTrunc@{Time\-Step\-Trunc}}
+\index{TimeStepTrunc@{Time\-Step\-Trunc}!Particle@{Particle}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}void Particle::Time\-Step\-Trunc ({\bf real} const {\em r\_\-ti}, {\bf real} const {\em r\_\-pert}, {\bf real} const {\em r\_\-epsilon})\hspace{0.3cm}{\tt  [inline]}}
+
+\label{Particle_a15}
+\index{Particle@{Particle}!NextEvent@{Next\-Event}}
+\index{NextEvent@{Next\-Event}!Particle@{Particle}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}bool Particle::Next\-Event (void)\hspace{0.3cm}{\tt  [inline]}}
+
+\label{Particle_d0}
+\index{Particle@{Particle}!EmissionOrder@{Emission\-Order}}
+\index{EmissionOrder@{Emission\-Order}!Particle@{Particle}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}int Particle::Emission\-Order (Particle const $\ast$const $\ast$ {\em pparticle1}, Particle const $\ast$const $\ast$ {\em pparticle2})\hspace{0.3cm}{\tt  [static]}}
+
+\label{Particle_d1}
+\index{Particle@{Particle}!rSetFieldA@{r\-Set\-Field\-A}}
+\index{rSetFieldA@{r\-Set\-Field\-A}!Particle@{Particle}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}void Particle::r\-Set\-Field\-A ({\bf real})\hspace{0.3cm}{\tt  [inline, static]}}
+
+\label{Particle_d2}
+\index{Particle@{Particle}!rGetFieldA@{r\-Get\-Field\-A}}
+\index{rGetFieldA@{r\-Get\-Field\-A}!Particle@{Particle}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf real} Particle::r\-Get\-Field\-A ()\hspace{0.3cm}{\tt  [inline, static]}}
+
+\label{Particle_d3}
+\index{Particle@{Particle}!iGetGroup@{i\-Get\-Group}}
+\index{iGetGroup@{i\-Get\-Group}!Particle@{Particle}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}int Particle::i\-Get\-Group (void)\hspace{0.3cm}{\tt  [inline, static]}}
+
+\label{Particle_d4}
+\index{Particle@{Particle}!iSetGroup@{i\-Set\-Group}}
+\index{iSetGroup@{i\-Set\-Group}!Particle@{Particle}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}void Particle::i\-Set\-Group (int)\hspace{0.3cm}{\tt  [inline, static]}}
+
+\label{Particle_d5}
+\index{Particle@{Particle}!iClearGroup@{i\-Clear\-Group}}
+\index{iClearGroup@{i\-Clear\-Group}!Particle@{Particle}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}void Particle::i\-Clear\-Group (int)\hspace{0.3cm}{\tt  [inline, static]}}
+
+\vspace{0.4cm}\hrule\vspace{0.2cm}
+\subsection*{Member Data Documentation}
+\label{Particle_a16}
+\index{Particle@{Particle}!iPlane@{i\-Plane}}
+\index{iPlane@{i\-Plane}!Particle@{Particle}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}int Particle::i\-Plane}
+
+\label{Particle_a17}
+\index{Particle@{Particle}!iId@{i\-Id}}
+\index{iId@{i\-Id}!Particle@{Particle}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}int Particle::i\-Id}
+
+\label{Particle_a18}
+\index{Particle@{Particle}!iBeam@{i\-Beam}}
+\index{iBeam@{i\-Beam}!Particle@{Particle}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}int Particle::i\-Beam}
+
+\label{Particle_a19}
+\index{Particle@{Particle}!xyzP@{xyz\-P}}
+\index{xyzP@{xyz\-P}!Particle@{Particle}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TXYZ} Particle::xyz\-P}
+
+\label{Particle_a20}
+\index{Particle@{Particle}!xyzV@{xyz\-V}}
+\index{xyzV@{xyz\-V}!Particle@{Particle}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TXYZ} Particle::xyz\-V}
+
+\label{Particle_a21}
+\index{Particle@{Particle}!xyzPCommit@{xyz\-PCommit}}
+\index{xyzPCommit@{xyz\-PCommit}!Particle@{Particle}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TXYZ} Particle::xyz\-PCommit}
+
+\label{Particle_a22}
+\index{Particle@{Particle}!xyzVCommit@{xyz\-VCommit}}
+\index{xyzVCommit@{xyz\-VCommit}!Particle@{Particle}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TXYZ} Particle::xyz\-VCommit}
+
+\label{Particle_a23}
+\index{Particle@{Particle}!rPert@{r\-Pert}}
+\index{rPert@{r\-Pert}!Particle@{Particle}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf real} Particle::r\-Pert}
+
+\label{Particle_a24}
+\index{Particle@{Particle}!rTi@{r\-Ti}}
+\index{rTi@{r\-Ti}!Particle@{Particle}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf real} Particle::r\-Ti}
+
+\label{Particle_a25}
+\index{Particle@{Particle}!rTf@{r\-Tf}}
+\index{rTf@{r\-Tf}!Particle@{Particle}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf real} Particle::r\-Tf}
+
+\label{Particle_a26}
+\index{Particle@{Particle}!rDt@{r\-Dt}}
+\index{rDt@{r\-Dt}!Particle@{Particle}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf real} Particle::r\-Dt}
+
+\label{Particle_a27}
+\index{Particle@{Particle}!iTOrder@{i\-TOrder}}
+\index{iTOrder@{i\-TOrder}!Particle@{Particle}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}int Particle::i\-TOrder}
+
+\label{Particle_a28}
+\index{Particle@{Particle}!iZOrder@{i\-ZOrder}}
+\index{iZOrder@{i\-ZOrder}!Particle@{Particle}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}int Particle::i\-ZOrder}
+
+\vspace{0.4cm}\hrule\vspace{0.2cm}
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+{\bf particle.h}\item 
+{\bf particle.cc}\end{CompactItemize}

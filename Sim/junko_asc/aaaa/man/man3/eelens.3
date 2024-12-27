@@ -1,0 +1,94 @@
+.TH EELens 3 "16 Dec 1999" "simeb_ebit" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+EELens \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <plane.h>\fR
+.PP
+Inherits \fBTTarget\fR.
+.PP
+.SS Public Members
+
+.in +1c
+.ti -1c
+.RI "\fBEELens\fR ()"
+.br
+.ti -1c
+.RI "virtual void \fBInitialize\fR (void)"
+.br
+.ti -1c
+.RI "virtual bool \fBCross\fR (\fBParticle\fR * const p)"
+.br
+.in -1c
+.SS Static Public Members
+
+.in +1c
+.ti -1c
+.RI "int \fBiMode\fR"
+.br
+.ti -1c
+.RI "int \fBiGroup\fR"
+.br
+.ti -1c
+.RI "FILE* \fBpFile\fR"
+.br
+.ti -1c
+.RI "int \fBiNumLens\fR"
+.br
+.ti -1c
+.RI "int \fBiNumBeams\fR"
+.br
+.ti -1c
+.RI "int \fBiNumElements\fR"
+.br
+.ti -1c
+.RI "int \fBiNumSegments\fR"
+.br
+.ti -1c
+.RI "int* \fBLensMap\fR"
+.br
+.ti -1c
+.RI "\fBreal\fR* \fBCurrentMap\fR"
+.br
+.in -1c
+.SH DETAILED DESCRIPTION
+.PP 
+.SH MEMBER FUNCTION DOCUMENTATION
+.PP 
+.SS EELens::EELens (void)
+.PP
+.SS void EELens::Initialize (void)\fC [virtual]\fR
+.PP
+Reimplemented from \fBTPlane\fR.
+.SS bool EELens::Cross (\fBParticle\fR * const p)\fC [virtual]\fR
+.PP
+Reimplemented from \fBTPlane\fR.
+.SH MEMBER DATA DOCUMENTATION
+.PP 
+.SS int EELens::iMode\fC [static]\fR
+.PP
+.SS int EELens::iGroup\fC [static]\fR
+.PP
+Reimplemented from \fBTPlane\fR.
+.SS FILE* EELens::pFile\fC [static]\fR
+.PP
+.SS int EELens::iNumLens\fC [static]\fR
+.PP
+.SS int EELens::iNumBeams\fC [static]\fR
+.PP
+.SS int EELens::iNumElements\fC [static]\fR
+.PP
+.SS int EELens::iNumSegments\fC [static]\fR
+.PP
+.SS int* EELens::LensMap\fC [static]\fR
+.PP
+.SS \fBreal\fR* EELens::CurrentMap\fC [static]\fR
+.PP
+
+
+.SH AUTHOR
+.PP 
+Generated automatically by Doxygen for simeb_ebit from the source code.

@@ -1,0 +1,180 @@
+\section{TPlane  Class Reference}
+\label{TPlane}\index{TPlane@{TPlane}}
+
+
+{\tt \#include $<$plane.h$>$}
+
+\subsection*{Class diagram for TPlane}
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\setlength{\epsfysize}{3cm}
+\epsfbox{class_tplane.eps}
+\end{center}
+\end{figure}
+\subsection*{Public Members}
+\begin{CompactItemize}
+\item 
+{\bf TPlane} ()
+\item 
+virtual {\bf $\sim$TPlane} (void)
+\item 
+virtual void {\bf Parse} ({\bf TParser} \&, char $\ast$)
+\item 
+virtual void {\bf Initialize} (void)
+\item 
+virtual bool {\bf Cross} ({\bf Particle} $\ast$ const p)
+\item 
+virtual void {\bf Finalize} (FILE $\ast$pfile)
+\item 
+int const {\bf i\-Get\-Plane} (void) const
+\item 
+char const$\ast$ {\bf s\-Get\-Name} (void) const
+\item 
+{\bf real} {\bf r\-Get\-Z} (void) const
+\item 
+{\bf real} {\bf r\-Get\-Voltage} (void) const
+\item 
+int {\bf i\-Get\-Set\-Group} (void) const
+\item 
+int {\bf i\-Get\-Clear\-Group} (void) const
+\item 
+{\bf real} {\bf r\-Get\-Field\-A} (void) const
+\item 
+void {\bf r\-Set\-Voltage} ({\bf real} r\_\-voltage)
+\item 
+void {\bf r\-Set\-Field\-A} ({\bf real} r\_\-field\_\-a)
+\end{CompactItemize}
+\subsection*{Static Public Members}
+\begin{CompactItemize}
+\item 
+TPlane$\ast$ {\bf Parse} ({\bf TParser} \&)
+\end{CompactItemize}
+\subsection*{Protected Members}
+\begin{CompactItemize}
+\item 
+int {\bf i\-Group}
+\item 
+char {\bf s\-Name} [MAX\_\-TOKEN]
+\end{CompactItemize}
+\subsection*{Static Protected Members}
+\begin{CompactItemize}
+\item 
+void {\bf Trajectory} ({\bf Particle} $\ast$ p, {\bf TXY} const \& xy\_\-v\_\-normal)
+\end{CompactItemize}
+\vspace{0.4cm}\hrule\vspace{0.2cm}
+\subsection*{Detailed Description}
+\vspace{0.4cm}\hrule\vspace{0.2cm}
+\subsection*{Member Function Documentation}
+\label{TPlane_a0}
+\index{TPlane@{TPlane}!TPlane@{TPlane}}
+\index{TPlane@{TPlane}!TPlane@{TPlane}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}TPlane::TPlane (void)}
+
+\label{TPlane_a1}
+\index{TPlane@{TPlane}!~TPlane@{$\sim$TPlane}}
+\index{~TPlane@{$\sim$TPlane}!TPlane@{TPlane}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}virtual TPlane::$\sim$TPlane (void)\hspace{0.3cm}{\tt  [inline, virtual]}}
+
+\label{TPlane_a2}
+\index{TPlane@{TPlane}!Parse@{Parse}}
+\index{Parse@{Parse}!TPlane@{TPlane}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}void TPlane::Parse ({\bf TParser} \& {\em parser}, char $\ast$ {\em s\_\-token})\hspace{0.3cm}{\tt  [virtual]}}
+
+
+
+Reimplemented in {\bf TAperture} {\rm (p.~\pageref{TAperture_a1})}, {\bf TSource} {\rm (p.~\pageref{TSource_a1})}, {\bf TSource\-Array} {\rm (p.~\pageref{TSourceArray_a1})}, {\bf TSource\-EELens} {\rm (p.~\pageref{TSourceEELens_a1})}, {\bf TSource\-Grid} {\rm (p.~\pageref{TSourceGrid_a1})}, {\bf TTarget} {\rm (p.~\pageref{TTarget_a1})}, and {\bf TThin\-Lens} {\rm (p.~\pageref{TThinLens_a1})}.\label{TPlane_a3}
+\index{TPlane@{TPlane}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!TPlane@{TPlane}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}void TPlane::Initialize (void)\hspace{0.3cm}{\tt  [virtual]}}
+
+
+
+Reimplemented in {\bf EELens} {\rm (p.~\pageref{EELens_a1})}, {\bf TSource} {\rm (p.~\pageref{TSource_a2})}, {\bf TSource\-Array} {\rm (p.~\pageref{TSourceArray_a2})}, {\bf TSource\-EELens} {\rm (p.~\pageref{TSourceEELens_a2})}, {\bf TSource\-Grid} {\rm (p.~\pageref{TSourceGrid_a2})}, and {\bf TTarget} {\rm (p.~\pageref{TTarget_a2})}.\label{TPlane_a4}
+\index{TPlane@{TPlane}!Cross@{Cross}}
+\index{Cross@{Cross}!TPlane@{TPlane}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}bool TPlane::Cross ({\bf Particle} $\ast$ {\em const p})\hspace{0.3cm}{\tt  [virtual]}}
+
+
+
+Reimplemented in {\bf EELens} {\rm (p.~\pageref{EELens_a2})}, {\bf TAperture} {\rm (p.~\pageref{TAperture_a2})}, {\bf TTarget} {\rm (p.~\pageref{TTarget_a3})}, and {\bf TThin\-Lens} {\rm (p.~\pageref{TThinLens_a2})}.\label{TPlane_a5}
+\index{TPlane@{TPlane}!Finalize@{Finalize}}
+\index{Finalize@{Finalize}!TPlane@{TPlane}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}virtual void TPlane::Finalize (FILE $\ast$ {\em pfile})\hspace{0.3cm}{\tt  [inline, virtual]}}
+
+\label{TPlane_a6}
+\index{TPlane@{TPlane}!iGetPlane@{i\-Get\-Plane}}
+\index{iGetPlane@{i\-Get\-Plane}!TPlane@{TPlane}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}int const TPlane::i\-Get\-Plane (void) const\hspace{0.3cm}{\tt  [inline]}}
+
+\label{TPlane_a7}
+\index{TPlane@{TPlane}!sGetName@{s\-Get\-Name}}
+\index{sGetName@{s\-Get\-Name}!TPlane@{TPlane}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}char const $\ast$ TPlane::s\-Get\-Name (void) const\hspace{0.3cm}{\tt  [inline]}}
+
+\label{TPlane_a8}
+\index{TPlane@{TPlane}!rGetZ@{r\-Get\-Z}}
+\index{rGetZ@{r\-Get\-Z}!TPlane@{TPlane}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf real} TPlane::r\-Get\-Z (void) const\hspace{0.3cm}{\tt  [inline]}}
+
+\label{TPlane_a9}
+\index{TPlane@{TPlane}!rGetVoltage@{r\-Get\-Voltage}}
+\index{rGetVoltage@{r\-Get\-Voltage}!TPlane@{TPlane}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf real} TPlane::r\-Get\-Voltage (void) const\hspace{0.3cm}{\tt  [inline]}}
+
+\label{TPlane_a10}
+\index{TPlane@{TPlane}!iGetSetGroup@{i\-Get\-Set\-Group}}
+\index{iGetSetGroup@{i\-Get\-Set\-Group}!TPlane@{TPlane}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}int TPlane::i\-Get\-Set\-Group (void) const\hspace{0.3cm}{\tt  [inline]}}
+
+\label{TPlane_a11}
+\index{TPlane@{TPlane}!iGetClearGroup@{i\-Get\-Clear\-Group}}
+\index{iGetClearGroup@{i\-Get\-Clear\-Group}!TPlane@{TPlane}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}int TPlane::i\-Get\-Clear\-Group (void) const\hspace{0.3cm}{\tt  [inline]}}
+
+\label{TPlane_a12}
+\index{TPlane@{TPlane}!rGetFieldA@{r\-Get\-Field\-A}}
+\index{rGetFieldA@{r\-Get\-Field\-A}!TPlane@{TPlane}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf real} TPlane::r\-Get\-Field\-A (void) const\hspace{0.3cm}{\tt  [inline]}}
+
+\label{TPlane_a13}
+\index{TPlane@{TPlane}!rSetVoltage@{r\-Set\-Voltage}}
+\index{rSetVoltage@{r\-Set\-Voltage}!TPlane@{TPlane}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}void TPlane::r\-Set\-Voltage ({\bf real} {\em r\_\-voltage})\hspace{0.3cm}{\tt  [inline]}}
+
+\label{TPlane_a14}
+\index{TPlane@{TPlane}!rSetFieldA@{r\-Set\-Field\-A}}
+\index{rSetFieldA@{r\-Set\-Field\-A}!TPlane@{TPlane}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}void TPlane::r\-Set\-Field\-A ({\bf real} {\em r\_\-field\_\-a})\hspace{0.3cm}{\tt  [inline]}}
+
+\label{TPlane_d0}
+\index{TPlane@{TPlane}!Parse@{Parse}}
+\index{Parse@{Parse}!TPlane@{TPlane}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}TPlane $\ast$ TPlane::Parse ({\bf TParser} \& {\em parser})\hspace{0.3cm}{\tt  [static]}}
+
+
+
+Reimplemented in {\bf TSource} {\rm (p.~\pageref{TSource_d0})}.\label{TPlane_e0}
+\index{TPlane@{TPlane}!Trajectory@{Trajectory}}
+\index{Trajectory@{Trajectory}!TPlane@{TPlane}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}void TPlane::Trajectory ({\bf Particle} $\ast$ {\em p}, {\bf TXY} const \& {\em xy\_\-v\_\-normal})\hspace{0.3cm}{\tt  [static, protected]}}
+
+\vspace{0.4cm}\hrule\vspace{0.2cm}
+\subsection*{Member Data Documentation}
+\label{TPlane_b0}
+\index{TPlane@{TPlane}!iGroup@{i\-Group}}
+\index{iGroup@{i\-Group}!TPlane@{TPlane}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}int TPlane::i\-Group\hspace{0.3cm}{\tt  [protected]}}
+
+
+
+Reimplemented in {\bf EELens} {\rm (p.~\pageref{EELens_d1})}.\label{TPlane_b1}
+\index{TPlane@{TPlane}!sName@{s\-Name}}
+\index{sName@{s\-Name}!TPlane@{TPlane}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}char TPlane::s\-Name[MAX\_\-TOKEN]\hspace{0.3cm}{\tt  [protected]}}
+
+\vspace{0.4cm}\hrule\vspace{0.2cm}
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+{\bf plane.h}\item 
+{\bf plane.cc}\end{CompactItemize}

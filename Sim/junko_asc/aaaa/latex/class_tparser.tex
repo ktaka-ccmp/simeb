@@ -1,0 +1,139 @@
+\section{TParser  Class Reference}
+\label{TParser}\index{TParser@{TParser}}
+
+
+{\tt \#include $<$setup.h$>$}
+
+\subsection*{Class diagram for TParser}
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\setlength{\epsfysize}{2cm}
+\epsfbox{class_tparser.eps}
+\end{center}
+\end{figure}
+\subsection*{Public Members}
+\begin{CompactItemize}
+\item 
+{\bf TParser} (void)
+\item 
+virtual {\bf $\sim$TParser} (void)
+\item 
+virtual bool {\bf Get\-Token} (void) = 0
+\item 
+virtual void {\bf Error} (void) = 0
+\item 
+bool {\bf Eof} (void)
+\item 
+TParser\& {\bf operator$>$$>$} (char $\ast$s)
+\item 
+TParser\& {\bf operator$>$$>$} (unsigned \&u)
+\item 
+TParser\& {\bf operator$>$$>$} (int \&i)
+\item 
+TParser\& {\bf operator$>$$>$} (long \&l)
+\item 
+TParser\& {\bf operator$>$$>$} ({\bf real} \&r)
+\item 
+TParser\& {\bf operator$>$$>$} ({\bf TXYZ} \&xyz)
+\item 
+TParser\& {\bf operator$>$$>$} ({\bf TXY} \&xy)
+\item 
+TParser\& {\bf operator$>$$>$} (bool \&b)
+\end{CompactItemize}
+\subsection*{Protected Members}
+\begin{CompactItemize}
+\item 
+bool {\bf Eof} (bool b)
+\item 
+char {\bf s\-Token} [MAX\_\-TOKEN]
+\end{CompactItemize}
+\vspace{0.4cm}\hrule\vspace{0.2cm}
+\subsection*{Detailed Description}
+\vspace{0.4cm}\hrule\vspace{0.2cm}
+\subsection*{Member Function Documentation}
+\label{TParser_a0}
+\index{TParser@{TParser}!TParser@{TParser}}
+\index{TParser@{TParser}!TParser@{TParser}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}TParser::TParser (void)\hspace{0.3cm}{\tt  [inline]}}
+
+\label{TParser_a1}
+\index{TParser@{TParser}!~TParser@{$\sim$TParser}}
+\index{~TParser@{$\sim$TParser}!TParser@{TParser}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}virtual TParser::$\sim$TParser (void)\hspace{0.3cm}{\tt  [inline, virtual]}}
+
+\label{TParser_a2}
+\index{TParser@{TParser}!GetToken@{Get\-Token}}
+\index{GetToken@{Get\-Token}!TParser@{TParser}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}virtual bool TParser::Get\-Token (void)\hspace{0.3cm}{\tt  [pure virtual]}}
+
+
+
+Reimplemented in {\bf TArg\-Parser} {\rm (p.~\pageref{TArgParser_a1})}, and {\bf TFile\-Parser} {\rm (p.~\pageref{TFileParser_a1})}.\label{TParser_a3}
+\index{TParser@{TParser}!Error@{Error}}
+\index{Error@{Error}!TParser@{TParser}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}virtual void TParser::Error (void)\hspace{0.3cm}{\tt  [pure virtual]}}
+
+
+
+Reimplemented in {\bf TArg\-Parser} {\rm (p.~\pageref{TArgParser_a2})}, and {\bf TFile\-Parser} {\rm (p.~\pageref{TFileParser_a2})}.\label{TParser_a4}
+\index{TParser@{TParser}!Eof@{Eof}}
+\index{Eof@{Eof}!TParser@{TParser}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}bool TParser::Eof (void)\hspace{0.3cm}{\tt  [inline]}}
+
+\label{TParser_a5}
+\index{TParser@{TParser}!operator>>@{operator$>$$>$}}
+\index{operator>>@{operator$>$$>$}!TParser@{TParser}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}TParser \& TParser::operator$>$$>$ (char $\ast$ {\em s})\hspace{0.3cm}{\tt  [inline]}}
+
+\label{TParser_a6}
+\index{TParser@{TParser}!operator>>@{operator$>$$>$}}
+\index{operator>>@{operator$>$$>$}!TParser@{TParser}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}TParser \& TParser::operator$>$$>$ (unsigned \& {\em u})\hspace{0.3cm}{\tt  [inline]}}
+
+\label{TParser_a7}
+\index{TParser@{TParser}!operator>>@{operator$>$$>$}}
+\index{operator>>@{operator$>$$>$}!TParser@{TParser}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}TParser \& TParser::operator$>$$>$ (int \& {\em i})\hspace{0.3cm}{\tt  [inline]}}
+
+\label{TParser_a8}
+\index{TParser@{TParser}!operator>>@{operator$>$$>$}}
+\index{operator>>@{operator$>$$>$}!TParser@{TParser}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}TParser \& TParser::operator$>$$>$ (long \& {\em l})\hspace{0.3cm}{\tt  [inline]}}
+
+\label{TParser_a9}
+\index{TParser@{TParser}!operator>>@{operator$>$$>$}}
+\index{operator>>@{operator$>$$>$}!TParser@{TParser}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}TParser \& TParser::operator$>$$>$ ({\bf real} \& {\em r})\hspace{0.3cm}{\tt  [inline]}}
+
+\label{TParser_a10}
+\index{TParser@{TParser}!operator>>@{operator$>$$>$}}
+\index{operator>>@{operator$>$$>$}!TParser@{TParser}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}TParser \& TParser::operator$>$$>$ ({\bf TXYZ} \& {\em xyz})\hspace{0.3cm}{\tt  [inline]}}
+
+\label{TParser_a11}
+\index{TParser@{TParser}!operator>>@{operator$>$$>$}}
+\index{operator>>@{operator$>$$>$}!TParser@{TParser}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}TParser \& TParser::operator$>$$>$ ({\bf TXY} \& {\em xy})\hspace{0.3cm}{\tt  [inline]}}
+
+\label{TParser_a12}
+\index{TParser@{TParser}!operator>>@{operator$>$$>$}}
+\index{operator>>@{operator$>$$>$}!TParser@{TParser}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}TParser \& TParser::operator$>$$>$ (bool \& {\em b})\hspace{0.3cm}{\tt  [inline]}}
+
+\label{TParser_b0}
+\index{TParser@{TParser}!Eof@{Eof}}
+\index{Eof@{Eof}!TParser@{TParser}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}bool TParser::Eof (bool {\em b})\hspace{0.3cm}{\tt  [inline, protected]}}
+
+\vspace{0.4cm}\hrule\vspace{0.2cm}
+\subsection*{Member Data Documentation}
+\label{TParser_b1}
+\index{TParser@{TParser}!sToken@{s\-Token}}
+\index{sToken@{s\-Token}!TParser@{TParser}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}char TParser::s\-Token[MAX\_\-TOKEN]\hspace{0.3cm}{\tt  [protected]}}
+
+\vspace{0.4cm}\hrule\vspace{0.2cm}
+The documentation for this class was generated from the following file:\begin{CompactItemize}
+\item 
+{\bf setup.h}\end{CompactItemize}

@@ -1,0 +1,47 @@
+.TH TShapeSquare 3 "16 Dec 1999" "simeb_ebit" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TShapeSquare \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <shape.h>\fR
+.PP
+Inherits \fBTShape\fR.
+.PP
+.SS Public Members
+
+.in +1c
+.ti -1c
+.RI "\fBTShapeSquare\fR (void)"
+.br
+.ti -1c
+.RI "virtual void \fBParse\fR (\fBTParser\fR &, char *)"
+.br
+.ti -1c
+.RI "virtual void \fBRandomize\fR (\fBParticle\fR *)"
+.br
+.ti -1c
+.RI "virtual bool \fBbInside\fR (\fBTXY\fR xy)"
+.br
+.in -1c
+.SH DETAILED DESCRIPTION
+.PP 
+.SH MEMBER FUNCTION DOCUMENTATION
+.PP 
+.SS TShapeSquare::TShapeSquare (void)
+.PP
+.SS void TShapeSquare::Parse (\fBTParser\fR & parser, char * s_token)\fC [virtual]\fR
+.PP
+Reimplemented from \fBTShape\fR.
+.SS void TShapeSquare::Randomize (\fBParticle\fR * p)\fC [virtual]\fR
+.PP
+Reimplemented from \fBTShape\fR.
+.SS bool TShapeSquare::bInside (\fBTXY\fR xy)\fC [virtual]\fR
+.PP
+Reimplemented from \fBTShape\fR.
+
+.SH AUTHOR
+.PP 
+Generated automatically by Doxygen for simeb_ebit from the source code.

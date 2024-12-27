@@ -1,0 +1,900 @@
+This is pTeX, Version p2.1.8, based on TeX, Version 3.14159 (EUC) (Web2C 7.2) (format=platex 1999.1.6)  16 DEC 1999 20:58
+**\nonstopmode\input refman.tex
+(refman.tex (/usr/share/texmf/tex/latex/base/book.cls
+Document Class: book 1998/05/05 v1.3y Standard LaTeX document class
+(/usr/share/texmf/tex/latex/base/bk10.clo
+File: bk10.clo 1998/05/05 v1.3y Standard LaTeX file (size option)
+)
+\c@part=\count81
+\c@chapter=\count82
+\c@section=\count83
+\c@subsection=\count84
+\c@subsubsection=\count85
+\c@paragraph=\count86
+\c@subparagraph=\count87
+\c@figure=\count88
+\c@table=\count89
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen118
+)
+(/usr/share/texmf/tex/latex209/a4wide.sty (/usr/share/texmf/tex/latex209/a4.sty
+)) (/usr/share/texmf/tex/latex/base/makeidx.sty
+Package: makeidx 1995/04/19 v1.0j Standard LaTeX package
+)
+(/usr/share/texmf/tex/platex/inputs/fancyhdr/fancyheadings.sty
+\headwidth=\dimen119
+)
+(/usr/share/texmf/tex/platex/inputs/graphics/epsfig.sty
+Package: epsfig 1996/10/04 v1.7 (e)psfig emulation (SPQR)
+
+(/usr/share/texmf/tex/platex/inputs/graphics/graphicx.sty
+Package: graphicx 1997/06/09 v1.0d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf/tex/platex/inputs/graphics/keyval.sty
+Package: keyval 1997/11/10 v1.10 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/usr/share/texmf/tex/platex/inputs/graphics/graphics.sty
+Package: graphics 1997/09/09 v1.0f Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf/tex/platex/inputs/graphics/trig.sty
+Package: trig 1994/10/16 v1.08 sin cos tan (DPC)
+)
+(/usr/share/texmf/tex/platex/inputs/graphics/graphics.cfg)
+Package graphics Info: Driver file: dvips.def on input line 84.
+
+(/usr/share/texmf/tex/platex/inputs/graphics/dvips.def
+File: dvips.def 1997/09/09 v3.0e Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen120
+\Gin@req@width=\dimen121
+)
+\epsfxsize=\dimen122
+\epsfysize=\dimen123
+)
+(/usr/share/texmf/tex/latex209/float.sty
+Style-Option: `float' 1.1c 18 Dec 92 (AL)
+\float@type=\count90
+\float@box=\box41
+\@floatcapt=\box42
+) (doxygen.sty
+Package: doxygen 
+
+(/usr/share/texmf/tex/platex/inputs/tools/calc.sty
+Package: calc 1998/07/07 v4.1b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count91
+\calc@Bcount=\count92
+\calc@Adimen=\dimen124
+\calc@Bdimen=\dimen125
+\calc@Askip=\skip43
+\calc@Bskip=\skip44
+LaTeX Info: Redefining \setlength on input line 51.
+LaTeX Info: Redefining \addtolength on input line 52.
+\calc@denominator=\count93
+)
+(/usr/share/texmf/tex/platex/inputs/tools/array.sty
+Package: array 1998/05/13 v2.3l Tabular extension package (FMi)
+\col@sep=\dimen126
+\extrarowheight=\dimen127
+\NC@list=\toks16
+\extratabsurround=\skip45
+\backup@length=\skip46
+)
+\tmplength=\skip47
+)
+\@indexfile=\write3
+\openout3 = `refman.idx'.
+
+
+Writing index file refman.idx
+(refman.aux (class_eelens.aux) (class_particle.aux) (class_relativity.aux)
+(class_simeb.aux) (class_taperture.aux) (class_targparser.aux)
+(class_tfileparser.aux) (class_tillumin.aux) (class_tilluminfixed.aux)
+(class_tillumingaussian.aux) (class_tilluminlumped.aux)
+(class_tilluminuniform.aux) (class_tparser.aux) (class_tplane.aux)
+(class_tshape.aux) (class_tshapebagel.aux) (class_tshapecircle.aux)
+(class_tshapepoint.aux) (class_tshaperectangle.aux) (class_tshapesquare.aux)
+(class_tsource.aux) (class_tsourcearray.aux) (class_tsourceeelens.aux)
+(class_tsourcegrid.aux) (class_ttarget.aux) (class_tthinlens.aux)
+(class_txy.aux) (class_txyz.aux) (column.cc.aux) (column.h.aux) (illumin.cc.aux
+) (illumin.h.aux) (include.h.aux) (particle.cc.aux) (particle.h.aux)
+(plane.cc.aux) (plane.h.aux) (relativity.cc.aux) (relativity.h.aux)
+(setup.cc.aux) (setup.h.aux) (shape.cc.aux) (shape.h.aux) (simeb.cc.aux)
+(simeb.h.aux) (source.cc.aux) (source.h.aux) (vector.cc.aux) (vector.h.aux))
+\openout1 = `refman.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 11.
+LaTeX Font Info:    ... okay on input line 11.
+
+[1
+
+
+] [2
+
+]
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 24.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 24.
+ (refman.toc
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <10> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 2.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 2.
+ [1
+
+])
+\tf@toc=\write4
+\openout4 = `refman.toc'.
+
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <7> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 25.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <7> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 25.
+ [2]
+Chapter 1.
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <20.74> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 27.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <20.74> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 27.
+(hierarchy.tex
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <14.4> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
+) [1
+
+
+] [2
+
+]
+Chapter 2.
+(annotated.tex
+
+LaTeX Font Warning: Font shape `JY1/gt/m/it' undefined
+(Font)              using `JY1/gt/m/n' instead on input line 3.
+
+
+LaTeX Font Warning: Font shape `JT1/gt/m/it' undefined
+(Font)              using `JT1/gt/m/n' instead on input line 3.
+
+) [3] [4
+
+]
+Chapter 3.
+(files.tex) [5] [6
+
+]
+Chapter 4.
+(class_column.tex
+LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 7.
+LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 7.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 10.
+ (/usr/share/texmf/tex/latex/base/omscmr.fd
+File: omscmr.fd 1998/03/27 v2.5g Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 10.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 42.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 42.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 42.
+LaTeX Font Info:    Font shape `JY1/gt/bx/n' in size <12> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 47.
+LaTeX Font Info:    Font shape `JT1/gt/bx/n' in size <12> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 47.
+
+
+LaTeX Font Warning: Font shape `JY1/gt/bx/it' undefined
+(Font)              using `JY1/gt/bx/n' instead on input line 47.
+
+
+LaTeX Font Warning: Font shape `JT1/gt/bx/it' undefined
+(Font)              using `JT1/gt/bx/n' instead on input line 47.
+
+LaTeX Font Info:    Font shape `JY1/gt/bx/it' in size <12> not available
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 52.
+LaTeX Font Info:    Font shape `JT1/gt/bx/it' in size <12> not available
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 52.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7])
+[8]
+\openout2 = `class_eelens.aux'.
+
+ (class_eelens.tex
+File: class_eelens.eps Graphic file (type eps)
+ <class_eelens.eps>
+! Extra }, or forgotten \endgroup.
+\endfigure ...rrbox \fi \vskip \intextsep \egroup 
+                                                  
+l.14 \end{figure}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[9
+
+]) [10]
+\openout2 = `class_particle.aux'.
+
+ (class_particle.tex [11
+
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12]
+Overfull \vbox (16.91223pt too high) has occurred while \output is active []
+
+
+[13]) [14]
+\openout2 = `class_relativity.aux'.
+
+ (class_relativity.tex) [15
+
+
+]
+\openout2 = `class_simeb.aux'.
+
+ (class_simeb.tex
+Underfull \vbox (badness 1371) has occurred while \output is active []
+
+ [16
+
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [17])
+[18]
+\openout2 = `class_taperture.aux'.
+
+ (class_taperture.tex
+File: class_taperture.eps Graphic file (type eps)
+ <class_taperture.eps>
+! Extra }, or forgotten \endgroup.
+\endfigure ...rrbox \fi \vskip \intextsep \egroup 
+                                                  
+l.14 \end{figure}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+) [19
+
+
+]
+\openout2 = `class_targparser.aux'.
+
+ (class_targparser.tex
+File: class_targparser.eps Graphic file (type eps)
+ <class_targparser.eps>
+! Extra }, or forgotten \endgroup.
+\endfigure ...rrbox \fi \vskip \intextsep \egroup 
+                                                  
+l.14 \end{figure}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+) [20
+
+
+]
+\openout2 = `class_tfileparser.aux'.
+
+ (class_tfileparser.tex
+File: class_tfileparser.eps Graphic file (type eps)
+ <class_tfileparser.eps>
+! Extra }, or forgotten \endgroup.
+\endfigure ...rrbox \fi \vskip \intextsep \egroup 
+                                                  
+l.14 \end{figure}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+) [21
+
+
+]
+\openout2 = `class_tillumin.aux'.
+
+ (class_tillumin.tex
+File: class_tillumin.eps Graphic file (type eps)
+ <class_tillumin.eps>
+! Extra }, or forgotten \endgroup.
+\endfigure ...rrbox \fi \vskip \intextsep \egroup 
+                                                  
+l.14 \end{figure}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+) [22
+
+
+]
+\openout2 = `class_tilluminfixed.aux'.
+
+ (class_tilluminfixed.tex
+File: class_tilluminfixed.eps Graphic file (type eps)
+ <class_tilluminfixed.eps>
+! Extra }, or forgotten \endgroup.
+\endfigure ...rrbox \fi \vskip \intextsep \egroup 
+                                                  
+l.14 \end{figure}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+) [23
+
+
+]
+\openout2 = `class_tillumingaussian.aux'.
+
+ (class_tillumingaussian.tex
+File: class_tillumingaussian.eps Graphic file (type eps)
+ <class_tillumingaussian.eps>
+! Extra }, or forgotten \endgroup.
+\endfigure ...rrbox \fi \vskip \intextsep \egroup 
+                                                  
+l.14 \end{figure}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+) [24
+
+
+]
+\openout2 = `class_tilluminlumped.aux'.
+
+ (class_tilluminlumped.tex
+File: class_tilluminlumped.eps Graphic file (type eps)
+ <class_tilluminlumped.eps>
+! Extra }, or forgotten \endgroup.
+\endfigure ...rrbox \fi \vskip \intextsep \egroup 
+                                                  
+l.14 \end{figure}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+) [25
+
+
+]
+\openout2 = `class_tilluminuniform.aux'.
+
+ (class_tilluminuniform.tex
+File: class_tilluminuniform.eps Graphic file (type eps)
+ <class_tilluminuniform.eps>
+! Extra }, or forgotten \endgroup.
+\endfigure ...rrbox \fi \vskip \intextsep \egroup 
+                                                  
+l.14 \end{figure}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+) [26
+
+
+]
+\openout2 = `class_tparser.aux'.
+
+ (class_tparser.tex
+File: class_tparser.eps Graphic file (type eps)
+ <class_tparser.eps>
+! Extra }, or forgotten \endgroup.
+\endfigure ...rrbox \fi \vskip \intextsep \egroup 
+                                                  
+l.14 \end{figure}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[27
+
+
+]) [28]
+\openout2 = `class_tplane.aux'.
+
+ (class_tplane.tex
+File: class_tplane.eps Graphic file (type eps)
+ <class_tplane.eps>
+! Extra }, or forgotten \endgroup.
+\endfigure ...rrbox \fi \vskip \intextsep \egroup 
+                                                  
+l.14 \end{figure}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[29
+
+
+] [30]) [31]
+\openout2 = `class_tshape.aux'.
+
+ (class_tshape.tex
+File: class_tshape.eps Graphic file (type eps)
+ <class_tshape.eps>
+! Extra }, or forgotten \endgroup.
+\endfigure ...rrbox \fi \vskip \intextsep \egroup 
+                                                  
+l.14 \end{figure}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[32
+
+
+]) [33]
+\openout2 = `class_tshapebagel.aux'.
+
+ (class_tshapebagel.tex
+File: class_tshapebagel.eps Graphic file (type eps)
+ <class_tshapebagel.eps>
+! Extra }, or forgotten \endgroup.
+\endfigure ...rrbox \fi \vskip \intextsep \egroup 
+                                                  
+l.14 \end{figure}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+) [34
+
+
+]
+\openout2 = `class_tshapecircle.aux'.
+
+ (class_tshapecircle.tex
+File: class_tshapecircle.eps Graphic file (type eps)
+ <class_tshapecircle.eps>
+! Extra }, or forgotten \endgroup.
+\endfigure ...rrbox \fi \vskip \intextsep \egroup 
+                                                  
+l.14 \end{figure}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+) [35
+
+
+]
+\openout2 = `class_tshapepoint.aux'.
+
+ (class_tshapepoint.tex
+File: class_tshapepoint.eps Graphic file (type eps)
+ <class_tshapepoint.eps>
+! Extra }, or forgotten \endgroup.
+\endfigure ...rrbox \fi \vskip \intextsep \egroup 
+                                                  
+l.14 \end{figure}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+) [36
+
+
+]
+\openout2 = `class_tshaperectangle.aux'.
+
+ (class_tshaperectangle.tex
+File: class_tshaperectangle.eps Graphic file (type eps)
+ <class_tshaperectangle.eps>
+! Extra }, or forgotten \endgroup.
+\endfigure ...rrbox \fi \vskip \intextsep \egroup 
+                                                  
+l.14 \end{figure}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+) [37
+
+
+]
+\openout2 = `class_tshapesquare.aux'.
+
+ (class_tshapesquare.tex
+File: class_tshapesquare.eps Graphic file (type eps)
+ <class_tshapesquare.eps>
+! Extra }, or forgotten \endgroup.
+\endfigure ...rrbox \fi \vskip \intextsep \egroup 
+                                                  
+l.14 \end{figure}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+) [38
+
+
+]
+\openout2 = `class_tsource.aux'.
+
+ (class_tsource.tex
+File: class_tsource.eps Graphic file (type eps)
+ <class_tsource.eps>
+! Extra }, or forgotten \endgroup.
+\endfigure ...rrbox \fi \vskip \intextsep \egroup 
+                                                  
+l.14 \end{figure}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[39
+
+
+]) [40]
+\openout2 = `class_tsourcearray.aux'.
+
+ (class_tsourcearray.tex
+File: class_tsourcearray.eps Graphic file (type eps)
+ <class_tsourcearray.eps>
+! Extra }, or forgotten \endgroup.
+\endfigure ...rrbox \fi \vskip \intextsep \egroup 
+                                                  
+l.14 \end{figure}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+) [41
+
+
+]
+\openout2 = `class_tsourceeelens.aux'.
+
+ (class_tsourceeelens.tex
+File: class_tsourceeelens.eps Graphic file (type eps)
+ <class_tsourceeelens.eps>
+! Extra }, or forgotten \endgroup.
+\endfigure ...rrbox \fi \vskip \intextsep \egroup 
+                                                  
+l.14 \end{figure}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+) [42
+
+
+]
+\openout2 = `class_tsourcegrid.aux'.
+
+ (class_tsourcegrid.tex
+File: class_tsourcegrid.eps Graphic file (type eps)
+ <class_tsourcegrid.eps>
+! Extra }, or forgotten \endgroup.
+\endfigure ...rrbox \fi \vskip \intextsep \egroup 
+                                                  
+l.14 \end{figure}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+) [43
+
+
+]
+\openout2 = `class_ttarget.aux'.
+
+ (class_ttarget.tex
+File: class_ttarget.eps Graphic file (type eps)
+ <class_ttarget.eps>
+! Extra }, or forgotten \endgroup.
+\endfigure ...rrbox \fi \vskip \intextsep \egroup 
+                                                  
+l.14 \end{figure}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+[44
+
+
+]) [45]
+\openout2 = `class_tthinlens.aux'.
+
+ (class_tthinlens.tex
+File: class_tthinlens.eps Graphic file (type eps)
+ <class_tthinlens.eps>
+! Extra }, or forgotten \endgroup.
+\endfigure ...rrbox \fi \vskip \intextsep \egroup 
+                                                  
+l.14 \end{figure}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+) [46
+
+
+]
+\openout2 = `class_txy.aux'.
+
+ (class_txy.tex) [47
+
+
+]
+\openout2 = `class_txyz.aux'.
+
+ (class_txyz.tex) [48
+
+
+]
+Chapter 5.
+(cap.h.tex) [49
+
+
+]
+\openout2 = `column.cc.aux'.
+
+ (column.cc.tex) [50
+
+]
+\openout2 = `column.h.aux'.
+
+ (column.h.tex) [51
+
+
+]
+\openout2 = `illumin.cc.aux'.
+
+ (illumin.cc.tex)
+[52
+
+
+]
+\openout2 = `illumin.h.aux'.
+
+ (illumin.h.tex) [53
+
+
+]
+\openout2 = `include.h.aux'.
+
+ (include.h.tex) [54
+
+
+]
+\openout2 = `particle.cc.aux'.
+
+ (particle.cc.tex) [55
+
+
+]
+\openout2 = `particle.h.aux'.
+
+
+(particle.h.tex) [56
+
+
+]
+\openout2 = `plane.cc.aux'.
+
+ (plane.cc.tex) [57
+
+
+]
+\openout2 = `plane.h.aux'.
+
+ (plane.h.tex) [58
+
+
+]
+\openout2 = `relativity.cc.aux'.
+
+ (relativity.cc.tex) [59
+
+
+]
+\openout2 = `relativity.h.aux'.
+
+ (relativity.h.tex) [60
+
+
+]
+\openout2 = `setup.cc.aux'.
+
+ (setup.cc.tex) [61
+
+
+]
+\openout2 = `setup.h.aux'.
+
+ (setup.h.tex) [62
+
+
+]
+\openout2 = `shape.cc.aux'.
+
+
+(shape.cc.tex) [63
+
+
+]
+\openout2 = `shape.h.aux'.
+
+ (shape.h.tex) [64
+
+
+]
+\openout2 = `simeb.cc.aux'.
+
+ (simeb.cc.tex) [65
+
+
+]
+\openout2 = `simeb.h.aux'.
+
+ (simeb.h.tex)
+[66
+
+
+]
+\openout2 = `source.cc.aux'.
+
+ (source.cc.tex) [67
+
+
+]
+\openout2 = `source.h.aux'.
+
+ (source.h.tex) [68
+
+
+]
+\openout2 = `vector.cc.aux'.
+
+ (vector.cc.tex) [69
+
+
+]
+\openout2 = `vector.h.aux'.
+
+
+(vector.h.tex
+Underfull \vbox (badness 1102) has occurred while \output is active []
+
+ [70
+
+
+]
+Overfull \vbox (29.061pt too high) has occurred while \output is active []
+
+
+[71]) [72]
+No file refman.ind.
+(refman.aux (class_eelens.aux) (class_particle.aux) (class_relativity.aux)
+(class_simeb.aux) (class_taperture.aux) (class_targparser.aux)
+(class_tfileparser.aux) (class_tillumin.aux) (class_tilluminfixed.aux)
+(class_tillumingaussian.aux) (class_tilluminlumped.aux)
+(class_tilluminuniform.aux) (class_tparser.aux) (class_tplane.aux)
+(class_tshape.aux) (class_tshapebagel.aux) (class_tshapecircle.aux)
+(class_tshapepoint.aux) (class_tshaperectangle.aux) (class_tshapesquare.aux)
+(class_tsource.aux) (class_tsourcearray.aux) (class_tsourceeelens.aux)
+(class_tsourcegrid.aux) (class_ttarget.aux) (class_tthinlens.aux)
+(class_txy.aux) (class_txyz.aux) (column.cc.aux) (column.h.aux) (illumin.cc.aux
+) (illumin.h.aux) (include.h.aux) (particle.cc.aux) (particle.h.aux)
+(plane.cc.aux) (plane.h.aux) (relativity.cc.aux) (relativity.h.aux)
+(setup.cc.aux) (setup.h.aux) (shape.cc.aux) (shape.h.aux) (simeb.cc.aux)
+(simeb.h.aux) (source.cc.aux) (source.h.aux) (vector.cc.aux) (vector.h.aux))
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 1460 strings out of 10663
+ 18047 string characters out of 69600
+ 82248 words of memory out of 263001
+ 4421 multiletter control sequences out of 10000+0
+ 17586 words of font info for 68 fonts, out of 200000 for 1000
+ 14 hyphenation exceptions out of 1000
+ 32i,11n,40p,486b,495s stack positions out of 300i,100n,500p,30000b,4000s
+
+Output written on refman.dvi (76 pages, 139460 bytes).

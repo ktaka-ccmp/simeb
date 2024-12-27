@@ -1,0 +1,121 @@
+\section{EELens  Class Reference}
+\label{EELens}\index{EELens@{EELens}}
+
+
+{\tt \#include $<$plane.h$>$}
+
+\subsection*{Class diagram for EELens}
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\setlength{\epsfysize}{3cm}
+\epsfbox{class_eelens.eps}
+\end{center}
+\end{figure}
+\subsection*{Public Members}
+\begin{CompactItemize}
+\item 
+{\bf EELens} ()
+\item 
+virtual void {\bf Initialize} (void)
+\item 
+virtual bool {\bf Cross} ({\bf Particle} $\ast$ const p)
+\end{CompactItemize}
+\subsection*{Static Public Members}
+\begin{CompactItemize}
+\item 
+int {\bf i\-Mode}
+\item 
+int {\bf i\-Group}
+\item 
+FILE$\ast$ {\bf p\-File}
+\item 
+int {\bf i\-Num\-Lens}
+\item 
+int {\bf i\-Num\-Beams}
+\item 
+int {\bf i\-Num\-Elements}
+\item 
+int {\bf i\-Num\-Segments}
+\item 
+int$\ast$ {\bf Lens\-Map}
+\item 
+{\bf real}$\ast$ {\bf Current\-Map}
+\end{CompactItemize}
+\vspace{0.4cm}\hrule\vspace{0.2cm}
+\subsection*{Detailed Description}
+\vspace{0.4cm}\hrule\vspace{0.2cm}
+\subsection*{Member Function Documentation}
+\label{EELens_a0}
+\index{EELens@{EELens}!EELens@{EELens}}
+\index{EELens@{EELens}!EELens@{EELens}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}EELens::EELens (void)}
+
+\label{EELens_a1}
+\index{EELens@{EELens}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!EELens@{EELens}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}void EELens::Initialize (void)\hspace{0.3cm}{\tt  [virtual]}}
+
+
+
+Reimplemented from {\bf TPlane} {\rm (p.~\pageref{TPlane_a3})}.\label{EELens_a2}
+\index{EELens@{EELens}!Cross@{Cross}}
+\index{Cross@{Cross}!EELens@{EELens}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}bool EELens::Cross ({\bf Particle} $\ast$ {\em const p})\hspace{0.3cm}{\tt  [virtual]}}
+
+
+
+Reimplemented from {\bf TPlane} {\rm (p.~\pageref{TPlane_a4})}.\vspace{0.4cm}\hrule\vspace{0.2cm}
+\subsection*{Member Data Documentation}
+\label{EELens_d0}
+\index{EELens@{EELens}!iMode@{i\-Mode}}
+\index{iMode@{i\-Mode}!EELens@{EELens}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}int EELens::i\-Mode\hspace{0.3cm}{\tt  [static]}}
+
+\label{EELens_d1}
+\index{EELens@{EELens}!iGroup@{i\-Group}}
+\index{iGroup@{i\-Group}!EELens@{EELens}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}int EELens::i\-Group\hspace{0.3cm}{\tt  [static]}}
+
+
+
+Reimplemented from {\bf TPlane} {\rm (p.~\pageref{TPlane_b0})}.\label{EELens_d2}
+\index{EELens@{EELens}!pFile@{p\-File}}
+\index{pFile@{p\-File}!EELens@{EELens}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}FILE$\ast$ EELens::p\-File\hspace{0.3cm}{\tt  [static]}}
+
+\label{EELens_d3}
+\index{EELens@{EELens}!iNumLens@{i\-Num\-Lens}}
+\index{iNumLens@{i\-Num\-Lens}!EELens@{EELens}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}int EELens::i\-Num\-Lens\hspace{0.3cm}{\tt  [static]}}
+
+\label{EELens_d4}
+\index{EELens@{EELens}!iNumBeams@{i\-Num\-Beams}}
+\index{iNumBeams@{i\-Num\-Beams}!EELens@{EELens}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}int EELens::i\-Num\-Beams\hspace{0.3cm}{\tt  [static]}}
+
+\label{EELens_d5}
+\index{EELens@{EELens}!iNumElements@{i\-Num\-Elements}}
+\index{iNumElements@{i\-Num\-Elements}!EELens@{EELens}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}int EELens::i\-Num\-Elements\hspace{0.3cm}{\tt  [static]}}
+
+\label{EELens_d6}
+\index{EELens@{EELens}!iNumSegments@{i\-Num\-Segments}}
+\index{iNumSegments@{i\-Num\-Segments}!EELens@{EELens}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}int EELens::i\-Num\-Segments\hspace{0.3cm}{\tt  [static]}}
+
+\label{EELens_d7}
+\index{EELens@{EELens}!LensMap@{Lens\-Map}}
+\index{LensMap@{Lens\-Map}!EELens@{EELens}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}int$\ast$ EELens::Lens\-Map\hspace{0.3cm}{\tt  [static]}}
+
+\label{EELens_d8}
+\index{EELens@{EELens}!CurrentMap@{Current\-Map}}
+\index{CurrentMap@{Current\-Map}!EELens@{EELens}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf real}$\ast$ EELens::Current\-Map\hspace{0.3cm}{\tt  [static]}}
+
+\vspace{0.4cm}\hrule\vspace{0.2cm}
+The documentation for this class was generated from the following files:\begin{CompactItemize}
+\item 
+{\bf plane.h}\item 
+{\bf plane.cc}\end{CompactItemize}

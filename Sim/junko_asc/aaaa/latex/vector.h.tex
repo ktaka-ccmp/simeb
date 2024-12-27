@@ -1,0 +1,196 @@
+\section{vector.h File Reference}
+\label{vector.h}\index{vector.h@{vector.h}}
+
+
+\subsection*{Compounds}
+\begin{CompactItemize}
+\item 
+class {\bf TXY}
+\item 
+class {\bf TXYZ}
+\end{CompactItemize}
+\subsection*{Functions}
+\begin{CompactItemize}
+\item 
+ostream\& {\bf operator$<$$<$} (ostream \&stream\_\-out, {\bf TXY} xy)
+\item 
+ostream\& {\bf operator$<$$<$} (ostream \&stream\_\-out,{\bf TXYZ} xyz)
+\item 
+{\bf TXYZ} {\bf operator+} ({\bf TXYZ} const xyz1, {\bf TXYZ} const xyz2)
+\item 
+{\bf TXY} {\bf operator+} ({\bf TXY} const xy1, {\bf TXY} const xy2)
+\item 
+{\bf TXYZ} {\bf operator+} ({\bf TXYZ} const xyz, {\bf TXY} const xy)
+\item 
+{\bf TXYZ}\& {\bf operator+=} ({\bf TXYZ} \&xyz1, {\bf TXYZ} xyz2)
+\item 
+{\bf TXY}\& {\bf operator+=} ({\bf TXY} \&xy1, {\bf TXY} xy2)
+\item 
+{\bf TXYZ}\& {\bf operator+=} ({\bf TXYZ} \&xyz, {\bf TXY} xy)
+\item 
+{\bf TXYZ} {\bf operator-} ({\bf TXYZ} xyz1, {\bf TXYZ} xyz2)
+\item 
+{\bf TXY} {\bf operator-} ({\bf TXY} xy1, {\bf TXY} xy2)
+\item 
+{\bf TXYZ} {\bf operator-} ({\bf TXY} xy, {\bf TXYZ} xyz)
+\item 
+{\bf TXYZ}\& {\bf operator-=} ({\bf TXYZ} \&xyz1, {\bf TXYZ} xyz2)
+\item 
+{\bf TXY}\& {\bf operator-=} ({\bf TXY} \&xy1, {\bf TXY} \&xy2)
+\item 
+{\bf TXYZ}\& {\bf operator-} ({\bf TXYZ} \&xyz)
+\item 
+{\bf real} {\bf operator $\ast$} ({\bf TXYZ} xyz1, {\bf TXYZ} xyz2)
+\item 
+{\bf TXYZ}\& {\bf operator $\ast$=} ({\bf TXYZ} \&xyz, {\bf real} r)
+\item 
+{\bf TXYZ} {\bf operator $\ast$} ({\bf real} r, {\bf TXYZ} xyz)
+\item 
+{\bf TXYZ} {\bf operator/} ({\bf TXYZ} xyz, {\bf real} r)
+\item 
+{\bf TXYZ}\& {\bf operator/=} ({\bf TXYZ} \&xyz, {\bf real} r)
+\item 
+{\bf real} {\bf operator $\ast$} ({\bf TXY} xy1, {\bf TXY} xy2)
+\item 
+{\bf TXY} {\bf operator $\ast$} ({\bf real} r, {\bf TXY} xy)
+\item 
+{\bf TXY} {\bf operator/} ({\bf TXY} xy, {\bf real} r)
+\item 
+{\bf TXYZ}\& {\bf operator-=} ({\bf TXYZ} \&xyz, {\bf TXY} xy)
+\end{CompactItemize}
+\subsection*{Variables}
+\begin{CompactItemize}
+\item 
+{\bf TXY} {\bf xy0}
+\item 
+{\bf TXYZ} {\bf xyz0}
+\end{CompactItemize}
+\vspace{0.4cm}\hrule\vspace{0.2cm}
+\subsection*{Function Documentation}
+\label{vector.h_a0}
+\index{vector.h@{vector.h}!operator<<@{operator$<$$<$}}
+\index{operator<<@{operator$<$$<$}!vector.h@{vector.h}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}ostream \& operator$<$$<$ (ostream \& {\em stream\_\-out}, {\bf TXY} {\em xyz})\hspace{0.3cm}{\tt  [inline]}}
+
+\label{vector.h_a1}
+\index{vector.h@{vector.h}!operator<<@{operator$<$$<$}}
+\index{operator<<@{operator$<$$<$}!vector.h@{vector.h}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}ostream \& operator$<$$<$ (ostream \& {\em stream\_\-out}, {\bf TXYZ} {\em xyz})\hspace{0.3cm}{\tt  [inline]}}
+
+\label{vector.h_a2}
+\index{vector.h@{vector.h}!operator+@{operator+}}
+\index{operator+@{operator+}!vector.h@{vector.h}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TXYZ} operator+ ({\bf TXYZ} const {\em xyz}, {\bf TXYZ} const {\em xyz2})\hspace{0.3cm}{\tt  [inline]}}
+
+\label{vector.h_a3}
+\index{vector.h@{vector.h}!operator+@{operator+}}
+\index{operator+@{operator+}!vector.h@{vector.h}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TXY} operator+ ({\bf TXY} const {\em xy1}, {\bf TXY} const {\em xy2})\hspace{0.3cm}{\tt  [inline]}}
+
+\label{vector.h_a4}
+\index{vector.h@{vector.h}!operator+@{operator+}}
+\index{operator+@{operator+}!vector.h@{vector.h}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TXYZ} operator+ ({\bf TXYZ} const {\em xyz}, {\bf TXY} const {\em xy})\hspace{0.3cm}{\tt  [inline]}}
+
+\label{vector.h_a5}
+\index{vector.h@{vector.h}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!vector.h@{vector.h}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TXYZ} \& operator+= ({\bf TXYZ} \& {\em xyz}, {\bf TXYZ} {\em xy})\hspace{0.3cm}{\tt  [inline]}}
+
+\label{vector.h_a6}
+\index{vector.h@{vector.h}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!vector.h@{vector.h}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TXY} \& operator+= ({\bf TXY} \& {\em xy1}, {\bf TXY} {\em xy2})\hspace{0.3cm}{\tt  [inline]}}
+
+\label{vector.h_a7}
+\index{vector.h@{vector.h}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!vector.h@{vector.h}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TXYZ} \& operator+= ({\bf TXYZ} \& {\em xyz}, {\bf TXY} {\em xy})\hspace{0.3cm}{\tt  [inline]}}
+
+\label{vector.h_a8}
+\index{vector.h@{vector.h}!operator-@{operator-}}
+\index{operator-@{operator-}!vector.h@{vector.h}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TXYZ} operator- ({\bf TXYZ} {\em xy}, {\bf TXYZ} {\em xyz})\hspace{0.3cm}{\tt  [inline]}}
+
+\label{vector.h_a9}
+\index{vector.h@{vector.h}!operator-@{operator-}}
+\index{operator-@{operator-}!vector.h@{vector.h}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TXYZ} operator- ({\bf TXY} {\em xy}, {\bf TXY} {\em xyz})\hspace{0.3cm}{\tt  [inline]}}
+
+\label{vector.h_a10}
+\index{vector.h@{vector.h}!operator-@{operator-}}
+\index{operator-@{operator-}!vector.h@{vector.h}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TXYZ} operator- ({\bf TXY} {\em xy}, {\bf TXYZ} {\em xyz})\hspace{0.3cm}{\tt  [inline]}}
+
+\label{vector.h_a11}
+\index{vector.h@{vector.h}!operator-=@{operator-=}}
+\index{operator-=@{operator-=}!vector.h@{vector.h}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TXYZ} \& operator-= ({\bf TXYZ} \& {\em xyz}, {\bf TXYZ} {\em xy})\hspace{0.3cm}{\tt  [inline]}}
+
+\label{vector.h_a12}
+\index{vector.h@{vector.h}!operator-=@{operator-=}}
+\index{operator-=@{operator-=}!vector.h@{vector.h}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TXY} \& operator-= ({\bf TXY} \& {\em xy1}, {\bf TXY} \& {\em xy2})\hspace{0.3cm}{\tt  [inline]}}
+
+\label{vector.h_a13}
+\index{vector.h@{vector.h}!operator-@{operator-}}
+\index{operator-@{operator-}!vector.h@{vector.h}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TXYZ} \& operator- ({\bf TXYZ} \& {\em xyz})\hspace{0.3cm}{\tt  [inline]}}
+
+\label{vector.h_a14}
+\index{vector.h@{vector.h}!operator *@{operator $\ast$}}
+\index{operator *@{operator $\ast$}!vector.h@{vector.h}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TXY} operator $\ast$ ({\bf TXYZ} {\em xy}, {\bf TXYZ} {\em xy2})\hspace{0.3cm}{\tt  [inline]}}
+
+\label{vector.h_a15}
+\index{vector.h@{vector.h}!operator *=@{operator $\ast$=}}
+\index{operator *=@{operator $\ast$=}!vector.h@{vector.h}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TXYZ} \& operator $\ast$= ({\bf TXYZ} \& {\em xyz}, {\bf real} {\em r})\hspace{0.3cm}{\tt  [inline]}}
+
+\label{vector.h_a16}
+\index{vector.h@{vector.h}!operator *@{operator $\ast$}}
+\index{operator *@{operator $\ast$}!vector.h@{vector.h}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TXY} operator $\ast$ ({\bf real} {\em r}, {\bf TXYZ} {\em xy})\hspace{0.3cm}{\tt  [inline]}}
+
+\label{vector.h_a17}
+\index{vector.h@{vector.h}!operator/@{operator/}}
+\index{operator/@{operator/}!vector.h@{vector.h}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TXY} operator/ ({\bf TXYZ} {\em xy}, {\bf real} {\em r})\hspace{0.3cm}{\tt  [inline]}}
+
+\label{vector.h_a18}
+\index{vector.h@{vector.h}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!vector.h@{vector.h}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TXYZ} \& operator/= ({\bf TXYZ} \& {\em xyz}, {\bf real} {\em r})\hspace{0.3cm}{\tt  [inline]}}
+
+\label{vector.h_a19}
+\index{vector.h@{vector.h}!operator *@{operator $\ast$}}
+\index{operator *@{operator $\ast$}!vector.h@{vector.h}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TXY} operator $\ast$ ({\bf TXY} {\em xy}, {\bf TXY} {\em xy2})\hspace{0.3cm}{\tt  [inline]}}
+
+\label{vector.h_a20}
+\index{vector.h@{vector.h}!operator *@{operator $\ast$}}
+\index{operator *@{operator $\ast$}!vector.h@{vector.h}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TXY} operator $\ast$ ({\bf real} {\em r}, {\bf TXY} {\em xy})\hspace{0.3cm}{\tt  [inline]}}
+
+\label{vector.h_a21}
+\index{vector.h@{vector.h}!operator/@{operator/}}
+\index{operator/@{operator/}!vector.h@{vector.h}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TXY} operator/ ({\bf TXY} {\em xy}, {\bf real} {\em r})\hspace{0.3cm}{\tt  [inline]}}
+
+\label{vector.h_a22}
+\index{vector.h@{vector.h}!operator-=@{operator-=}}
+\index{operator-=@{operator-=}!vector.h@{vector.h}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TXYZ} \& operator-= ({\bf TXYZ} \& {\em xyz}, {\bf TXY} {\em xy})\hspace{0.3cm}{\tt  [inline]}}
+
+\vspace{0.4cm}\hrule\vspace{0.2cm}
+\subsection*{Variable Documentation}
+\label{vector.h_a23}
+\index{vector.h@{vector.h}!xy0@{xy0}}
+\index{xy0@{xy0}!vector.h@{vector.h}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TXY} xy0}
+
+\label{vector.h_a24}
+\index{vector.h@{vector.h}!xyz0@{xyz0}}
+\index{xyz0@{xyz0}!vector.h@{vector.h}}
+\subsection{\setlength{\rightskip}{0pt plus 5cm}{\bf TXYZ} xyz0}
+

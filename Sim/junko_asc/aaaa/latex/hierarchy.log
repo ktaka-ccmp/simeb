@@ -1,0 +1,23 @@
+This is TeX, Version 3.14159 (Web2C 7.2) (format=latex 1999.1.6)  16 DEC 1999 20:36
+**hierarchy.tex
+(hierarchy.tex
+LaTeX2e <1998/06/01>
+! Undefined control sequence.
+l.1 \section
+            { Class Hierarchy}
+? 
+! Emergency stop.
+l.1 \section
+            { Class Hierarchy}
+End of file on the terminal!
+
+ 
+Here is how much of TeX's memory you used:
+ 3 strings out of 10979
+ 35 string characters out of 74402
+ 42044 words of memory out of 263001
+ 2956 multiletter control sequences out of 10000+0
+ 3640 words of font info for 14 fonts, out of 200000 for 1000
+ 14 hyphenation exceptions out of 1000
+ 4i,0n,1p,42b,7s stack positions out of 300i,100n,500p,30000b,4000s
+No pages of output.

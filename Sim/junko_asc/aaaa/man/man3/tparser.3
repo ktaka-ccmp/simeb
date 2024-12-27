@@ -1,0 +1,108 @@
+.TH TParser 3 "16 Dec 1999" "simeb_ebit" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+TParser \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <setup.h>\fR
+.PP
+Inherited by \fBTArgParser\fR\fC [virtual]\fR, and \fBTFileParser\fR\fC [virtual]\fR.
+.PP
+.SS Public Members
+
+.in +1c
+.ti -1c
+.RI "\fBTParser\fR (void)"
+.br
+.ti -1c
+.RI "virtual \fB~TParser\fR (void)"
+.br
+.ti -1c
+.RI "virtual bool \fBGetToken\fR (void) = 0"
+.br
+.ti -1c
+.RI "virtual void \fBError\fR (void) = 0"
+.br
+.ti -1c
+.RI "bool \fBEof\fR (void)"
+.br
+.ti -1c
+.RI "TParser& \fBoperator>>\fR (char *s)"
+.br
+.ti -1c
+.RI "TParser& \fBoperator>>\fR (unsigned &u)"
+.br
+.ti -1c
+.RI "TParser& \fBoperator>>\fR (int &i)"
+.br
+.ti -1c
+.RI "TParser& \fBoperator>>\fR (long &l)"
+.br
+.ti -1c
+.RI "TParser& \fBoperator>>\fR (\fBreal\fR &r)"
+.br
+.ti -1c
+.RI "TParser& \fBoperator>>\fR (\fBTXYZ\fR &xyz)"
+.br
+.ti -1c
+.RI "TParser& \fBoperator>>\fR (\fBTXY\fR &xy)"
+.br
+.ti -1c
+.RI "TParser& \fBoperator>>\fR (bool &b)"
+.br
+.in -1c
+.SS Protected Members
+
+.in +1c
+.ti -1c
+.RI "bool \fBEof\fR (bool b)"
+.br
+.ti -1c
+.RI "char \fBsToken\fR [MAX_TOKEN]"
+.br
+.in -1c
+.SH DETAILED DESCRIPTION
+.PP 
+.SH MEMBER FUNCTION DOCUMENTATION
+.PP 
+.SS TParser::TParser (void)\fC [inline]\fR
+.PP
+.SS virtual TParser::~TParser (void)\fC [inline, virtual]\fR
+.PP
+.SS virtual bool TParser::GetToken (void)\fC [pure virtual]\fR
+.PP
+Reimplemented in \fBTArgParser\fR, and \fBTFileParser\fR.
+.SS virtual void TParser::Error (void)\fC [pure virtual]\fR
+.PP
+Reimplemented in \fBTArgParser\fR, and \fBTFileParser\fR.
+.SS bool TParser::Eof (void)\fC [inline]\fR
+.PP
+.SS TParser & TParser::operator>> (char * s)\fC [inline]\fR
+.PP
+.SS TParser & TParser::operator>> (unsigned & u)\fC [inline]\fR
+.PP
+.SS TParser & TParser::operator>> (int & i)\fC [inline]\fR
+.PP
+.SS TParser & TParser::operator>> (long & l)\fC [inline]\fR
+.PP
+.SS TParser & TParser::operator>> (\fBreal\fR & r)\fC [inline]\fR
+.PP
+.SS TParser & TParser::operator>> (\fBTXYZ\fR & xyz)\fC [inline]\fR
+.PP
+.SS TParser & TParser::operator>> (\fBTXY\fR & xy)\fC [inline]\fR
+.PP
+.SS TParser & TParser::operator>> (bool & b)\fC [inline]\fR
+.PP
+.SS bool TParser::Eof (bool b)\fC [inline, protected]\fR
+.PP
+.SH MEMBER DATA DOCUMENTATION
+.PP 
+.SS char TParser::sToken[MAX_TOKEN]\fC [protected]\fR
+.PP
+
+
+.SH AUTHOR
+.PP 
+Generated automatically by Doxygen for simeb_ebit from the source code.

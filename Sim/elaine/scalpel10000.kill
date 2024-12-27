@@ -1,0 +1,4 @@
+kill 11565
+rm scalpel10000.progress
+rm scalpel10000.poll
+rm scalpel10000.kill

@@ -1,0 +1,158 @@
+.TH vector.h 3 "16 Dec 1999" "simeb_ebit" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+vector.h \- 
+.SH SYNOPSIS
+.br
+.PP
+.SS Compounds
+
+.in +1c
+.ti -1c
+.RI "class \fBTXY\fR"
+.br
+.ti -1c
+.RI "class \fBTXYZ\fR"
+.br
+.in -1c
+.SS Functions
+
+.in +1c
+.ti -1c
+.RI "ostream& \fBoperator<<\fR (ostream &stream_out, \fBTXY\fR xy)"
+.br
+.ti -1c
+.RI "ostream& \fBoperator<<\fR (ostream &stream_out,\fBTXYZ\fR xyz)"
+.br
+.ti -1c
+.RI "\fBTXYZ\fR \fBoperator+\fR (\fBTXYZ\fR const xyz1, \fBTXYZ\fR const xyz2)"
+.br
+.ti -1c
+.RI "\fBTXY\fR \fBoperator+\fR (\fBTXY\fR const xy1, \fBTXY\fR const xy2)"
+.br
+.ti -1c
+.RI "\fBTXYZ\fR \fBoperator+\fR (\fBTXYZ\fR const xyz, \fBTXY\fR const xy)"
+.br
+.ti -1c
+.RI "\fBTXYZ\fR& \fBoperator+=\fR (\fBTXYZ\fR &xyz1, \fBTXYZ\fR xyz2)"
+.br
+.ti -1c
+.RI "\fBTXY\fR& \fBoperator+=\fR (\fBTXY\fR &xy1, \fBTXY\fR xy2)"
+.br
+.ti -1c
+.RI "\fBTXYZ\fR& \fBoperator+=\fR (\fBTXYZ\fR &xyz, \fBTXY\fR xy)"
+.br
+.ti -1c
+.RI "\fBTXYZ\fR \fBoperator-\fR (\fBTXYZ\fR xyz1, \fBTXYZ\fR xyz2)"
+.br
+.ti -1c
+.RI "\fBTXY\fR \fBoperator-\fR (\fBTXY\fR xy1, \fBTXY\fR xy2)"
+.br
+.ti -1c
+.RI "\fBTXYZ\fR \fBoperator-\fR (\fBTXY\fR xy, \fBTXYZ\fR xyz)"
+.br
+.ti -1c
+.RI "\fBTXYZ\fR& \fBoperator-=\fR (\fBTXYZ\fR &xyz1, \fBTXYZ\fR xyz2)"
+.br
+.ti -1c
+.RI "\fBTXY\fR& \fBoperator-=\fR (\fBTXY\fR &xy1, \fBTXY\fR &xy2)"
+.br
+.ti -1c
+.RI "\fBTXYZ\fR& \fBoperator-\fR (\fBTXYZ\fR &xyz)"
+.br
+.ti -1c
+.RI "\fBreal\fR \fBoperator *\fR (\fBTXYZ\fR xyz1, \fBTXYZ\fR xyz2)"
+.br
+.ti -1c
+.RI "\fBTXYZ\fR& \fBoperator *=\fR (\fBTXYZ\fR &xyz, \fBreal\fR r)"
+.br
+.ti -1c
+.RI "\fBTXYZ\fR \fBoperator *\fR (\fBreal\fR r, \fBTXYZ\fR xyz)"
+.br
+.ti -1c
+.RI "\fBTXYZ\fR \fBoperator/\fR (\fBTXYZ\fR xyz, \fBreal\fR r)"
+.br
+.ti -1c
+.RI "\fBTXYZ\fR& \fBoperator/=\fR (\fBTXYZ\fR &xyz, \fBreal\fR r)"
+.br
+.ti -1c
+.RI "\fBreal\fR \fBoperator *\fR (\fBTXY\fR xy1, \fBTXY\fR xy2)"
+.br
+.ti -1c
+.RI "\fBTXY\fR \fBoperator *\fR (\fBreal\fR r, \fBTXY\fR xy)"
+.br
+.ti -1c
+.RI "\fBTXY\fR \fBoperator/\fR (\fBTXY\fR xy, \fBreal\fR r)"
+.br
+.ti -1c
+.RI "\fBTXYZ\fR& \fBoperator-=\fR (\fBTXYZ\fR &xyz, \fBTXY\fR xy)"
+.br
+.in -1c
+.SS Variables
+
+.in +1c
+.ti -1c
+.RI "\fBTXY\fR \fBxy0\fR"
+.br
+.ti -1c
+.RI "\fBTXYZ\fR \fBxyz0\fR"
+.br
+.in -1c
+.SH FUNCTION DOCUMENTATION
+.PP 
+.SS ostream & operator<< (ostream & stream_out, \fBTXY\fR xyz)\fC [inline]\fR
+.PP
+.SS ostream & operator<< (ostream & stream_out, \fBTXYZ\fR xyz)\fC [inline]\fR
+.PP
+.SS \fBTXYZ\fR operator+ (\fBTXYZ\fR const xyz, \fBTXYZ\fR const xyz2)\fC [inline]\fR
+.PP
+.SS \fBTXY\fR operator+ (\fBTXY\fR const xy1, \fBTXY\fR const xy2)\fC [inline]\fR
+.PP
+.SS \fBTXYZ\fR operator+ (\fBTXYZ\fR const xyz, \fBTXY\fR const xy)\fC [inline]\fR
+.PP
+.SS \fBTXYZ\fR & operator+= (\fBTXYZ\fR & xyz, \fBTXYZ\fR xy)\fC [inline]\fR
+.PP
+.SS \fBTXY\fR & operator+= (\fBTXY\fR & xy1, \fBTXY\fR xy2)\fC [inline]\fR
+.PP
+.SS \fBTXYZ\fR & operator+= (\fBTXYZ\fR & xyz, \fBTXY\fR xy)\fC [inline]\fR
+.PP
+.SS \fBTXYZ\fR operator- (\fBTXYZ\fR xy, \fBTXYZ\fR xyz)\fC [inline]\fR
+.PP
+.SS \fBTXYZ\fR operator- (\fBTXY\fR xy, \fBTXY\fR xyz)\fC [inline]\fR
+.PP
+.SS \fBTXYZ\fR operator- (\fBTXY\fR xy, \fBTXYZ\fR xyz)\fC [inline]\fR
+.PP
+.SS \fBTXYZ\fR & operator-= (\fBTXYZ\fR & xyz, \fBTXYZ\fR xy)\fC [inline]\fR
+.PP
+.SS \fBTXY\fR & operator-= (\fBTXY\fR & xy1, \fBTXY\fR & xy2)\fC [inline]\fR
+.PP
+.SS \fBTXYZ\fR & operator- (\fBTXYZ\fR & xyz)\fC [inline]\fR
+.PP
+.SS \fBTXY\fR operator * (\fBTXYZ\fR xy, \fBTXYZ\fR xy2)\fC [inline]\fR
+.PP
+.SS \fBTXYZ\fR & operator *= (\fBTXYZ\fR & xyz, \fBreal\fR r)\fC [inline]\fR
+.PP
+.SS \fBTXY\fR operator * (\fBreal\fR r, \fBTXYZ\fR xy)\fC [inline]\fR
+.PP
+.SS \fBTXY\fR operator/ (\fBTXYZ\fR xy, \fBreal\fR r)\fC [inline]\fR
+.PP
+.SS \fBTXYZ\fR & operator/= (\fBTXYZ\fR & xyz, \fBreal\fR r)\fC [inline]\fR
+.PP
+.SS \fBTXY\fR operator * (\fBTXY\fR xy, \fBTXY\fR xy2)\fC [inline]\fR
+.PP
+.SS \fBTXY\fR operator * (\fBreal\fR r, \fBTXY\fR xy)\fC [inline]\fR
+.PP
+.SS \fBTXY\fR operator/ (\fBTXY\fR xy, \fBreal\fR r)\fC [inline]\fR
+.PP
+.SS \fBTXYZ\fR & operator-= (\fBTXYZ\fR & xyz, \fBTXY\fR xy)\fC [inline]\fR
+.PP
+.SH VARIABLE DOCUMENTATION
+.PP 
+.SS \fBTXY\fR xy0
+.PP
+.SS \fBTXYZ\fR xyz0
+.PP
+.SH AUTHOR
+.PP 
+Generated automatically by Doxygen for simeb_ebit from the source code.

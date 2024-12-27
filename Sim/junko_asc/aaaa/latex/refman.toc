@@ -1,0 +1,324 @@
+\contentsline {chapter}{\numberline {1}simeb\_\discretionary {-}{}{}ebit Hierarchical Index}{1}
+\contentsline {section}{\numberline {1.1}simeb\_\discretionary {-}{}{}ebit Class Hierarchy}{1}
+\contentsline {chapter}{\numberline {2}simeb\_\discretionary {-}{}{}ebit Compound Index}{3}
+\contentsline {section}{\numberline {2.1}simeb\_\discretionary {-}{}{}ebit Compound List}{3}
+\contentsline {chapter}{\numberline {3}simeb\_\discretionary {-}{}{}ebit File Index}{5}
+\contentsline {section}{\numberline {3.1}simeb\_\discretionary {-}{}{}ebit File List}{5}
+\contentsline {chapter}{\numberline {4}simeb\_\discretionary {-}{}{}ebit Class Documentation}{7}
+\contentsline {section}{\numberline {4.1}Column Class Reference}{7}
+\contentsline {subsection}{\numberline {4.1.1}\setlength {\rightskip }{0pt plus 5cm}int Column::i\discretionary {-}{}{}Get\discretionary {-}{}{}Num\discretionary {-}{}{}Planes (void)\hspace {0.3cm}{\tt [inline, static]}}{8}
+\contentsline {subsection}{\numberline {4.1.2}\setlength {\rightskip }{0pt plus 5cm}{\bf TSource} $\ast $ Column::Get\discretionary {-}{}{}Source (void)\hspace {0.3cm}{\tt [inline, static]}}{8}
+\contentsline {subsection}{\numberline {4.1.3}\setlength {\rightskip }{0pt plus 5cm}{\bf TPlane} $\ast $ Column::Get\discretionary {-}{}{}Plane (int const {\em i})\hspace {0.3cm}{\tt [inline, static]}}{8}
+\contentsline {subsection}{\numberline {4.1.4}\setlength {\rightskip }{0pt plus 5cm}{\bf real} Column::r\discretionary {-}{}{}Get\discretionary {-}{}{}Z (int const {\em i})\hspace {0.3cm}{\tt [inline, static]}}{8}
+\contentsline {subsection}{\numberline {4.1.5}\setlength {\rightskip }{0pt plus 5cm}{\bf real} Column::r\discretionary {-}{}{}Get\discretionary {-}{}{}Capture (void)\hspace {0.3cm}{\tt [inline, static]}}{8}
+\contentsline {subsection}{\numberline {4.1.6}\setlength {\rightskip }{0pt plus 5cm}void Column::Setup (void)\hspace {0.3cm}{\tt [static]}}{8}
+\contentsline {subsection}{\numberline {4.1.7}\setlength {\rightskip }{0pt plus 5cm}void Column::Initialize (void)\hspace {0.3cm}{\tt [static]}}{8}
+\contentsline {subsection}{\numberline {4.1.8}\setlength {\rightskip }{0pt plus 5cm}void Column::Parse ({\bf TParser} \& {\em parser}, char $\ast $ {\em s\_\discretionary {-}{}{}token})\hspace {0.3cm}{\tt [static]}}{8}
+\contentsline {subsection}{\numberline {4.1.9}\setlength {\rightskip }{0pt plus 5cm}void Column::Fly ({\bf real} const r\_\discretionary {-}{}{}dt)\hspace {0.3cm}{\tt [static]}}{8}
+\contentsline {subsection}{\numberline {4.1.10}\setlength {\rightskip }{0pt plus 5cm}{\bf real} const Column::r\discretionary {-}{}{}Precision\hspace {0.3cm}{\tt [static]}}{8}
+\contentsline {section}{\numberline {4.2}EELens Class Reference}{9}
+\contentsline {subsection}{\numberline {4.2.1}\setlength {\rightskip }{0pt plus 5cm}EELens::EELens (void)}{9}
+\contentsline {subsection}{\numberline {4.2.2}\setlength {\rightskip }{0pt plus 5cm}void EELens::Initialize (void)\hspace {0.3cm}{\tt [virtual]}}{9}
+\contentsline {subsection}{\numberline {4.2.3}\setlength {\rightskip }{0pt plus 5cm}bool EELens::Cross ({\bf Particle} $\ast $ {\em const p})\hspace {0.3cm}{\tt [virtual]}}{10}
+\contentsline {subsection}{\numberline {4.2.4}\setlength {\rightskip }{0pt plus 5cm}int EELens::i\discretionary {-}{}{}Mode\hspace {0.3cm}{\tt [static]}}{10}
+\contentsline {subsection}{\numberline {4.2.5}\setlength {\rightskip }{0pt plus 5cm}int EELens::i\discretionary {-}{}{}Group\hspace {0.3cm}{\tt [static]}}{10}
+\contentsline {subsection}{\numberline {4.2.6}\setlength {\rightskip }{0pt plus 5cm}FILE$\ast $ EELens::p\discretionary {-}{}{}File\hspace {0.3cm}{\tt [static]}}{10}
+\contentsline {subsection}{\numberline {4.2.7}\setlength {\rightskip }{0pt plus 5cm}int EELens::i\discretionary {-}{}{}Num\discretionary {-}{}{}Lens\hspace {0.3cm}{\tt [static]}}{10}
+\contentsline {subsection}{\numberline {4.2.8}\setlength {\rightskip }{0pt plus 5cm}int EELens::i\discretionary {-}{}{}Num\discretionary {-}{}{}Beams\hspace {0.3cm}{\tt [static]}}{10}
+\contentsline {subsection}{\numberline {4.2.9}\setlength {\rightskip }{0pt plus 5cm}int EELens::i\discretionary {-}{}{}Num\discretionary {-}{}{}Elements\hspace {0.3cm}{\tt [static]}}{10}
+\contentsline {subsection}{\numberline {4.2.10}\setlength {\rightskip }{0pt plus 5cm}int EELens::i\discretionary {-}{}{}Num\discretionary {-}{}{}Segments\hspace {0.3cm}{\tt [static]}}{10}
+\contentsline {subsection}{\numberline {4.2.11}\setlength {\rightskip }{0pt plus 5cm}int$\ast $ EELens::Lens\discretionary {-}{}{}Map\hspace {0.3cm}{\tt [static]}}{10}
+\contentsline {subsection}{\numberline {4.2.12}\setlength {\rightskip }{0pt plus 5cm}{\bf real}$\ast $ EELens::Current\discretionary {-}{}{}Map\hspace {0.3cm}{\tt [static]}}{10}
+\contentsline {section}{\numberline {4.3}Particle Class Reference}{11}
+\contentsline {subsection}{\numberline {4.3.1}\setlength {\rightskip }{0pt plus 5cm}{\bf real} Particle::Impact ({\bf real} const {\em r\_\discretionary {-}{}{}dz})\hspace {0.3cm}{\tt [inline]}}{13}
+\contentsline {subsection}{\numberline {4.3.2}\setlength {\rightskip }{0pt plus 5cm}bool Particle::Cross ({\bf real} const {\em r\_\discretionary {-}{}{}dz})\hspace {0.3cm}{\tt [inline]}}{13}
+\contentsline {subsection}{\numberline {4.3.3}\setlength {\rightskip }{0pt plus 5cm}bool Particle::b\discretionary {-}{}{}Incr\discretionary {-}{}{}Plane (void)\hspace {0.3cm}{\tt [inline]}}{13}
+\contentsline {subsection}{\numberline {4.3.4}\setlength {\rightskip }{0pt plus 5cm}Particle::Particle (void)}{13}
+\contentsline {subsection}{\numberline {4.3.5}\setlength {\rightskip }{0pt plus 5cm}int Particle::i\discretionary {-}{}{}Get\discretionary {-}{}{}Plane (void) const\hspace {0.3cm}{\tt [inline]}}{13}
+\contentsline {subsection}{\numberline {4.3.6}\setlength {\rightskip }{0pt plus 5cm}int Particle::i\discretionary {-}{}{}Get\discretionary {-}{}{}Id (void) const\hspace {0.3cm}{\tt [inline]}}{13}
+\contentsline {subsection}{\numberline {4.3.7}\setlength {\rightskip }{0pt plus 5cm}int Particle::i\discretionary {-}{}{}Get\discretionary {-}{}{}Beam (void) const\hspace {0.3cm}{\tt [inline]}}{13}
+\contentsline {subsection}{\numberline {4.3.8}\setlength {\rightskip }{0pt plus 5cm}void Particle::i\discretionary {-}{}{}Set\discretionary {-}{}{}Id (int const {\em i\_\discretionary {-}{}{}id})\hspace {0.3cm}{\tt [inline]}}{13}
+\contentsline {subsection}{\numberline {4.3.9}\setlength {\rightskip }{0pt plus 5cm}void Particle::i\discretionary {-}{}{}Set\discretionary {-}{}{}Beam (int const {\em i\_\discretionary {-}{}{}beam})\hspace {0.3cm}{\tt [inline]}}{13}
+\contentsline {subsection}{\numberline {4.3.10}\setlength {\rightskip }{0pt plus 5cm}void Particle::Commit (void)\hspace {0.3cm}{\tt [inline]}}{13}
+\contentsline {subsection}{\numberline {4.3.11}\setlength {\rightskip }{0pt plus 5cm}void Particle::Fly ({\bf TXYZ} \& {\em xyz\_\discretionary {-}{}{}p}, {\bf TXYZ} \& {\em xyz\_\discretionary {-}{}{}v}, {\bf real} const {\em r\_\discretionary {-}{}{}dt}) const\hspace {0.3cm}{\tt [inline]}}{13}
+\contentsline {subsection}{\numberline {4.3.12}\setlength {\rightskip }{0pt plus 5cm}void Particle::Fly\discretionary {-}{}{}Z ({\bf real} \& {\em r\_\discretionary {-}{}{}pz}, {\bf real} \& {\em r\_\discretionary {-}{}{}vz}, {\bf real} const {\em r\_\discretionary {-}{}{}dt}) const\hspace {0.3cm}{\tt [inline]}}{13}
+\contentsline {subsection}{\numberline {4.3.13}\setlength {\rightskip }{0pt plus 5cm}void Particle::Time\discretionary {-}{}{}Step\discretionary {-}{}{}Incr ({\bf real} const {\em r\_\discretionary {-}{}{}epsilon})\hspace {0.3cm}{\tt [inline]}}{13}
+\contentsline {subsection}{\numberline {4.3.14}\setlength {\rightskip }{0pt plus 5cm}void Particle::Time\discretionary {-}{}{}Step\discretionary {-}{}{}Decr ({\bf real} const {\em r\_\discretionary {-}{}{}epsilon})\hspace {0.3cm}{\tt [inline]}}{13}
+\contentsline {subsection}{\numberline {4.3.15}\setlength {\rightskip }{0pt plus 5cm}void Particle::Time\discretionary {-}{}{}Step\discretionary {-}{}{}Trunc ({\bf real} const {\em r\_\discretionary {-}{}{}ti}, {\bf real} const {\em r\_\discretionary {-}{}{}pert}, {\bf real} const {\em r\_\discretionary {-}{}{}epsilon})\hspace {0.3cm}{\tt [inline]}}{13}
+\contentsline {subsection}{\numberline {4.3.16}\setlength {\rightskip }{0pt plus 5cm}bool Particle::Next\discretionary {-}{}{}Event (void)\hspace {0.3cm}{\tt [inline]}}{13}
+\contentsline {subsection}{\numberline {4.3.17}\setlength {\rightskip }{0pt plus 5cm}int Particle::Emission\discretionary {-}{}{}Order (Particle const $\ast $const $\ast $ {\em pparticle1}, Particle const $\ast $const $\ast $ {\em pparticle2})\hspace {0.3cm}{\tt [static]}}{13}
+\contentsline {subsection}{\numberline {4.3.18}\setlength {\rightskip }{0pt plus 5cm}void Particle::r\discretionary {-}{}{}Set\discretionary {-}{}{}Field\discretionary {-}{}{}A ({\bf real})\hspace {0.3cm}{\tt [inline, static]}}{13}
+\contentsline {subsection}{\numberline {4.3.19}\setlength {\rightskip }{0pt plus 5cm}{\bf real} Particle::r\discretionary {-}{}{}Get\discretionary {-}{}{}Field\discretionary {-}{}{}A ()\hspace {0.3cm}{\tt [inline, static]}}{13}
+\contentsline {subsection}{\numberline {4.3.20}\setlength {\rightskip }{0pt plus 5cm}int Particle::i\discretionary {-}{}{}Get\discretionary {-}{}{}Group (void)\hspace {0.3cm}{\tt [inline, static]}}{13}
+\contentsline {subsection}{\numberline {4.3.21}\setlength {\rightskip }{0pt plus 5cm}void Particle::i\discretionary {-}{}{}Set\discretionary {-}{}{}Group (int)\hspace {0.3cm}{\tt [inline, static]}}{13}
+\contentsline {subsection}{\numberline {4.3.22}\setlength {\rightskip }{0pt plus 5cm}void Particle::i\discretionary {-}{}{}Clear\discretionary {-}{}{}Group (int)\hspace {0.3cm}{\tt [inline, static]}}{13}
+\contentsline {subsection}{\numberline {4.3.23}\setlength {\rightskip }{0pt plus 5cm}int Particle::i\discretionary {-}{}{}Plane}{14}
+\contentsline {subsection}{\numberline {4.3.24}\setlength {\rightskip }{0pt plus 5cm}int Particle::i\discretionary {-}{}{}Id}{14}
+\contentsline {subsection}{\numberline {4.3.25}\setlength {\rightskip }{0pt plus 5cm}int Particle::i\discretionary {-}{}{}Beam}{14}
+\contentsline {subsection}{\numberline {4.3.26}\setlength {\rightskip }{0pt plus 5cm}{\bf TXYZ} Particle::xyz\discretionary {-}{}{}P}{14}
+\contentsline {subsection}{\numberline {4.3.27}\setlength {\rightskip }{0pt plus 5cm}{\bf TXYZ} Particle::xyz\discretionary {-}{}{}V}{14}
+\contentsline {subsection}{\numberline {4.3.28}\setlength {\rightskip }{0pt plus 5cm}{\bf TXYZ} Particle::xyz\discretionary {-}{}{}PCommit}{14}
+\contentsline {subsection}{\numberline {4.3.29}\setlength {\rightskip }{0pt plus 5cm}{\bf TXYZ} Particle::xyz\discretionary {-}{}{}VCommit}{14}
+\contentsline {subsection}{\numberline {4.3.30}\setlength {\rightskip }{0pt plus 5cm}{\bf real} Particle::r\discretionary {-}{}{}Pert}{14}
+\contentsline {subsection}{\numberline {4.3.31}\setlength {\rightskip }{0pt plus 5cm}{\bf real} Particle::r\discretionary {-}{}{}Ti}{14}
+\contentsline {subsection}{\numberline {4.3.32}\setlength {\rightskip }{0pt plus 5cm}{\bf real} Particle::r\discretionary {-}{}{}Tf}{14}
+\contentsline {subsection}{\numberline {4.3.33}\setlength {\rightskip }{0pt plus 5cm}{\bf real} Particle::r\discretionary {-}{}{}Dt}{14}
+\contentsline {subsection}{\numberline {4.3.34}\setlength {\rightskip }{0pt plus 5cm}int Particle::i\discretionary {-}{}{}TOrder}{14}
+\contentsline {subsection}{\numberline {4.3.35}\setlength {\rightskip }{0pt plus 5cm}int Particle::i\discretionary {-}{}{}ZOrder}{14}
+\contentsline {section}{\numberline {4.4}Relativity Class Reference}{15}
+\contentsline {subsection}{\numberline {4.4.1}\setlength {\rightskip }{0pt plus 5cm}void Relativity::r\discretionary {-}{}{}Set\discretionary {-}{}{}QM ({\bf real} {\em r\_\discretionary {-}{}{}qm})\hspace {0.3cm}{\tt [inline, static]}}{15}
+\contentsline {subsection}{\numberline {4.4.2}\setlength {\rightskip }{0pt plus 5cm}const {\bf real} Relativity::r\discretionary {-}{}{}Calc\discretionary {-}{}{}Velocity ({\bf real} {\em r\_\discretionary {-}{}{}voltage})\hspace {0.3cm}{\tt [inline, static]}}{15}
+\contentsline {subsection}{\numberline {4.4.3}\setlength {\rightskip }{0pt plus 5cm}const {\bf real} Relativity::r\discretionary {-}{}{}Calc\discretionary {-}{}{}Velocity ({\bf real} {\em r\_\discretionary {-}{}{}voltage}, {\bf real} {\em r\_\discretionary {-}{}{}alpha})\hspace {0.3cm}{\tt [inline, static]}}{15}
+\contentsline {subsection}{\numberline {4.4.4}\setlength {\rightskip }{0pt plus 5cm}const {\bf real} Relativity::r\discretionary {-}{}{}Calc\discretionary {-}{}{}Voltage ({\bf real} {\em r\_\discretionary {-}{}{}velocity})\hspace {0.3cm}{\tt [inline, static]}}{15}
+\contentsline {subsection}{\numberline {4.4.5}\setlength {\rightskip }{0pt plus 5cm}const {\bf real} Relativity::r\discretionary {-}{}{}Calc\discretionary {-}{}{}Gamma\discretionary {-}{}{}From\discretionary {-}{}{}Velocity ({\bf real} {\em r\_\discretionary {-}{}{}velocity})\hspace {0.3cm}{\tt [inline, static]}}{15}
+\contentsline {subsection}{\numberline {4.4.6}\setlength {\rightskip }{0pt plus 5cm}const {\bf real} Relativity::r\discretionary {-}{}{}Calc\discretionary {-}{}{}Gamma\discretionary {-}{}{}From\discretionary {-}{}{}Voltage ({\bf real} {\em r\_\discretionary {-}{}{}voltage})\hspace {0.3cm}{\tt [inline, static]}}{15}
+\contentsline {subsection}{\numberline {4.4.7}\setlength {\rightskip }{0pt plus 5cm}{\bf real} Relativity::r\discretionary {-}{}{}QM\hspace {0.3cm}{\tt [static]}}{15}
+\contentsline {section}{\numberline {4.5}SimEB Class Reference}{16}
+\contentsline {subsection}{\numberline {4.5.1}\setlength {\rightskip }{0pt plus 5cm}const char $\ast $ Sim\discretionary {-}{}{}EB::s\discretionary {-}{}{}Get\discretionary {-}{}{}Root (void)\hspace {0.3cm}{\tt [inline, static]}}{17}
+\contentsline {subsection}{\numberline {4.5.2}\setlength {\rightskip }{0pt plus 5cm}const char $\ast $ Sim\discretionary {-}{}{}EB::s\discretionary {-}{}{}Get\discretionary {-}{}{}Name (void)\hspace {0.3cm}{\tt [inline, static]}}{17}
+\contentsline {subsection}{\numberline {4.5.3}\setlength {\rightskip }{0pt plus 5cm}const {\bf real} Sim\discretionary {-}{}{}EB::r\discretionary {-}{}{}Get\discretionary {-}{}{}Q (void)\hspace {0.3cm}{\tt [inline, static]}}{17}
+\contentsline {subsection}{\numberline {4.5.4}\setlength {\rightskip }{0pt plus 5cm}const {\bf real} Sim\discretionary {-}{}{}EB::r\discretionary {-}{}{}Get\discretionary {-}{}{}QM (void)\hspace {0.3cm}{\tt [inline, static]}}{17}
+\contentsline {subsection}{\numberline {4.5.5}\setlength {\rightskip }{0pt plus 5cm}const {\bf real} Sim\discretionary {-}{}{}EB::r\discretionary {-}{}{}Get\discretionary {-}{}{}Scale\discretionary {-}{}{}Factor (void)\hspace {0.3cm}{\tt [inline, static]}}{17}
+\contentsline {subsection}{\numberline {4.5.6}\setlength {\rightskip }{0pt plus 5cm}const {\bf real} Sim\discretionary {-}{}{}EB::r\discretionary {-}{}{}Get\discretionary {-}{}{}Epsilon (void)\hspace {0.3cm}{\tt [inline, static]}}{17}
+\contentsline {subsection}{\numberline {4.5.7}\setlength {\rightskip }{0pt plus 5cm}const int Sim\discretionary {-}{}{}EB::i\discretionary {-}{}{}Get\discretionary {-}{}{}Sphere (void)\hspace {0.3cm}{\tt [inline, static]}}{17}
+\contentsline {subsection}{\numberline {4.5.8}\setlength {\rightskip }{0pt plus 5cm}void Sim\discretionary {-}{}{}EB::s\discretionary {-}{}{}Set\discretionary {-}{}{}Name (char const $\ast $ {\em const s\_\discretionary {-}{}{}name})\hspace {0.3cm}{\tt [inline, static]}}{17}
+\contentsline {subsection}{\numberline {4.5.9}\setlength {\rightskip }{0pt plus 5cm}void Sim\discretionary {-}{}{}EB::s\discretionary {-}{}{}Ext\discretionary {-}{}{}Name (char const $\ast $ {\em const s\_\discretionary {-}{}{}ext})\hspace {0.3cm}{\tt [inline, static]}}{17}
+\contentsline {subsection}{\numberline {4.5.10}\setlength {\rightskip }{0pt plus 5cm}void Sim\discretionary {-}{}{}EB::r\discretionary {-}{}{}Set\discretionary {-}{}{}QM ({\bf real} {\em r\_\discretionary {-}{}{}q}, {\bf real} {\em r\_\discretionary {-}{}{}m})\hspace {0.3cm}{\tt [inline, static]}}{17}
+\contentsline {subsection}{\numberline {4.5.11}\setlength {\rightskip }{0pt plus 5cm}void Sim\discretionary {-}{}{}EB::Init\discretionary {-}{}{}Progress (void)\hspace {0.3cm}{\tt [static]}}{17}
+\contentsline {subsection}{\numberline {4.5.12}\setlength {\rightskip }{0pt plus 5cm}void Sim\discretionary {-}{}{}EB::Poll\discretionary {-}{}{}Progress (int)\hspace {0.3cm}{\tt [static]}}{17}
+\contentsline {subsection}{\numberline {4.5.13}\setlength {\rightskip }{0pt plus 5cm}void Sim\discretionary {-}{}{}EB::Kill\discretionary {-}{}{}Progress (void)\hspace {0.3cm}{\tt [static]}}{17}
+\contentsline {subsection}{\numberline {4.5.14}\setlength {\rightskip }{0pt plus 5cm}void Sim\discretionary {-}{}{}EB::Halt (void)\hspace {0.3cm}{\tt [static]}}{17}
+\contentsline {subsection}{\numberline {4.5.15}\setlength {\rightskip }{0pt plus 5cm}void Sim\discretionary {-}{}{}EB::Setup (int {\em i\_\discretionary {-}{}{}argc}, char const $\ast $const[$\,$])\hspace {0.3cm}{\tt [static]}}{17}
+\contentsline {subsection}{\numberline {4.5.16}\setlength {\rightskip }{0pt plus 5cm}void Sim\discretionary {-}{}{}EB::Parse ({\bf TParser} \& {\em parser}, char $\ast $ {\em s\_\discretionary {-}{}{}token})\hspace {0.3cm}{\tt [static]}}{17}
+\contentsline {subsection}{\numberline {4.5.17}\setlength {\rightskip }{0pt plus 5cm}void Sim\discretionary {-}{}{}EB::Initialize (void)\hspace {0.3cm}{\tt [static]}}{17}
+\contentsline {subsection}{\numberline {4.5.18}\setlength {\rightskip }{0pt plus 5cm}void Sim\discretionary {-}{}{}EB::Simulate (void)\hspace {0.3cm}{\tt [static]}}{17}
+\contentsline {subsection}{\numberline {4.5.19}\setlength {\rightskip }{0pt plus 5cm}void Sim\discretionary {-}{}{}EB::Finalize (void)\hspace {0.3cm}{\tt [static]}}{17}
+\contentsline {subsection}{\numberline {4.5.20}\setlength {\rightskip }{0pt plus 5cm}{\bf real} const Sim\discretionary {-}{}{}EB::r\discretionary {-}{}{}Q0\hspace {0.3cm}{\tt [static]}}{18}
+\contentsline {subsection}{\numberline {4.5.21}\setlength {\rightskip }{0pt plus 5cm}{\bf real} const Sim\discretionary {-}{}{}EB::r\discretionary {-}{}{}M0\hspace {0.3cm}{\tt [static]}}{18}
+\contentsline {subsection}{\numberline {4.5.22}\setlength {\rightskip }{0pt plus 5cm}{\bf real} const Sim\discretionary {-}{}{}EB::r\discretionary {-}{}{}M1\hspace {0.3cm}{\tt [static]}}{18}
+\contentsline {subsection}{\numberline {4.5.23}\setlength {\rightskip }{0pt plus 5cm}{\bf real} const Sim\discretionary {-}{}{}EB::r\discretionary {-}{}{}E0\hspace {0.3cm}{\tt [static]}}{18}
+\contentsline {subsection}{\numberline {4.5.24}\setlength {\rightskip }{0pt plus 5cm}int Sim\discretionary {-}{}{}EB::i\discretionary {-}{}{}Iteration\hspace {0.3cm}{\tt [static]}}{18}
+\contentsline {subsection}{\numberline {4.5.25}\setlength {\rightskip }{0pt plus 5cm}int Sim\discretionary {-}{}{}EB::i\discretionary {-}{}{}Num\discretionary {-}{}{}Generated\hspace {0.3cm}{\tt [static]}}{18}
+\contentsline {subsection}{\numberline {4.5.26}\setlength {\rightskip }{0pt plus 5cm}int Sim\discretionary {-}{}{}EB::i\discretionary {-}{}{}Num\discretionary {-}{}{}Activated\hspace {0.3cm}{\tt [static]}}{18}
+\contentsline {subsection}{\numberline {4.5.27}\setlength {\rightskip }{0pt plus 5cm}int Sim\discretionary {-}{}{}EB::i\discretionary {-}{}{}Num\discretionary {-}{}{}Killed\hspace {0.3cm}{\tt [static]}}{18}
+\contentsline {section}{\numberline {4.6}TAperture Class Reference}{19}
+\contentsline {subsection}{\numberline {4.6.1}\setlength {\rightskip }{0pt plus 5cm}TAperture::TAperture ()}{19}
+\contentsline {subsection}{\numberline {4.6.2}\setlength {\rightskip }{0pt plus 5cm}void TAperture::Parse ({\bf TParser} \& {\em parser}, char $\ast $ {\em s\_\discretionary {-}{}{}token})\hspace {0.3cm}{\tt [virtual]}}{19}
+\contentsline {subsection}{\numberline {4.6.3}\setlength {\rightskip }{0pt plus 5cm}bool TAperture::Cross ({\bf Particle} $\ast $ {\em const p})\hspace {0.3cm}{\tt [virtual]}}{19}
+\contentsline {section}{\numberline {4.7}TArgParser Class Reference}{20}
+\contentsline {subsection}{\numberline {4.7.1}\setlength {\rightskip }{0pt plus 5cm}TArg\discretionary {-}{}{}Parser::TArg\discretionary {-}{}{}Parser (unsigned {\em u\_\discretionary {-}{}{}argc}, char const $\ast $const $\ast $ {\em s\_\discretionary {-}{}{}argv})}{20}
+\contentsline {subsection}{\numberline {4.7.2}\setlength {\rightskip }{0pt plus 5cm}bool TArg\discretionary {-}{}{}Parser::Get\discretionary {-}{}{}Token (void)\hspace {0.3cm}{\tt [virtual]}}{20}
+\contentsline {subsection}{\numberline {4.7.3}\setlength {\rightskip }{0pt plus 5cm}void TArg\discretionary {-}{}{}Parser::Error (void)\hspace {0.3cm}{\tt [virtual]}}{20}
+\contentsline {section}{\numberline {4.8}TFileParser Class Reference}{21}
+\contentsline {subsection}{\numberline {4.8.1}\setlength {\rightskip }{0pt plus 5cm}TFile\discretionary {-}{}{}Parser::TFile\discretionary {-}{}{}Parser (char const $\ast $ {\em s\_\discretionary {-}{}{}filename})}{21}
+\contentsline {subsection}{\numberline {4.8.2}\setlength {\rightskip }{0pt plus 5cm}bool TFile\discretionary {-}{}{}Parser::Get\discretionary {-}{}{}Token (void)\hspace {0.3cm}{\tt [virtual]}}{21}
+\contentsline {subsection}{\numberline {4.8.3}\setlength {\rightskip }{0pt plus 5cm}void TFile\discretionary {-}{}{}Parser::Error (void)\hspace {0.3cm}{\tt [virtual]}}{21}
+\contentsline {section}{\numberline {4.9}TIllumin Class Reference}{22}
+\contentsline {subsection}{\numberline {4.9.1}\setlength {\rightskip }{0pt plus 5cm}void TIllumin::Parse ({\bf TParser} \& {\em parser}, char $\ast $ {\em s\_\discretionary {-}{}{}token})\hspace {0.3cm}{\tt [virtual]}}{22}
+\contentsline {subsection}{\numberline {4.9.2}\setlength {\rightskip }{0pt plus 5cm}virtual void TIllumin::Randomize ({\bf Particle} $\ast $ {\em p}, {\bf real} {\em r\_\discretionary {-}{}{}energy})\hspace {0.3cm}{\tt [virtual]}}{22}
+\contentsline {subsection}{\numberline {4.9.3}\setlength {\rightskip }{0pt plus 5cm}TIllumin $\ast $ TIllumin::Parse ({\bf TParser} \& {\em parser})\hspace {0.3cm}{\tt [static]}}{22}
+\contentsline {section}{\numberline {4.10}TIlluminFixed Class Reference}{23}
+\contentsline {subsection}{\numberline {4.10.1}\setlength {\rightskip }{0pt plus 5cm}TIllumin\discretionary {-}{}{}Fixed::TIllumin\discretionary {-}{}{}Fixed (void)}{23}
+\contentsline {subsection}{\numberline {4.10.2}\setlength {\rightskip }{0pt plus 5cm}void TIllumin\discretionary {-}{}{}Fixed::Parse ({\bf TParser} \& {\em parser}, char $\ast $ {\em s\_\discretionary {-}{}{}token})\hspace {0.3cm}{\tt [virtual]}}{23}
+\contentsline {subsection}{\numberline {4.10.3}\setlength {\rightskip }{0pt plus 5cm}void TIllumin\discretionary {-}{}{}Fixed::Randomize ({\bf Particle} $\ast $ {\em p}, {\bf real} {\em r\_\discretionary {-}{}{}energy})\hspace {0.3cm}{\tt [virtual]}}{23}
+\contentsline {section}{\numberline {4.11}TIlluminGaussian Class Reference}{24}
+\contentsline {subsection}{\numberline {4.11.1}\setlength {\rightskip }{0pt plus 5cm}TIllumin\discretionary {-}{}{}Gaussian::TIllumin\discretionary {-}{}{}Gaussian (void)}{24}
+\contentsline {subsection}{\numberline {4.11.2}\setlength {\rightskip }{0pt plus 5cm}void TIllumin\discretionary {-}{}{}Gaussian::Parse ({\bf TParser} \& {\em parser}, char $\ast $ {\em s\_\discretionary {-}{}{}token})\hspace {0.3cm}{\tt [virtual]}}{24}
+\contentsline {subsection}{\numberline {4.11.3}\setlength {\rightskip }{0pt plus 5cm}void TIllumin\discretionary {-}{}{}Gaussian::Randomize ({\bf Particle} $\ast $ {\em p}, {\bf real} {\em r\_\discretionary {-}{}{}energy})\hspace {0.3cm}{\tt [virtual]}}{24}
+\contentsline {section}{\numberline {4.12}TIlluminLumped Class Reference}{25}
+\contentsline {subsection}{\numberline {4.12.1}\setlength {\rightskip }{0pt plus 5cm}TIllumin\discretionary {-}{}{}Lumped::TIllumin\discretionary {-}{}{}Lumped (void)}{25}
+\contentsline {subsection}{\numberline {4.12.2}\setlength {\rightskip }{0pt plus 5cm}void TIllumin\discretionary {-}{}{}Lumped::Parse ({\bf TParser} \& {\em parser}, char $\ast $ {\em s\_\discretionary {-}{}{}token})\hspace {0.3cm}{\tt [virtual]}}{25}
+\contentsline {subsection}{\numberline {4.12.3}\setlength {\rightskip }{0pt plus 5cm}void TIllumin\discretionary {-}{}{}Lumped::Randomize ({\bf Particle} $\ast $ {\em p}, {\bf real} {\em r\_\discretionary {-}{}{}energy})\hspace {0.3cm}{\tt [virtual]}}{25}
+\contentsline {section}{\numberline {4.13}TIlluminUniform Class Reference}{26}
+\contentsline {subsection}{\numberline {4.13.1}\setlength {\rightskip }{0pt plus 5cm}TIllumin\discretionary {-}{}{}Uniform::TIllumin\discretionary {-}{}{}Uniform (void)}{26}
+\contentsline {subsection}{\numberline {4.13.2}\setlength {\rightskip }{0pt plus 5cm}void TIllumin\discretionary {-}{}{}Uniform::Parse ({\bf TParser} \& {\em parser}, char $\ast $ {\em s\_\discretionary {-}{}{}token})\hspace {0.3cm}{\tt [virtual]}}{26}
+\contentsline {subsection}{\numberline {4.13.3}\setlength {\rightskip }{0pt plus 5cm}void TIllumin\discretionary {-}{}{}Uniform::Randomize ({\bf Particle} $\ast $ {\em p}, {\bf real} {\em r\_\discretionary {-}{}{}energy})\hspace {0.3cm}{\tt [virtual]}}{26}
+\contentsline {section}{\numberline {4.14}TParser Class Reference}{27}
+\contentsline {subsection}{\numberline {4.14.1}\setlength {\rightskip }{0pt plus 5cm}TParser::TParser (void)\hspace {0.3cm}{\tt [inline]}}{27}
+\contentsline {subsection}{\numberline {4.14.2}\setlength {\rightskip }{0pt plus 5cm}virtual TParser::$\sim $TParser (void)\hspace {0.3cm}{\tt [inline, virtual]}}{27}
+\contentsline {subsection}{\numberline {4.14.3}\setlength {\rightskip }{0pt plus 5cm}virtual bool TParser::Get\discretionary {-}{}{}Token (void)\hspace {0.3cm}{\tt [pure virtual]}}{27}
+\contentsline {subsection}{\numberline {4.14.4}\setlength {\rightskip }{0pt plus 5cm}virtual void TParser::Error (void)\hspace {0.3cm}{\tt [pure virtual]}}{28}
+\contentsline {subsection}{\numberline {4.14.5}\setlength {\rightskip }{0pt plus 5cm}bool TParser::Eof (void)\hspace {0.3cm}{\tt [inline]}}{28}
+\contentsline {subsection}{\numberline {4.14.6}\setlength {\rightskip }{0pt plus 5cm}TParser \& TParser::operator$>$$>$ (char $\ast $ {\em s})\hspace {0.3cm}{\tt [inline]}}{28}
+\contentsline {subsection}{\numberline {4.14.7}\setlength {\rightskip }{0pt plus 5cm}TParser \& TParser::operator$>$$>$ (unsigned \& {\em u})\hspace {0.3cm}{\tt [inline]}}{28}
+\contentsline {subsection}{\numberline {4.14.8}\setlength {\rightskip }{0pt plus 5cm}TParser \& TParser::operator$>$$>$ (int \& {\em i})\hspace {0.3cm}{\tt [inline]}}{28}
+\contentsline {subsection}{\numberline {4.14.9}\setlength {\rightskip }{0pt plus 5cm}TParser \& TParser::operator$>$$>$ (long \& {\em l})\hspace {0.3cm}{\tt [inline]}}{28}
+\contentsline {subsection}{\numberline {4.14.10}\setlength {\rightskip }{0pt plus 5cm}TParser \& TParser::operator$>$$>$ ({\bf real} \& {\em r})\hspace {0.3cm}{\tt [inline]}}{28}
+\contentsline {subsection}{\numberline {4.14.11}\setlength {\rightskip }{0pt plus 5cm}TParser \& TParser::operator$>$$>$ ({\bf TXYZ} \& {\em xyz})\hspace {0.3cm}{\tt [inline]}}{28}
+\contentsline {subsection}{\numberline {4.14.12}\setlength {\rightskip }{0pt plus 5cm}TParser \& TParser::operator$>$$>$ ({\bf TXY} \& {\em xy})\hspace {0.3cm}{\tt [inline]}}{28}
+\contentsline {subsection}{\numberline {4.14.13}\setlength {\rightskip }{0pt plus 5cm}TParser \& TParser::operator$>$$>$ (bool \& {\em b})\hspace {0.3cm}{\tt [inline]}}{28}
+\contentsline {subsection}{\numberline {4.14.14}\setlength {\rightskip }{0pt plus 5cm}bool TParser::Eof (bool {\em b})\hspace {0.3cm}{\tt [inline, protected]}}{28}
+\contentsline {subsection}{\numberline {4.14.15}\setlength {\rightskip }{0pt plus 5cm}char TParser::s\discretionary {-}{}{}Token[MAX\_\discretionary {-}{}{}TOKEN]\hspace {0.3cm}{\tt [protected]}}{28}
+\contentsline {section}{\numberline {4.15}TPlane Class Reference}{29}
+\contentsline {subsection}{\numberline {4.15.1}\setlength {\rightskip }{0pt plus 5cm}TPlane::TPlane (void)}{30}
+\contentsline {subsection}{\numberline {4.15.2}\setlength {\rightskip }{0pt plus 5cm}virtual TPlane::$\sim $TPlane (void)\hspace {0.3cm}{\tt [inline, virtual]}}{30}
+\contentsline {subsection}{\numberline {4.15.3}\setlength {\rightskip }{0pt plus 5cm}void TPlane::Parse ({\bf TParser} \& {\em parser}, char $\ast $ {\em s\_\discretionary {-}{}{}token})\hspace {0.3cm}{\tt [virtual]}}{30}
+\contentsline {subsection}{\numberline {4.15.4}\setlength {\rightskip }{0pt plus 5cm}void TPlane::Initialize (void)\hspace {0.3cm}{\tt [virtual]}}{30}
+\contentsline {subsection}{\numberline {4.15.5}\setlength {\rightskip }{0pt plus 5cm}bool TPlane::Cross ({\bf Particle} $\ast $ {\em const p})\hspace {0.3cm}{\tt [virtual]}}{30}
+\contentsline {subsection}{\numberline {4.15.6}\setlength {\rightskip }{0pt plus 5cm}virtual void TPlane::Finalize (FILE $\ast $ {\em pfile})\hspace {0.3cm}{\tt [inline, virtual]}}{30}
+\contentsline {subsection}{\numberline {4.15.7}\setlength {\rightskip }{0pt plus 5cm}int const TPlane::i\discretionary {-}{}{}Get\discretionary {-}{}{}Plane (void) const\hspace {0.3cm}{\tt [inline]}}{30}
+\contentsline {subsection}{\numberline {4.15.8}\setlength {\rightskip }{0pt plus 5cm}char const $\ast $ TPlane::s\discretionary {-}{}{}Get\discretionary {-}{}{}Name (void) const\hspace {0.3cm}{\tt [inline]}}{30}
+\contentsline {subsection}{\numberline {4.15.9}\setlength {\rightskip }{0pt plus 5cm}{\bf real} TPlane::r\discretionary {-}{}{}Get\discretionary {-}{}{}Z (void) const\hspace {0.3cm}{\tt [inline]}}{30}
+\contentsline {subsection}{\numberline {4.15.10}\setlength {\rightskip }{0pt plus 5cm}{\bf real} TPlane::r\discretionary {-}{}{}Get\discretionary {-}{}{}Voltage (void) const\hspace {0.3cm}{\tt [inline]}}{30}
+\contentsline {subsection}{\numberline {4.15.11}\setlength {\rightskip }{0pt plus 5cm}int TPlane::i\discretionary {-}{}{}Get\discretionary {-}{}{}Set\discretionary {-}{}{}Group (void) const\hspace {0.3cm}{\tt [inline]}}{30}
+\contentsline {subsection}{\numberline {4.15.12}\setlength {\rightskip }{0pt plus 5cm}int TPlane::i\discretionary {-}{}{}Get\discretionary {-}{}{}Clear\discretionary {-}{}{}Group (void) const\hspace {0.3cm}{\tt [inline]}}{30}
+\contentsline {subsection}{\numberline {4.15.13}\setlength {\rightskip }{0pt plus 5cm}{\bf real} TPlane::r\discretionary {-}{}{}Get\discretionary {-}{}{}Field\discretionary {-}{}{}A (void) const\hspace {0.3cm}{\tt [inline]}}{30}
+\contentsline {subsection}{\numberline {4.15.14}\setlength {\rightskip }{0pt plus 5cm}void TPlane::r\discretionary {-}{}{}Set\discretionary {-}{}{}Voltage ({\bf real} {\em r\_\discretionary {-}{}{}voltage})\hspace {0.3cm}{\tt [inline]}}{30}
+\contentsline {subsection}{\numberline {4.15.15}\setlength {\rightskip }{0pt plus 5cm}void TPlane::r\discretionary {-}{}{}Set\discretionary {-}{}{}Field\discretionary {-}{}{}A ({\bf real} {\em r\_\discretionary {-}{}{}field\_\discretionary {-}{}{}a})\hspace {0.3cm}{\tt [inline]}}{30}
+\contentsline {subsection}{\numberline {4.15.16}\setlength {\rightskip }{0pt plus 5cm}TPlane $\ast $ TPlane::Parse ({\bf TParser} \& {\em parser})\hspace {0.3cm}{\tt [static]}}{30}
+\contentsline {subsection}{\numberline {4.15.17}\setlength {\rightskip }{0pt plus 5cm}void TPlane::Trajectory ({\bf Particle} $\ast $ {\em p}, {\bf TXY} const \& {\em xy\_\discretionary {-}{}{}v\_\discretionary {-}{}{}normal})\hspace {0.3cm}{\tt [static, protected]}}{31}
+\contentsline {subsection}{\numberline {4.15.18}\setlength {\rightskip }{0pt plus 5cm}int TPlane::i\discretionary {-}{}{}Group\hspace {0.3cm}{\tt [protected]}}{31}
+\contentsline {subsection}{\numberline {4.15.19}\setlength {\rightskip }{0pt plus 5cm}char TPlane::s\discretionary {-}{}{}Name[MAX\_\discretionary {-}{}{}TOKEN]\hspace {0.3cm}{\tt [protected]}}{31}
+\contentsline {section}{\numberline {4.16}TShape Class Reference}{32}
+\contentsline {subsection}{\numberline {4.16.1}\setlength {\rightskip }{0pt plus 5cm}void TShape::Parse ({\bf TParser} \& {\em parser}, char $\ast $ {\em s\_\discretionary {-}{}{}token})\hspace {0.3cm}{\tt [virtual]}}{32}
+\contentsline {subsection}{\numberline {4.16.2}\setlength {\rightskip }{0pt plus 5cm}virtual void TShape::Randomize ({\bf Particle} $\ast $ {\em p})\hspace {0.3cm}{\tt [pure virtual]}}{32}
+\contentsline {subsection}{\numberline {4.16.3}\setlength {\rightskip }{0pt plus 5cm}virtual bool TShape::b\discretionary {-}{}{}Inside ({\bf TXY} {\em xy})\hspace {0.3cm}{\tt [pure virtual]}}{32}
+\contentsline {subsection}{\numberline {4.16.4}\setlength {\rightskip }{0pt plus 5cm}TShape $\ast $ TShape::Parse ({\bf TParser} \& {\em parser})\hspace {0.3cm}{\tt [static]}}{33}
+\contentsline {subsection}{\numberline {4.16.5}\setlength {\rightskip }{0pt plus 5cm}{\bf TXY} TShape::xy\discretionary {-}{}{}Offset}{33}
+\contentsline {section}{\numberline {4.17}TShapeBagel Class Reference}{34}
+\contentsline {subsection}{\numberline {4.17.1}\setlength {\rightskip }{0pt plus 5cm}TShape\discretionary {-}{}{}Bagel::TShape\discretionary {-}{}{}Bagel (void)}{34}
+\contentsline {subsection}{\numberline {4.17.2}\setlength {\rightskip }{0pt plus 5cm}void TShape\discretionary {-}{}{}Bagel::Parse ({\bf TParser} \& {\em parser}, char $\ast $ {\em s\_\discretionary {-}{}{}token})\hspace {0.3cm}{\tt [virtual]}}{34}
+\contentsline {subsection}{\numberline {4.17.3}\setlength {\rightskip }{0pt plus 5cm}void TShape\discretionary {-}{}{}Bagel::Randomize ({\bf Particle} $\ast $ {\em p})\hspace {0.3cm}{\tt [virtual]}}{34}
+\contentsline {subsection}{\numberline {4.17.4}\setlength {\rightskip }{0pt plus 5cm}bool TShape\discretionary {-}{}{}Bagel::b\discretionary {-}{}{}Inside ({\bf TXY} {\em xy})\hspace {0.3cm}{\tt [virtual]}}{34}
+\contentsline {section}{\numberline {4.18}TShapeCircle Class Reference}{35}
+\contentsline {subsection}{\numberline {4.18.1}\setlength {\rightskip }{0pt plus 5cm}TShape\discretionary {-}{}{}Circle::TShape\discretionary {-}{}{}Circle (void)}{35}
+\contentsline {subsection}{\numberline {4.18.2}\setlength {\rightskip }{0pt plus 5cm}void TShape\discretionary {-}{}{}Circle::Parse ({\bf TParser} \& {\em parser}, char $\ast $ {\em s\_\discretionary {-}{}{}token})\hspace {0.3cm}{\tt [virtual]}}{35}
+\contentsline {subsection}{\numberline {4.18.3}\setlength {\rightskip }{0pt plus 5cm}void TShape\discretionary {-}{}{}Circle::Randomize ({\bf Particle} $\ast $ {\em p})\hspace {0.3cm}{\tt [virtual]}}{35}
+\contentsline {subsection}{\numberline {4.18.4}\setlength {\rightskip }{0pt plus 5cm}bool TShape\discretionary {-}{}{}Circle::b\discretionary {-}{}{}Inside ({\bf TXY} {\em xy})\hspace {0.3cm}{\tt [virtual]}}{35}
+\contentsline {section}{\numberline {4.19}TShapePoint Class Reference}{36}
+\contentsline {subsection}{\numberline {4.19.1}\setlength {\rightskip }{0pt plus 5cm}TShape\discretionary {-}{}{}Point::TShape\discretionary {-}{}{}Point (void)}{36}
+\contentsline {subsection}{\numberline {4.19.2}\setlength {\rightskip }{0pt plus 5cm}void TShape\discretionary {-}{}{}Point::Parse ({\bf TParser} \& {\em parser}, char $\ast $ {\em s\_\discretionary {-}{}{}token})\hspace {0.3cm}{\tt [virtual]}}{36}
+\contentsline {subsection}{\numberline {4.19.3}\setlength {\rightskip }{0pt plus 5cm}void TShape\discretionary {-}{}{}Point::Randomize ({\bf Particle} $\ast $ {\em p})\hspace {0.3cm}{\tt [virtual]}}{36}
+\contentsline {subsection}{\numberline {4.19.4}\setlength {\rightskip }{0pt plus 5cm}bool TShape\discretionary {-}{}{}Point::b\discretionary {-}{}{}Inside ({\bf TXY} {\em xy})\hspace {0.3cm}{\tt [virtual]}}{36}
+\contentsline {section}{\numberline {4.20}TShapeRectangle Class Reference}{37}
+\contentsline {subsection}{\numberline {4.20.1}\setlength {\rightskip }{0pt plus 5cm}TShape\discretionary {-}{}{}Rectangle::TShape\discretionary {-}{}{}Rectangle (void)}{37}
+\contentsline {subsection}{\numberline {4.20.2}\setlength {\rightskip }{0pt plus 5cm}void TShape\discretionary {-}{}{}Rectangle::Parse ({\bf TParser} \& {\em parser}, char $\ast $ {\em s\_\discretionary {-}{}{}token})\hspace {0.3cm}{\tt [virtual]}}{37}
+\contentsline {subsection}{\numberline {4.20.3}\setlength {\rightskip }{0pt plus 5cm}void TShape\discretionary {-}{}{}Rectangle::Randomize ({\bf Particle} $\ast $ {\em p})\hspace {0.3cm}{\tt [virtual]}}{37}
+\contentsline {subsection}{\numberline {4.20.4}\setlength {\rightskip }{0pt plus 5cm}bool TShape\discretionary {-}{}{}Rectangle::b\discretionary {-}{}{}Inside ({\bf TXY} {\em xy})\hspace {0.3cm}{\tt [virtual]}}{37}
+\contentsline {section}{\numberline {4.21}TShapeSquare Class Reference}{38}
+\contentsline {subsection}{\numberline {4.21.1}\setlength {\rightskip }{0pt plus 5cm}TShape\discretionary {-}{}{}Square::TShape\discretionary {-}{}{}Square (void)}{38}
+\contentsline {subsection}{\numberline {4.21.2}\setlength {\rightskip }{0pt plus 5cm}void TShape\discretionary {-}{}{}Square::Parse ({\bf TParser} \& {\em parser}, char $\ast $ {\em s\_\discretionary {-}{}{}token})\hspace {0.3cm}{\tt [virtual]}}{38}
+\contentsline {subsection}{\numberline {4.21.3}\setlength {\rightskip }{0pt plus 5cm}void TShape\discretionary {-}{}{}Square::Randomize ({\bf Particle} $\ast $ {\em p})\hspace {0.3cm}{\tt [virtual]}}{38}
+\contentsline {subsection}{\numberline {4.21.4}\setlength {\rightskip }{0pt plus 5cm}bool TShape\discretionary {-}{}{}Square::b\discretionary {-}{}{}Inside ({\bf TXY} {\em xy})\hspace {0.3cm}{\tt [virtual]}}{38}
+\contentsline {section}{\numberline {4.22}TSource Class Reference}{39}
+\contentsline {subsection}{\numberline {4.22.1}\setlength {\rightskip }{0pt plus 5cm}TSource::TSource (void)}{39}
+\contentsline {subsection}{\numberline {4.22.2}\setlength {\rightskip }{0pt plus 5cm}void TSource::Parse ({\bf TParser} \& {\em parser}, char $\ast $ {\em s\_\discretionary {-}{}{}token})\hspace {0.3cm}{\tt [virtual]}}{39}
+\contentsline {subsection}{\numberline {4.22.3}\setlength {\rightskip }{0pt plus 5cm}void TSource::Initialize (void)\hspace {0.3cm}{\tt [virtual]}}{40}
+\contentsline {subsection}{\numberline {4.22.4}\setlength {\rightskip }{0pt plus 5cm}TSource $\ast $ TSource::Parse ({\bf TParser} \& {\em parser})\hspace {0.3cm}{\tt [static]}}{40}
+\contentsline {subsection}{\numberline {4.22.5}\setlength {\rightskip }{0pt plus 5cm}{\bf Particle} $\ast $ TSource::New\discretionary {-}{}{}Particle (void)\hspace {0.3cm}{\tt [static]}}{40}
+\contentsline {subsection}{\numberline {4.22.6}\setlength {\rightskip }{0pt plus 5cm}int TSource::i\discretionary {-}{}{}Get\discretionary {-}{}{}Total\discretionary {-}{}{}Particles (void)\hspace {0.3cm}{\tt [static]}}{40}
+\contentsline {subsection}{\numberline {4.22.7}\setlength {\rightskip }{0pt plus 5cm}{\bf Particle} $\ast $ TSource::Get\discretionary {-}{}{}Particle (int {\em i})\hspace {0.3cm}{\tt [static]}}{40}
+\contentsline {subsection}{\numberline {4.22.8}\setlength {\rightskip }{0pt plus 5cm}{\bf real} TSource::r\discretionary {-}{}{}Emission\discretionary {-}{}{}Time}{40}
+\contentsline {section}{\numberline {4.23}TSourceArray Class Reference}{41}
+\contentsline {subsection}{\numberline {4.23.1}\setlength {\rightskip }{0pt plus 5cm}TSource\discretionary {-}{}{}Array::TSource\discretionary {-}{}{}Array (void)}{41}
+\contentsline {subsection}{\numberline {4.23.2}\setlength {\rightskip }{0pt plus 5cm}void TSource\discretionary {-}{}{}Array::Parse ({\bf TParser} \& {\em parser}, char $\ast $ {\em s\_\discretionary {-}{}{}token})\hspace {0.3cm}{\tt [virtual]}}{41}
+\contentsline {subsection}{\numberline {4.23.3}\setlength {\rightskip }{0pt plus 5cm}void TSource\discretionary {-}{}{}Array::Initialize (void)\hspace {0.3cm}{\tt [virtual]}}{41}
+\contentsline {section}{\numberline {4.24}TSourceEELens Class Reference}{42}
+\contentsline {subsection}{\numberline {4.24.1}\setlength {\rightskip }{0pt plus 5cm}TSource\discretionary {-}{}{}EELens::TSource\discretionary {-}{}{}EELens (void)}{42}
+\contentsline {subsection}{\numberline {4.24.2}\setlength {\rightskip }{0pt plus 5cm}void TSource\discretionary {-}{}{}EELens::Parse ({\bf TParser} \& {\em parser}, char $\ast $ {\em s\_\discretionary {-}{}{}token})\hspace {0.3cm}{\tt [virtual]}}{42}
+\contentsline {subsection}{\numberline {4.24.3}\setlength {\rightskip }{0pt plus 5cm}void TSource\discretionary {-}{}{}EELens::Initialize (void)\hspace {0.3cm}{\tt [virtual]}}{42}
+\contentsline {section}{\numberline {4.25}TSourceGrid Class Reference}{43}
+\contentsline {subsection}{\numberline {4.25.1}\setlength {\rightskip }{0pt plus 5cm}TSource\discretionary {-}{}{}Grid::TSource\discretionary {-}{}{}Grid (void)}{43}
+\contentsline {subsection}{\numberline {4.25.2}\setlength {\rightskip }{0pt plus 5cm}void TSource\discretionary {-}{}{}Grid::Parse ({\bf TParser} \& {\em parser}, char $\ast $ {\em s\_\discretionary {-}{}{}token})\hspace {0.3cm}{\tt [virtual]}}{43}
+\contentsline {subsection}{\numberline {4.25.3}\setlength {\rightskip }{0pt plus 5cm}void TSource\discretionary {-}{}{}Grid::Initialize (void)\hspace {0.3cm}{\tt [virtual]}}{43}
+\contentsline {section}{\numberline {4.26}TTarget Class Reference}{44}
+\contentsline {subsection}{\numberline {4.26.1}\setlength {\rightskip }{0pt plus 5cm}TTarget::TTarget ()}{44}
+\contentsline {subsection}{\numberline {4.26.2}\setlength {\rightskip }{0pt plus 5cm}void TTarget::Parse ({\bf TParser} \& {\em parser}, char $\ast $ {\em s\_\discretionary {-}{}{}token})\hspace {0.3cm}{\tt [virtual]}}{44}
+\contentsline {subsection}{\numberline {4.26.3}\setlength {\rightskip }{0pt plus 5cm}void TTarget::Initialize (void)\hspace {0.3cm}{\tt [virtual]}}{44}
+\contentsline {subsection}{\numberline {4.26.4}\setlength {\rightskip }{0pt plus 5cm}bool TTarget::Cross ({\bf Particle} $\ast $ {\em const p})\hspace {0.3cm}{\tt [virtual]}}{44}
+\contentsline {section}{\numberline {4.27}TThinLens Class Reference}{46}
+\contentsline {subsection}{\numberline {4.27.1}\setlength {\rightskip }{0pt plus 5cm}TThin\discretionary {-}{}{}Lens::TThin\discretionary {-}{}{}Lens (void)}{46}
+\contentsline {subsection}{\numberline {4.27.2}\setlength {\rightskip }{0pt plus 5cm}void TThin\discretionary {-}{}{}Lens::Parse ({\bf TParser} \& {\em parser}, char $\ast $ {\em s\_\discretionary {-}{}{}token})\hspace {0.3cm}{\tt [virtual]}}{46}
+\contentsline {subsection}{\numberline {4.27.3}\setlength {\rightskip }{0pt plus 5cm}bool TThin\discretionary {-}{}{}Lens::Cross ({\bf Particle} $\ast $ {\em const p})\hspace {0.3cm}{\tt [virtual]}}{46}
+\contentsline {section}{\numberline {4.28}TXY Class Reference}{47}
+\contentsline {subsection}{\numberline {4.28.1}\setlength {\rightskip }{0pt plus 5cm}TXY::TXY ({\bf real} {\em rix} = 0.0, {\bf real} {\em riy} = 0.0)\hspace {0.3cm}{\tt [inline]}}{47}
+\contentsline {subsection}{\numberline {4.28.2}\setlength {\rightskip }{0pt plus 5cm}TXY::TXY (const {\bf TXYZ} \& {\em xyz})\hspace {0.3cm}{\tt [inline]}}{47}
+\contentsline {subsection}{\numberline {4.28.3}\setlength {\rightskip }{0pt plus 5cm}TXY TXY::operator= (const {\bf TXYZ} \& {\em xyz})\hspace {0.3cm}{\tt [inline]}}{47}
+\contentsline {subsection}{\numberline {4.28.4}\setlength {\rightskip }{0pt plus 5cm}{\bf real} TXY::r\discretionary {-}{}{}X}{47}
+\contentsline {subsection}{\numberline {4.28.5}\setlength {\rightskip }{0pt plus 5cm}{\bf real} TXY::r\discretionary {-}{}{}Y}{47}
+\contentsline {section}{\numberline {4.29}TXYZ Class Reference}{48}
+\contentsline {subsection}{\numberline {4.29.1}\setlength {\rightskip }{0pt plus 5cm}TXYZ::TXYZ ({\bf real} {\em rix} = 0.0, {\bf real} {\em riy} = 0.0, {\bf real} {\em riz} = 0.0)\hspace {0.3cm}{\tt [inline]}}{48}
+\contentsline {subsection}{\numberline {4.29.2}\setlength {\rightskip }{0pt plus 5cm}TXYZ::TXYZ (const {\bf TXY} \& {\em xy}, {\bf real} {\em riz} = 0.0)\hspace {0.3cm}{\tt [inline]}}{48}
+\contentsline {subsection}{\numberline {4.29.3}\setlength {\rightskip }{0pt plus 5cm}TXYZ TXYZ::operator= (const {\bf TXY} \& {\em xy})\hspace {0.3cm}{\tt [inline]}}{48}
+\contentsline {subsection}{\numberline {4.29.4}\setlength {\rightskip }{0pt plus 5cm}{\bf real} TXYZ::r\discretionary {-}{}{}X}{48}
+\contentsline {subsection}{\numberline {4.29.5}\setlength {\rightskip }{0pt plus 5cm}{\bf real} TXYZ::r\discretionary {-}{}{}Y}{48}
+\contentsline {subsection}{\numberline {4.29.6}\setlength {\rightskip }{0pt plus 5cm}{\bf real} TXYZ::r\discretionary {-}{}{}Z}{48}
+\contentsline {chapter}{\numberline {5}simeb\_\discretionary {-}{}{}ebit File Documentation}{49}
+\contentsline {section}{\numberline {5.1}cap.h File Reference}{49}
+\contentsline {subsection}{\numberline {5.1.1}\setlength {\rightskip }{0pt plus 5cm}\#define CAP\_\discretionary {-}{}{}b\discretionary {-}{}{}Group ()}{49}
+\contentsline {subsection}{\numberline {5.1.2}\setlength {\rightskip }{0pt plus 5cm}\#define CAP\_\discretionary {-}{}{}b\discretionary {-}{}{}Acceleration ()}{49}
+\contentsline {subsection}{\numberline {5.1.3}\setlength {\rightskip }{0pt plus 5cm}\#define CAP\_\discretionary {-}{}{}b\discretionary {-}{}{}Relativity ()}{49}
+\contentsline {section}{\numberline {5.2}column.cc File Reference}{50}
+\contentsline {subsection}{\numberline {5.2.1}\setlength {\rightskip }{0pt plus 5cm}\#define ERROR\_\discretionary {-}{}{}NOLEFTBRACE ()}{50}
+\contentsline {subsection}{\numberline {5.2.2}\setlength {\rightskip }{0pt plus 5cm}\#define ERROR\_\discretionary {-}{}{}NORGHTBRACE ()}{50}
+\contentsline {subsection}{\numberline {5.2.3}\setlength {\rightskip }{0pt plus 5cm}\#define ERROR\_\discretionary {-}{}{}NOARG ()}{50}
+\contentsline {subsection}{\numberline {5.2.4}\setlength {\rightskip }{0pt plus 5cm}\#define ERROR\_\discretionary {-}{}{}UNKNOWN ()}{50}
+\contentsline {section}{\numberline {5.3}column.h File Reference}{51}
+\contentsline {section}{\numberline {5.4}illumin.cc File Reference}{52}
+\contentsline {section}{\numberline {5.5}illumin.h File Reference}{53}
+\contentsline {section}{\numberline {5.6}include.h File Reference}{54}
+\contentsline {subsection}{\numberline {5.6.1}\setlength {\rightskip }{0pt plus 5cm}\#define newline ()}{54}
+\contentsline {subsection}{\numberline {5.6.2}\setlength {\rightskip }{0pt plus 5cm}\#define space ()}{54}
+\contentsline {subsection}{\numberline {5.6.3}\setlength {\rightskip }{0pt plus 5cm}typedef double real}{54}
+\contentsline {section}{\numberline {5.7}particle.cc File Reference}{55}
+\contentsline {section}{\numberline {5.8}particle.h File Reference}{56}
+\contentsline {section}{\numberline {5.9}plane.cc File Reference}{57}
+\contentsline {section}{\numberline {5.10}plane.h File Reference}{58}
+\contentsline {subsection}{\numberline {5.10.1}\setlength {\rightskip }{0pt plus 5cm}\#define EELENS\_\discretionary {-}{}{}OFF ()}{58}
+\contentsline {subsection}{\numberline {5.10.2}\setlength {\rightskip }{0pt plus 5cm}\#define EELENS\_\discretionary {-}{}{}TARGET ()}{58}
+\contentsline {subsection}{\numberline {5.10.3}\setlength {\rightskip }{0pt plus 5cm}\#define EELENS\_\discretionary {-}{}{}LENS ()}{58}
+\contentsline {section}{\numberline {5.11}relativity.cc File Reference}{59}
+\contentsline {section}{\numberline {5.12}relativity.h File Reference}{60}
+\contentsline {subsection}{\numberline {5.12.1}\setlength {\rightskip }{0pt plus 5cm}\#define C ()}{60}
+\contentsline {subsection}{\numberline {5.12.2}\setlength {\rightskip }{0pt plus 5cm}\#define C2 ()}{60}
+\contentsline {subsection}{\numberline {5.12.3}\setlength {\rightskip }{0pt plus 5cm}\#define C2INV ()}{60}
+\contentsline {section}{\numberline {5.13}setup.cc File Reference}{61}
+\contentsline {subsection}{\numberline {5.13.1}\setlength {\rightskip }{0pt plus 5cm}\#define ERROR\_\discretionary {-}{}{}USAGE ()}{61}
+\contentsline {subsection}{\numberline {5.13.2}\setlength {\rightskip }{0pt plus 5cm}\#define ERROR\_\discretionary {-}{}{}USAGE\_\discretionary {-}{}{}ACCEL ()}{61}
+\contentsline {subsection}{\numberline {5.13.3}\setlength {\rightskip }{0pt plus 5cm}\#define ERROR\_\discretionary {-}{}{}USAGE\_\discretionary {-}{}{}RELATIVITY ()}{61}
+\contentsline {subsection}{\numberline {5.13.4}\setlength {\rightskip }{0pt plus 5cm}\#define ERROR\_\discretionary {-}{}{}BADFILE ()}{61}
+\contentsline {subsection}{\numberline {5.13.5}\setlength {\rightskip }{0pt plus 5cm}\#define ERROR\_\discretionary {-}{}{}BADARG ()}{61}
+\contentsline {subsection}{\numberline {5.13.6}\setlength {\rightskip }{0pt plus 5cm}\#define ERROR\_\discretionary {-}{}{}MULTSOURCEDEF ()}{61}
+\contentsline {subsection}{\numberline {5.13.7}\setlength {\rightskip }{0pt plus 5cm}\#define ERROR\_\discretionary {-}{}{}NOSOURCEDEF ()}{61}
+\contentsline {subsection}{\numberline {5.13.8}\setlength {\rightskip }{0pt plus 5cm}\#define ERROR\_\discretionary {-}{}{}MAXSECTIONS ()}{61}
+\contentsline {subsection}{\numberline {5.13.9}\setlength {\rightskip }{0pt plus 5cm}\#define WARNING\_\discretionary {-}{}{}NOCAP\_\discretionary {-}{}{}TRACK ()}{61}
+\contentsline {subsection}{\numberline {5.13.10}\setlength {\rightskip }{0pt plus 5cm}\#define WARNING\_\discretionary {-}{}{}NOCAP\_\discretionary {-}{}{}PROXIMITY ()}{61}
+\contentsline {section}{\numberline {5.14}setup.h File Reference}{62}
+\contentsline {section}{\numberline {5.15}shape.cc File Reference}{63}
+\contentsline {section}{\numberline {5.16}shape.h File Reference}{64}
+\contentsline {section}{\numberline {5.17}simeb.cc File Reference}{65}
+\contentsline {subsection}{\numberline {5.17.1}\setlength {\rightskip }{0pt plus 5cm}void main (int {\em i\_\discretionary {-}{}{}argc}, char const $\ast $const s\_\discretionary {-}{}{}argv[$\,$])}{65}
+\contentsline {section}{\numberline {5.18}simeb.h File Reference}{66}
+\contentsline {subsection}{\numberline {5.18.1}\setlength {\rightskip }{0pt plus 5cm}\#define ASSERT (x)}{66}
+\contentsline {subsection}{\numberline {5.18.2}\setlength {\rightskip }{0pt plus 5cm}\#define MAX\_\discretionary {-}{}{}TOKEN ()}{66}
+\contentsline {section}{\numberline {5.19}source.cc File Reference}{67}
+\contentsline {section}{\numberline {5.20}source.h File Reference}{68}
+\contentsline {section}{\numberline {5.21}vector.cc File Reference}{69}
+\contentsline {subsection}{\numberline {5.21.1}\setlength {\rightskip }{0pt plus 5cm}{\bf TXY} xy0 (0. {\em 0}, 0. {\em 0})}{69}
+\contentsline {subsection}{\numberline {5.21.2}\setlength {\rightskip }{0pt plus 5cm}{\bf TXYZ} xyz0 (0. {\em 0}, 0. {\em 0}, 0. {\em 0})}{69}
+\contentsline {section}{\numberline {5.22}vector.h File Reference}{70}
+\contentsline {subsection}{\numberline {5.22.1}\setlength {\rightskip }{0pt plus 5cm}ostream \& operator$<$$<$ (ostream \& {\em stream\_\discretionary {-}{}{}out}, {\bf TXY} {\em xyz})\hspace {0.3cm}{\tt [inline]}}{71}
+\contentsline {subsection}{\numberline {5.22.2}\setlength {\rightskip }{0pt plus 5cm}ostream \& operator$<$$<$ (ostream \& {\em stream\_\discretionary {-}{}{}out}, {\bf TXYZ} {\em xyz})\hspace {0.3cm}{\tt [inline]}}{71}
+\contentsline {subsection}{\numberline {5.22.3}\setlength {\rightskip }{0pt plus 5cm}{\bf TXYZ} operator+ ({\bf TXYZ} const {\em xyz}, {\bf TXYZ} const {\em xyz2})\hspace {0.3cm}{\tt [inline]}}{71}
+\contentsline {subsection}{\numberline {5.22.4}\setlength {\rightskip }{0pt plus 5cm}{\bf TXY} operator+ ({\bf TXY} const {\em xy1}, {\bf TXY} const {\em xy2})\hspace {0.3cm}{\tt [inline]}}{71}
+\contentsline {subsection}{\numberline {5.22.5}\setlength {\rightskip }{0pt plus 5cm}{\bf TXYZ} operator+ ({\bf TXYZ} const {\em xyz}, {\bf TXY} const {\em xy})\hspace {0.3cm}{\tt [inline]}}{71}
+\contentsline {subsection}{\numberline {5.22.6}\setlength {\rightskip }{0pt plus 5cm}{\bf TXYZ} \& operator+= ({\bf TXYZ} \& {\em xyz}, {\bf TXYZ} {\em xy})\hspace {0.3cm}{\tt [inline]}}{71}
+\contentsline {subsection}{\numberline {5.22.7}\setlength {\rightskip }{0pt plus 5cm}{\bf TXY} \& operator+= ({\bf TXY} \& {\em xy1}, {\bf TXY} {\em xy2})\hspace {0.3cm}{\tt [inline]}}{71}
+\contentsline {subsection}{\numberline {5.22.8}\setlength {\rightskip }{0pt plus 5cm}{\bf TXYZ} \& operator+= ({\bf TXYZ} \& {\em xyz}, {\bf TXY} {\em xy})\hspace {0.3cm}{\tt [inline]}}{71}
+\contentsline {subsection}{\numberline {5.22.9}\setlength {\rightskip }{0pt plus 5cm}{\bf TXYZ} operator- ({\bf TXYZ} {\em xy}, {\bf TXYZ} {\em xyz})\hspace {0.3cm}{\tt [inline]}}{71}
+\contentsline {subsection}{\numberline {5.22.10}\setlength {\rightskip }{0pt plus 5cm}{\bf TXYZ} operator- ({\bf TXY} {\em xy}, {\bf TXY} {\em xyz})\hspace {0.3cm}{\tt [inline]}}{71}
+\contentsline {subsection}{\numberline {5.22.11}\setlength {\rightskip }{0pt plus 5cm}{\bf TXYZ} operator- ({\bf TXY} {\em xy}, {\bf TXYZ} {\em xyz})\hspace {0.3cm}{\tt [inline]}}{71}
+\contentsline {subsection}{\numberline {5.22.12}\setlength {\rightskip }{0pt plus 5cm}{\bf TXYZ} \& operator-= ({\bf TXYZ} \& {\em xyz}, {\bf TXYZ} {\em xy})\hspace {0.3cm}{\tt [inline]}}{71}
+\contentsline {subsection}{\numberline {5.22.13}\setlength {\rightskip }{0pt plus 5cm}{\bf TXY} \& operator-= ({\bf TXY} \& {\em xy1}, {\bf TXY} \& {\em xy2})\hspace {0.3cm}{\tt [inline]}}{71}
+\contentsline {subsection}{\numberline {5.22.14}\setlength {\rightskip }{0pt plus 5cm}{\bf TXYZ} \& operator- ({\bf TXYZ} \& {\em xyz})\hspace {0.3cm}{\tt [inline]}}{71}
+\contentsline {subsection}{\numberline {5.22.15}\setlength {\rightskip }{0pt plus 5cm}{\bf TXY} operator $\ast $ ({\bf TXYZ} {\em xy}, {\bf TXYZ} {\em xy2})\hspace {0.3cm}{\tt [inline]}}{71}
+\contentsline {subsection}{\numberline {5.22.16}\setlength {\rightskip }{0pt plus 5cm}{\bf TXYZ} \& operator $\ast $= ({\bf TXYZ} \& {\em xyz}, {\bf real} {\em r})\hspace {0.3cm}{\tt [inline]}}{71}
+\contentsline {subsection}{\numberline {5.22.17}\setlength {\rightskip }{0pt plus 5cm}{\bf TXY} operator $\ast $ ({\bf real} {\em r}, {\bf TXYZ} {\em xy})\hspace {0.3cm}{\tt [inline]}}{71}
+\contentsline {subsection}{\numberline {5.22.18}\setlength {\rightskip }{0pt plus 5cm}{\bf TXY} operator/ ({\bf TXYZ} {\em xy}, {\bf real} {\em r})\hspace {0.3cm}{\tt [inline]}}{71}
+\contentsline {subsection}{\numberline {5.22.19}\setlength {\rightskip }{0pt plus 5cm}{\bf TXYZ} \& operator/= ({\bf TXYZ} \& {\em xyz}, {\bf real} {\em r})\hspace {0.3cm}{\tt [inline]}}{71}
+\contentsline {subsection}{\numberline {5.22.20}\setlength {\rightskip }{0pt plus 5cm}{\bf TXY} operator $\ast $ ({\bf TXY} {\em xy}, {\bf TXY} {\em xy2})\hspace {0.3cm}{\tt [inline]}}{71}
+\contentsline {subsection}{\numberline {5.22.21}\setlength {\rightskip }{0pt plus 5cm}{\bf TXY} operator $\ast $ ({\bf real} {\em r}, {\bf TXY} {\em xy})\hspace {0.3cm}{\tt [inline]}}{71}
+\contentsline {subsection}{\numberline {5.22.22}\setlength {\rightskip }{0pt plus 5cm}{\bf TXY} operator/ ({\bf TXY} {\em xy}, {\bf real} {\em r})\hspace {0.3cm}{\tt [inline]}}{71}
+\contentsline {subsection}{\numberline {5.22.23}\setlength {\rightskip }{0pt plus 5cm}{\bf TXYZ} \& operator-= ({\bf TXYZ} \& {\em xyz}, {\bf TXY} {\em xy})\hspace {0.3cm}{\tt [inline]}}{71}
+\contentsline {subsection}{\numberline {5.22.24}\setlength {\rightskip }{0pt plus 5cm}{\bf TXY} xy0}{72}
+\contentsline {subsection}{\numberline {5.22.25}\setlength {\rightskip }{0pt plus 5cm}{\bf TXYZ} xyz0}{72}

@@ -1,0 +1,75 @@
+.TH Column 3 "16 Dec 1999" "simeb_ebit" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Column \- 
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <column.h>\fR
+.PP
+.SS Static Public Members
+
+.in +1c
+.ti -1c
+.RI "int \fBiGetNumPlanes\fR (void)"
+.br
+.ti -1c
+.RI "\fBTSource\fR* \fBGetSource\fR (void)"
+.br
+.ti -1c
+.RI "\fBTPlane\fR* \fBGetPlane\fR (int const i)"
+.br
+.ti -1c
+.RI "\fBreal\fR \fBrGetZ\fR (int const i)"
+.br
+.ti -1c
+.RI "\fBreal\fR \fBrGetCapture\fR (void)"
+.br
+.ti -1c
+.RI "void \fBSetup\fR (void)"
+.br
+.ti -1c
+.RI "void \fBInitialize\fR (void)"
+.br
+.ti -1c
+.RI "void \fBParse\fR (\fBTParser\fR &, char *)"
+.br
+.ti -1c
+.RI "void \fBFly\fR (\fBreal\fR const r_dt)"
+.br
+.ti -1c
+.RI "\fBreal\fR const \fBrPrecision\fR"
+.br
+.in -1c
+.SH DETAILED DESCRIPTION
+.PP 
+.SH MEMBER FUNCTION DOCUMENTATION
+.PP 
+.SS int Column::iGetNumPlanes (void)\fC [inline, static]\fR
+.PP
+.SS \fBTSource\fR * Column::GetSource (void)\fC [inline, static]\fR
+.PP
+.SS \fBTPlane\fR * Column::GetPlane (int const i)\fC [inline, static]\fR
+.PP
+.SS \fBreal\fR Column::rGetZ (int const i)\fC [inline, static]\fR
+.PP
+.SS \fBreal\fR Column::rGetCapture (void)\fC [inline, static]\fR
+.PP
+.SS void Column::Setup (void)\fC [static]\fR
+.PP
+.SS void Column::Initialize (void)\fC [static]\fR
+.PP
+.SS void Column::Parse (\fBTParser\fR & parser, char * s_token)\fC [static]\fR
+.PP
+.SS void Column::Fly (\fBreal\fR const r_dt)\fC [static]\fR
+.PP
+.SH MEMBER DATA DOCUMENTATION
+.PP 
+.SS \fBreal\fR const Column::rPrecision\fC [static]\fR
+.PP
+
+
+.SH AUTHOR
+.PP 
+Generated automatically by Doxygen for simeb_ebit from the source code.
